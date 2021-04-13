@@ -54,6 +54,7 @@ namespace AdaptiveSharedNamespace
         DateInput,
         Default,
         DefaultPoster,
+        DefaultTextBlockConfig,
         ElementId,
         Emphasis,
         ErrorMessage,

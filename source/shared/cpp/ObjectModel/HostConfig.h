@@ -346,6 +346,8 @@ namespace AdaptiveSharedNamespace
     struct HeadingsConfig
     {
         unsigned int level = 2;
+        TextConfig defaultTextBlockConfig{TextWeight::Bolder, TextSize::Medium, FontType::Default, ForegroundColor::Default, false, true, ~0U};
+
         static HeadingsConfig Deserialize(const Json::Value& json, const HeadingsConfig& defaultValue);
     };
 

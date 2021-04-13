@@ -52,6 +52,7 @@ namespace AdaptiveSharedNamespace
             {AdaptiveCardSchemaKey::DateInput, "dateInput"},
             {AdaptiveCardSchemaKey::Default, "default"},
             {AdaptiveCardSchemaKey::DefaultPoster, "defaultPoster"},
+            {AdaptiveCardSchemaKey::DefaultTextBlockConfig, "defaultTextBlockConfig"},
             {AdaptiveCardSchemaKey::ElementId, "elementId"},
             {AdaptiveCardSchemaKey::Emphasis, "emphasis"},
             {AdaptiveCardSchemaKey::ErrorMessage, "errorMessage"},

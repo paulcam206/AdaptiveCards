@@ -488,6 +488,8 @@ HeadingsConfig HeadingsConfig::Deserialize(const Json::Value& json, const Headin
     HeadingsConfig result;
 
     result.level = ParseUtil::GetInt(json, AdaptiveCardSchemaKey::Level, defaultValue.level);
+    result.defaultTextBlockConfig = ParseUtil::ExtractJsonValueAndMergeWithDefault<TextConfig>(
+        json, AdaptiveCardSchemaKey::DefaultTextBlockConfig, defaultValue.defaultTextBlockConfig, TextConfig::Deserialize);
 
     return result;
 }
