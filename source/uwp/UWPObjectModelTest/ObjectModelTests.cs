@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AdaptiveCards.Rendering.Uwp;
+using AdaptiveCards.ObjectModel.Uwp;
 using Windows.Data.Json;
 
 
-namespace UWPUnitTests
+namespace UWPObjectModelTest
 {
     [TestClass]
     public class ObjectModelTest
