@@ -5,7 +5,6 @@
 #include "AdaptiveShowCardAction.h"
 #include "AdaptiveShowCardActionRenderer.h"
 #include "AdaptiveElementParserRegistration.h"
-#include "ActionHelpers.h"
 
 using namespace Microsoft::WRL;
 using namespace ABI::AdaptiveNamespace;

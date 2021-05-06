@@ -5,7 +5,6 @@
 #include "AdaptiveExecuteAction.h"
 #include "AdaptiveExecuteActionRenderer.h"
 #include "AdaptiveElementParserRegistration.h"
-#include "ActionHelpers.h"
 
 using namespace ABI::AdaptiveNamespace;
 using namespace Microsoft::WRL;

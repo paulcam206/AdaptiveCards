@@ -34,6 +34,8 @@ namespace AdaptiveNamespace
         std::shared_ptr<ActionParserRegistration> GetSharedParserRegistration();
 
     private:
+        HRESULT RegisterDefaultActionRenderers(ABI::AdaptiveNamespace::IAdaptiveActionParserRegistration* registration);
+
         bool m_isInitializing;
         std::shared_ptr<RegistrationMap> m_registration;
         std::shared_ptr<ActionParserRegistration> m_sharedParserRegistration;

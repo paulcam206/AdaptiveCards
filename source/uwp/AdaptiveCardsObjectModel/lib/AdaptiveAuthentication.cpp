@@ -102,7 +102,7 @@ namespace AdaptiveNamespace
 
         if (m_buttons)
         {
-            XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::AdaptiveAuthCardButton, ABI::AdaptiveNamespace::IAdaptiveAuthCardButton>(
+            IterateOverVector<ABI::AdaptiveNamespace::AdaptiveAuthCardButton, ABI::AdaptiveNamespace::IAdaptiveAuthCardButton>(
                 m_buttons.Get(), [&](ABI::AdaptiveNamespace::IAdaptiveAuthCardButton* authCardButton) {
                     ComPtr<AdaptiveNamespace::AdaptiveAuthCardButton> buttonImpl =
                         PeekInnards<AdaptiveNamespace::AdaptiveAuthCardButton>(authCardButton);

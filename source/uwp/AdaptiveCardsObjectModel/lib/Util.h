@@ -67,8 +67,9 @@ HRESULT GenerateSharedAction(_In_ ABI::AdaptiveNamespace::IAdaptiveActionElement
 HRESULT GenerateSharedActions(_In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::IAdaptiveActionElement*>* items,
                               std::vector<std::shared_ptr<AdaptiveSharedNamespace::BaseActionElement>>& containedElements);
 
-HRESULT GenerateSharedRequirements(_In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveRequirement*>* adaptiveRequirements,
-                                   std::unordered_map<std::string, AdaptiveSharedNamespace::SemanticVersion>& sharedRequirements) noexcept;
+HRESULT GenerateSharedRequirements(
+    _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveRequirement*>* adaptiveRequirements,
+    std::unordered_map<std::string, AdaptiveSharedNamespace::SemanticVersion>& sharedRequirements) noexcept;
 
 HRESULT GenerateSharedImages(_In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveImage*>* items,
                              std::vector<std::shared_ptr<AdaptiveSharedNamespace::Image>>& containedElements);
@@ -112,8 +113,9 @@ HRESULT GenerateFactsProjection(const std::vector<std::shared_ptr<AdaptiveShared
 HRESULT GenerateInlinesProjection(const std::vector<std::shared_ptr<AdaptiveSharedNamespace::Inline>>& containedElements,
                                   _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::IAdaptiveInline*>* projectedParentContainer) noexcept;
 
-HRESULT GenerateRequirementsProjection(const std::unordered_map<std::string, AdaptiveSharedNamespace::SemanticVersion>& sharedRequirements,
-                                       _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveRequirement*>* projectedRequirementVector) noexcept;
+HRESULT GenerateRequirementsProjection(
+    const std::unordered_map<std::string, AdaptiveSharedNamespace::SemanticVersion>& sharedRequirements,
+    _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveRequirement*>* projectedRequirementVector) noexcept;
 
 HRESULT GenerateImagesProjection(const std::vector<std::shared_ptr<AdaptiveSharedNamespace::Image>>& containedElements,
                                  _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveImage*>* projectedParentContainer) noexcept;
@@ -180,6 +182,9 @@ template<typename T, typename R> Microsoft::WRL::ComPtr<T> PeekInnards(R r)
     return inner;
 }
 
+void RemoteResourceElementToRemoteResourceInformationVector(_In_ ABI::AdaptiveNamespace::IAdaptiveElementWithRemoteResources* remoteResources,
+                                                            std::vector<AdaptiveSharedNamespace::RemoteResourceInformation>& resourceUris);
+
 HRESULT SharedWarningsToAdaptiveWarnings(
     const std::vector<std::shared_ptr<AdaptiveSharedNamespace::AdaptiveCardParseWarning>>& sharedWarnings,
     _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveWarning*>* adaptiveWarnings);
@@ -211,141 +216,81 @@ HRESULT GetAdaptiveElementParserRegistrationFromSharedModel(
     const std::shared_ptr<AdaptiveSharedNamespace::ElementParserRegistration>& sharedElementParserRegistration,
     _COM_Outptr_ ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration** adaptiveElementParserRegistration);
 
-namespace AdaptiveNamespace
+HRESULT RegisterDefaultElementRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration);
+HRESULT RegisterDefaultActionRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration);
+
+template<typename T, typename TInterface, typename C>
+HRESULT IterateOverVectorWithFailure(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector, const boolean stopOnFailure, C iterationCallback)
 {
-    class XamlBuilder;
+    Microsoft::WRL::ComPtr<ABI::Windows::Foundation::Collections::IVector<T*>> localVector(vector);
+    ComPtr<IIterable<T*>> vectorIterable;
+    HRESULT hr = localVector.As<IIterable<T*>>(&vectorIterable);
 
-    template<class TRegistration>
-    HRESULT RegisterDefaultElementRenderers(TRegistration registration, Microsoft::WRL::ComPtr<XamlBuilder> xamlBuilder)
+    if (SUCCEEDED(hr))
     {
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"ActionSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveActionSetRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Column").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveColumnRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"ColumnSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveColumnSetRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Container").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveContainerRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"FactSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveFactSetRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Image").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveImageRenderer>(xamlBuilder).Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"ImageSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveImageSetRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.ChoiceSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveChoiceSetInputRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Date").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveDateInputRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Number").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveNumberInputRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Text").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTextInputRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Time").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTimeInputRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Toggle").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveToggleInputRenderer>().Get()));
-        RETURN_IF_FAILED(
-            registration->Set(HStringReference(L"Media").Get(), Make<AdaptiveNamespace::AdaptiveMediaRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"RichTextBlock").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveRichTextBlockRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"TextBlock").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTextBlockRenderer>().Get()));
-
-        return S_OK;
-    }
-
-    template<class TRegistration> HRESULT RegisterDefaultActionRenderers(TRegistration registration)
-    {
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.OpenUrl").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveOpenUrlActionRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.ShowCard").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveShowCardActionRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.Submit").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveSubmitActionRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.ToggleVisibility").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveToggleVisibilityActionRenderer>().Get()));
-        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.Execute").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveExecuteActionRenderer>().Get()));
-        return S_OK;
-    }
-
-        template<typename T, typename TInterface, typename C>
-    HRESULT IterateOverVectorWithFailure(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector,
-                                         const boolean stopOnFailure,
-                                         C iterationCallback)
-    {
-        Microsoft::WRL::ComPtr<ABI::Windows::Foundation::Collections::IVector<T*>> localVector(vector);
-        ComPtr<IIterable<T*>> vectorIterable;
-        HRESULT hr = localVector.As<IIterable<T*>>(&vectorIterable);
-
-        if (SUCCEEDED(hr))
-        {
-            Microsoft::WRL::ComPtr<IIterator<T*>> vectorIterator;
-            vectorIterable->First(&vectorIterator);
-
-            boolean hasCurrent = false;
-            hr = vectorIterator->get_HasCurrent(&hasCurrent);
-            while (SUCCEEDED(hr) && hasCurrent)
-            {
-                Microsoft::WRL::ComPtr<TInterface> current = nullptr;
-                if (FAILED(vectorIterator->get_Current(current.GetAddressOf())))
-                {
-                    return S_OK;
-                }
-
-                hr = iterationCallback(current.Get());
-                if (stopOnFailure && FAILED(hr))
-                {
-                    return hr;
-                }
-
-                hr = vectorIterator->MoveNext(&hasCurrent);
-            }
-        }
-
-        return hr;
-    }
-
-    template<typename T, typename C>
-    HRESULT IterateOverVectorWithFailure(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector,
-                                         const boolean stopOnFailure,
-                                         C iterationCallback)
-    {
-        return IterateOverVectorWithFailure<T, T, C>(vector, stopOnFailure, iterationCallback);
-    }
-
-    template<typename T, typename TInterface, typename C>
-    void IterateOverVector(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector, C iterationCallback)
-    {
-        Microsoft::WRL::ComPtr<ABI::Windows::Foundation::Collections::IVector<T*>> localVector(vector);
-        ComPtr<IIterable<T*>> vectorIterable;
-        THROW_IF_FAILED(localVector.As<IIterable<T*>>(&vectorIterable));
-
         Microsoft::WRL::ComPtr<IIterator<T*>> vectorIterator;
-        if (FAILED(vectorIterable->First(&vectorIterator)))
-        {
-            return;
-        }
+        vectorIterable->First(&vectorIterator);
 
         boolean hasCurrent = false;
-        HRESULT hr = vectorIterator->get_HasCurrent(&hasCurrent);
+        hr = vectorIterator->get_HasCurrent(&hasCurrent);
         while (SUCCEEDED(hr) && hasCurrent)
         {
             Microsoft::WRL::ComPtr<TInterface> current = nullptr;
-            hr = vectorIterator->get_Current(current.GetAddressOf());
-            if (FAILED(hr))
+            if (FAILED(vectorIterator->get_Current(current.GetAddressOf())))
             {
-                break;
+                return S_OK;
             }
 
-            iterationCallback(current.Get());
+            hr = iterationCallback(current.Get());
+            if (stopOnFailure && FAILED(hr))
+            {
+                return hr;
+            }
+
             hr = vectorIterator->MoveNext(&hasCurrent);
         }
     }
 
-    template<typename T, typename C>
-    void IterateOverVector(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector, C iterationCallback)
+    return hr;
+}
+
+template<typename T, typename C>
+HRESULT IterateOverVectorWithFailure(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector, const boolean stopOnFailure, C iterationCallback)
+{
+    return IterateOverVectorWithFailure<T, T, C>(vector, stopOnFailure, iterationCallback);
+}
+
+template<typename T, typename TInterface, typename C>
+void IterateOverVector(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector, C iterationCallback)
+{
+    Microsoft::WRL::ComPtr<ABI::Windows::Foundation::Collections::IVector<T*>> localVector(vector);
+    ComPtr<IIterable<T*>> vectorIterable;
+    THROW_IF_FAILED(localVector.As<IIterable<T*>>(&vectorIterable));
+
+    Microsoft::WRL::ComPtr<IIterator<T*>> vectorIterator;
+    if (FAILED(vectorIterable->First(&vectorIterator)))
     {
-        IterateOverVector<T, T, C>(vector, iterationCallback);
+        return;
     }
+
+    boolean hasCurrent = false;
+    HRESULT hr = vectorIterator->get_HasCurrent(&hasCurrent);
+    while (SUCCEEDED(hr) && hasCurrent)
+    {
+        Microsoft::WRL::ComPtr<TInterface> current = nullptr;
+        hr = vectorIterator->get_Current(current.GetAddressOf());
+        if (FAILED(hr))
+        {
+            break;
+        }
+
+        iterationCallback(current.Get());
+        hr = vectorIterator->MoveNext(&hasCurrent);
+    }
+}
+
+template<typename T, typename C>
+void IterateOverVector(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector, C iterationCallback)
+{
+    IterateOverVector<T, T, C>(vector, iterationCallback);
 }

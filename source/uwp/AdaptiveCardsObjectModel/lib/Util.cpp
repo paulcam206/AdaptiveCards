@@ -40,7 +40,6 @@
 #include "AdaptiveWarning.h"
 #include "CustomActionWrapper.h"
 #include "CustomElementWrapper.h"
-#include "XamlHelpers.h"
 
 using namespace AdaptiveCards;
 using namespace Microsoft::WRL;
@@ -289,7 +288,7 @@ HRESULT GenerateSharedElements(_In_ ABI::Windows::Foundation::Collections::IVect
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::IAdaptiveCardElement>(items, [&](ABI::AdaptiveNamespace::IAdaptiveCardElement* item) {
+    IterateOverVector<ABI::AdaptiveNamespace::IAdaptiveCardElement>(items, [&](ABI::AdaptiveNamespace::IAdaptiveCardElement* item) {
         std::shared_ptr<AdaptiveSharedNamespace::BaseCardElement> baseCardElement;
         RETURN_IF_FAILED(GenerateSharedElement(item, baseCardElement));
         containedElements.push_back(std::move(baseCardElement));
@@ -350,7 +349,7 @@ HRESULT GenerateSharedActions(_In_ ABI::Windows::Foundation::Collections::IVecto
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::IAdaptiveActionElement>(actions, [&](ABI::AdaptiveNamespace::IAdaptiveActionElement* action) {
+    IterateOverVector<ABI::AdaptiveNamespace::IAdaptiveActionElement>(actions, [&](ABI::AdaptiveNamespace::IAdaptiveActionElement* action) {
         std::shared_ptr<AdaptiveSharedNamespace::BaseActionElement> baseActionElement;
         GenerateSharedAction(action, baseActionElement);
         containedElements.push_back(baseActionElement);
@@ -366,7 +365,7 @@ try
 {
     sharedRequirements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::AdaptiveRequirement, ABI::AdaptiveNamespace::IAdaptiveRequirement>(
+    IterateOverVector<ABI::AdaptiveNamespace::AdaptiveRequirement, ABI::AdaptiveNamespace::IAdaptiveRequirement>(
         adaptiveRequirements, [&](ABI::AdaptiveNamespace::IAdaptiveRequirement* requirement) {
             HString nameHString;
             RETURN_IF_FAILED(requirement->get_Name(nameHString.GetAddressOf()));
@@ -401,7 +400,7 @@ HRESULT GenerateSharedImages(_In_ ABI::Windows::Foundation::Collections::IVector
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::AdaptiveImage, ABI::AdaptiveNamespace::IAdaptiveImage>(
+    IterateOverVector<ABI::AdaptiveNamespace::AdaptiveImage, ABI::AdaptiveNamespace::IAdaptiveImage>(
         images, [&](ABI::AdaptiveNamespace::IAdaptiveImage* image) {
             ComPtr<ABI::AdaptiveNamespace::IAdaptiveImage> localImage = image;
             ComPtr<ABI::AdaptiveNamespace::IAdaptiveCardElement> imageAsElement;
@@ -423,7 +422,7 @@ HRESULT GenerateSharedFacts(_In_ ABI::Windows::Foundation::Collections::IVector<
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::AdaptiveFact, ABI::AdaptiveNamespace::IAdaptiveFact>(
+    IterateOverVector<ABI::AdaptiveNamespace::AdaptiveFact, ABI::AdaptiveNamespace::IAdaptiveFact>(
         facts, [&](ABI::AdaptiveNamespace::IAdaptiveFact* fact) {
             ComPtr<AdaptiveNamespace::AdaptiveFact> adaptiveElement = PeekInnards<AdaptiveNamespace::AdaptiveFact>(fact);
             if (adaptiveElement == nullptr)
@@ -445,7 +444,7 @@ HRESULT GenerateSharedChoices(_In_ ABI::Windows::Foundation::Collections::IVecto
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::AdaptiveChoiceInput, ABI::AdaptiveNamespace::IAdaptiveChoiceInput>(
+    IterateOverVector<ABI::AdaptiveNamespace::AdaptiveChoiceInput, ABI::AdaptiveNamespace::IAdaptiveChoiceInput>(
         choices, [&](ABI::AdaptiveNamespace::IAdaptiveChoiceInput* choice) {
             ComPtr<AdaptiveNamespace::AdaptiveChoiceInput> adaptiveElement =
                 PeekInnards<AdaptiveNamespace::AdaptiveChoiceInput>(choice);
@@ -505,7 +504,7 @@ HRESULT GenerateSharedInlines(ABI::Windows::Foundation::Collections::IVector<ABI
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveNamespace::IAdaptiveInline, ABI::AdaptiveNamespace::IAdaptiveInline>(
+    IterateOverVector<ABI::AdaptiveNamespace::IAdaptiveInline, ABI::AdaptiveNamespace::IAdaptiveInline>(
         inlines, [&](ABI::AdaptiveNamespace::IAdaptiveInline* thisInline) {
             // We only support text runs for now
             ComPtr<AdaptiveNamespace::AdaptiveTextRun> adaptiveTextRun = PeekInnards<AdaptiveNamespace::AdaptiveTextRun>(thisInline);
@@ -954,412 +953,6 @@ try
 }
 CATCH_RETURN;
 
-HRESULT GetContainerStyleDefinition(ABI::AdaptiveNamespace::ContainerStyle style,
-                                    _In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                                    _Outptr_ ABI::AdaptiveNamespace::IAdaptiveContainerStyleDefinition** styleDefinition) noexcept
-try
-{
-    ComPtr<ABI::AdaptiveNamespace::IAdaptiveContainerStylesDefinition> containerStyles;
-    RETURN_IF_FAILED(hostConfig->get_ContainerStyles(&containerStyles));
-
-    switch (style)
-    {
-    case ABI::AdaptiveNamespace::ContainerStyle::Accent:
-        RETURN_IF_FAILED(containerStyles->get_Accent(styleDefinition));
-        break;
-    case ABI::AdaptiveNamespace::ContainerStyle::Attention:
-        RETURN_IF_FAILED(containerStyles->get_Attention(styleDefinition));
-        break;
-    case ABI::AdaptiveNamespace::ContainerStyle::Emphasis:
-        RETURN_IF_FAILED(containerStyles->get_Emphasis(styleDefinition));
-        break;
-    case ABI::AdaptiveNamespace::ContainerStyle::Good:
-        RETURN_IF_FAILED(containerStyles->get_Good(styleDefinition));
-        break;
-    case ABI::AdaptiveNamespace::ContainerStyle::Warning:
-        RETURN_IF_FAILED(containerStyles->get_Warning(styleDefinition));
-        break;
-    case ABI::AdaptiveNamespace::ContainerStyle::Default:
-    default:
-        RETURN_IF_FAILED(containerStyles->get_Default(styleDefinition));
-        break;
-    }
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetColorFromAdaptiveColor(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                                  ABI::AdaptiveNamespace::ForegroundColor adaptiveColor,
-                                  ABI::AdaptiveNamespace::ContainerStyle containerStyle,
-                                  bool isSubtle,
-                                  bool highlight,
-                                  _Out_ ABI::Windows::UI::Color* uiColor) noexcept
-try
-{
-    ComPtr<ABI::AdaptiveNamespace::IAdaptiveContainerStyleDefinition> styleDefinition;
-    GetContainerStyleDefinition(containerStyle, hostConfig, &styleDefinition);
-
-    ComPtr<ABI::AdaptiveNamespace::IAdaptiveColorsConfig> colorsConfig;
-    RETURN_IF_FAILED(styleDefinition->get_ForegroundColors(&colorsConfig));
-
-    ComPtr<ABI::AdaptiveNamespace::IAdaptiveColorConfig> colorConfig;
-    switch (adaptiveColor)
-    {
-    case ABI::AdaptiveNamespace::ForegroundColor::Accent:
-        RETURN_IF_FAILED(colorsConfig->get_Accent(&colorConfig));
-        break;
-    case ABI::AdaptiveNamespace::ForegroundColor::Dark:
-        RETURN_IF_FAILED(colorsConfig->get_Dark(&colorConfig));
-        break;
-    case ABI::AdaptiveNamespace::ForegroundColor::Light:
-        RETURN_IF_FAILED(colorsConfig->get_Light(&colorConfig));
-        break;
-    case ABI::AdaptiveNamespace::ForegroundColor::Good:
-        RETURN_IF_FAILED(colorsConfig->get_Good(&colorConfig));
-        break;
-    case ABI::AdaptiveNamespace::ForegroundColor::Warning:
-        RETURN_IF_FAILED(colorsConfig->get_Warning(&colorConfig));
-        break;
-    case ABI::AdaptiveNamespace::ForegroundColor::Attention:
-        RETURN_IF_FAILED(colorsConfig->get_Attention(&colorConfig));
-        break;
-    case ABI::AdaptiveNamespace::ForegroundColor::Default:
-    default:
-        RETURN_IF_FAILED(colorsConfig->get_Default(&colorConfig));
-        break;
-    }
-
-    if (highlight)
-    {
-        ComPtr<ABI::AdaptiveNamespace::IAdaptiveHighlightColorConfig> highlightColorConfig;
-        RETURN_IF_FAILED(colorConfig->get_HighlightColors(&highlightColorConfig));
-        RETURN_IF_FAILED(isSubtle ? highlightColorConfig->get_Subtle(uiColor) : highlightColorConfig->get_Default(uiColor));
-    }
-    else
-    {
-        RETURN_IF_FAILED(isSubtle ? colorConfig->get_Subtle(uiColor) : colorConfig->get_Default(uiColor));
-    }
-
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetHighlighter(_In_ ABI::AdaptiveNamespace::IAdaptiveTextElement* adaptiveTextElement,
-                       _In_ ABI::AdaptiveNamespace::IAdaptiveRenderContext* renderContext,
-                       _In_ ABI::AdaptiveNamespace::IAdaptiveRenderArgs* renderArgs,
-                       _Out_ ABI::Windows::UI::Xaml::Documents::ITextHighlighter** textHighlighter) noexcept
-{
-    ComPtr<ABI::Windows::UI::Xaml::Documents::ITextHighlighter> localTextHighlighter =
-        XamlHelpers::CreateXamlClass<ABI::Windows::UI::Xaml::Documents::ITextHighlighter>(
-            HStringReference(RuntimeClass_Windows_UI_Xaml_Documents_TextHighlighter));
-
-    ComPtr<ABI::AdaptiveNamespace::IAdaptiveHostConfig> hostConfig;
-    RETURN_IF_FAILED(renderContext->get_HostConfig(&hostConfig));
-
-    ABI::AdaptiveNamespace::ForegroundColor adaptiveForegroundColor;
-    RETURN_IF_FAILED(adaptiveTextElement->get_Color(&adaptiveForegroundColor));
-
-    boolean isSubtle;
-    RETURN_IF_FAILED(adaptiveTextElement->get_IsSubtle(&isSubtle));
-
-    ABI::AdaptiveNamespace::ContainerStyle containerStyle;
-    RETURN_IF_FAILED(renderArgs->get_ContainerStyle(&containerStyle));
-
-    ABI::Windows::UI::Color backgroundColor;
-    RETURN_IF_FAILED(GetColorFromAdaptiveColor(hostConfig.Get(), adaptiveForegroundColor, containerStyle, isSubtle, true, &backgroundColor));
-
-    ABI::Windows::UI::Color foregroundColor;
-    RETURN_IF_FAILED(GetColorFromAdaptiveColor(hostConfig.Get(), adaptiveForegroundColor, containerStyle, isSubtle, false, &foregroundColor));
-
-    RETURN_IF_FAILED(localTextHighlighter->put_Background(XamlHelpers::GetSolidColorBrush(backgroundColor).Get()));
-    RETURN_IF_FAILED(localTextHighlighter->put_Foreground(XamlHelpers::GetSolidColorBrush(foregroundColor).Get()));
-
-    localTextHighlighter.CopyTo(textHighlighter);
-    return S_OK;
-}
-
-HRESULT GetSpacingSizeFromSpacing(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                                  ABI::AdaptiveNamespace::Spacing spacing,
-                                  _Out_ UINT* spacingSize) noexcept
-try
-{
-    ComPtr<ABI::AdaptiveNamespace::IAdaptiveSpacingConfig> spacingConfig;
-    RETURN_IF_FAILED(hostConfig->get_Spacing(&spacingConfig));
-
-    switch (spacing)
-    {
-    case ABI::AdaptiveNamespace::Spacing::None:
-        *spacingSize = 0;
-        break;
-    case ABI::AdaptiveNamespace::Spacing::Small:
-        RETURN_IF_FAILED(spacingConfig->get_Small(spacingSize));
-        break;
-    case ABI::AdaptiveNamespace::Spacing::Medium:
-        RETURN_IF_FAILED(spacingConfig->get_Medium(spacingSize));
-        break;
-    case ABI::AdaptiveNamespace::Spacing::Large:
-        RETURN_IF_FAILED(spacingConfig->get_Large(spacingSize));
-        break;
-    case ABI::AdaptiveNamespace::Spacing::ExtraLarge:
-        RETURN_IF_FAILED(spacingConfig->get_ExtraLarge(spacingSize));
-        break;
-    case ABI::AdaptiveNamespace::Spacing::Padding:
-        RETURN_IF_FAILED(spacingConfig->get_Padding(spacingSize));
-        break;
-    case ABI::AdaptiveNamespace::Spacing::Default:
-    default:
-        RETURN_IF_FAILED(spacingConfig->get_Default(spacingSize));
-        break;
-    }
-
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetBackgroundColorFromStyle(ABI::AdaptiveNamespace::ContainerStyle style,
-                                    _In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                                    _Out_ ABI::Windows::UI::Color* backgroundColor) noexcept
-try
-{
-    ComPtr<ABI::AdaptiveNamespace::IAdaptiveContainerStyleDefinition> styleDefinition;
-    RETURN_IF_FAILED(GetContainerStyleDefinition(style, hostConfig, &styleDefinition));
-    RETURN_IF_FAILED(styleDefinition->get_BackgroundColor(backgroundColor));
-
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetFontDataFromFontType(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                                ABI::AdaptiveNamespace::FontType fontType,
-                                ABI::AdaptiveNamespace::TextSize desiredSize,
-                                ABI::AdaptiveNamespace::TextWeight desiredWeight,
-                                _Outptr_ HSTRING* resultFontFamilyName,
-                                _Out_ UINT32* resultSize,
-                                _Out_ ABI::Windows::UI::Text::FontWeight* resultWeight) noexcept
-try
-{
-    RETURN_IF_FAILED(GetFontFamilyFromFontType(hostConfig, fontType, resultFontFamilyName));
-    RETURN_IF_FAILED(GetFontSizeFromFontType(hostConfig, fontType, desiredSize, resultSize));
-    RETURN_IF_FAILED(GetFontWeightFromStyle(hostConfig, fontType, desiredWeight, resultWeight));
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetFontFamilyFromFontType(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                                  ABI::AdaptiveNamespace::FontType fontType,
-                                  _Outptr_ HSTRING* resultFontFamilyName) noexcept
-try
-{
-    HString result;
-    ABI::AdaptiveNamespace::IAdaptiveFontTypeDefinition* typeDefinition;
-
-    // get FontFamily from desired style
-    RETURN_IF_FAILED(GetFontType(hostConfig, fontType, &typeDefinition));
-    RETURN_IF_FAILED(typeDefinition->get_FontFamily(result.GetAddressOf()));
-    if (result == NULL)
-    {
-        if (fontType == ABI::AdaptiveNamespace::FontType::Monospace)
-        {
-            // fallback to system default monospace FontFamily
-            RETURN_IF_FAILED(UTF8ToHString("Courier New", result.GetAddressOf()));
-        }
-        else
-        {
-            // fallback to deprecated FontFamily
-            RETURN_IF_FAILED(hostConfig->get_FontFamily(result.GetAddressOf()));
-            if (result == NULL)
-            {
-                // fallback to system default FontFamily
-                RETURN_IF_FAILED(UTF8ToHString("Segoe UI", result.GetAddressOf()));
-            }
-        }
-    }
-    return result.CopyTo(resultFontFamilyName);
-}
-CATCH_RETURN;
-
-HRESULT GetFontSizeFromFontType(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                                ABI::AdaptiveNamespace::FontType fontType,
-                                ABI::AdaptiveNamespace::TextSize desiredSize,
-                                _Out_ UINT32* resultSize) noexcept
-try
-{
-    UINT32 result;
-    ABI::AdaptiveNamespace::IAdaptiveFontTypeDefinition* fontTypeDefinition;
-    ABI::AdaptiveNamespace::IAdaptiveFontSizesConfig* sizesConfig;
-
-    // get FontSize from desired style
-    RETURN_IF_FAILED(GetFontType(hostConfig, fontType, &fontTypeDefinition));
-    RETURN_IF_FAILED(fontTypeDefinition->get_FontSizes(&sizesConfig));
-    RETURN_IF_FAILED(GetFontSize(sizesConfig, desiredSize, &result));
-
-    if (result == MAXUINT32)
-    {
-        // get FontSize from Default style
-        RETURN_IF_FAILED(GetFontType(hostConfig, ABI::AdaptiveNamespace::FontType::Default, &fontTypeDefinition));
-        RETURN_IF_FAILED(fontTypeDefinition->get_FontSizes(&sizesConfig));
-        RETURN_IF_FAILED(GetFontSize(sizesConfig, desiredSize, &result));
-
-        if (result == MAXUINT32)
-        {
-            // get deprecated FontSize
-            RETURN_IF_FAILED(hostConfig->get_FontSizes(&sizesConfig));
-            RETURN_IF_FAILED(GetFontSize(sizesConfig, desiredSize, &result));
-
-            if (result == MAXUINT32)
-            {
-                // set system default FontSize based on desired style
-                switch (desiredSize)
-                {
-                case ABI::AdaptiveNamespace::TextSize::Small:
-                    result = 10;
-                    break;
-                case ABI::AdaptiveNamespace::TextSize::Medium:
-                    result = 14;
-                    break;
-                case ABI::AdaptiveNamespace::TextSize::Large:
-                    result = 17;
-                    break;
-                case ABI::AdaptiveNamespace::TextSize::ExtraLarge:
-                    result = 20;
-                    break;
-                case ABI::AdaptiveNamespace::TextSize::Default:
-                default:
-                    result = 12;
-                    break;
-                }
-            }
-        }
-    }
-    *resultSize = result;
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetFontWeightFromStyle(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                               ABI::AdaptiveNamespace::FontType fontType,
-                               ABI::AdaptiveNamespace::TextWeight desiredWeight,
-                               _Out_ ABI::Windows::UI::Text::FontWeight* resultWeight) noexcept
-try
-{
-    UINT16 result;
-    ABI::AdaptiveNamespace::IAdaptiveFontTypeDefinition* typeDefinition;
-    ABI::AdaptiveNamespace::IAdaptiveFontWeightsConfig* weightConfig;
-
-    // get FontWeight from desired fontType
-    RETURN_IF_FAILED(GetFontType(hostConfig, fontType, &typeDefinition));
-    RETURN_IF_FAILED(typeDefinition->get_FontWeights(&weightConfig));
-    RETURN_IF_FAILED(GetFontWeight(weightConfig, desiredWeight, &result));
-
-    if (result == MAXUINT16)
-    {
-        // get FontWeight from Default style
-        RETURN_IF_FAILED(GetFontType(hostConfig, ABI::AdaptiveNamespace::FontType::Default, &typeDefinition));
-        RETURN_IF_FAILED(typeDefinition->get_FontWeights(&weightConfig));
-        RETURN_IF_FAILED(GetFontWeight(weightConfig, desiredWeight, &result));
-
-        if (result == MAXUINT16)
-        {
-            // get deprecated FontWeight
-            RETURN_IF_FAILED(hostConfig->get_FontWeights(&weightConfig));
-            RETURN_IF_FAILED(GetFontWeight(weightConfig, desiredWeight, &result));
-
-            if (result == MAXUINT16)
-            {
-                // set system default FontWeight based on desired style
-                switch (desiredWeight)
-                {
-                case ABI::AdaptiveNamespace::TextWeight::Lighter:
-                    result = 200;
-                    break;
-                case ABI::AdaptiveNamespace::TextWeight::Bolder:
-                    result = 800;
-                    break;
-                case ABI::AdaptiveNamespace::TextWeight::Default:
-                default:
-                    result = 400;
-                    break;
-                }
-            }
-        }
-    }
-    resultWeight->Weight = result;
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetFontType(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                    ABI::AdaptiveNamespace::FontType fontType,
-                    _COM_Outptr_ ABI::AdaptiveNamespace::IAdaptiveFontTypeDefinition** fontTypeDefinition) noexcept
-try
-{
-    ABI::AdaptiveNamespace::IAdaptiveFontTypesDefinition* fontTypes;
-    RETURN_IF_FAILED(hostConfig->get_FontTypes(&fontTypes));
-
-    switch (fontType)
-    {
-    case ABI::AdaptiveNamespace::FontType::Monospace:
-        RETURN_IF_FAILED(fontTypes->get_Monospace(fontTypeDefinition));
-        break;
-    case ABI::AdaptiveNamespace::FontType::Default:
-    default:
-        RETURN_IF_FAILED(fontTypes->get_Default(fontTypeDefinition));
-        break;
-    }
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetFontSize(_In_ ABI::AdaptiveNamespace::IAdaptiveFontSizesConfig* sizesConfig,
-                    ABI::AdaptiveNamespace::TextSize desiredSize,
-                    _Out_ UINT32* resultSize) noexcept
-try
-{
-    switch (desiredSize)
-    {
-    case ABI::AdaptiveNamespace::TextSize::Small:
-        RETURN_IF_FAILED(sizesConfig->get_Small(resultSize));
-        break;
-    case ABI::AdaptiveNamespace::TextSize::Medium:
-        RETURN_IF_FAILED(sizesConfig->get_Medium(resultSize));
-        break;
-    case ABI::AdaptiveNamespace::TextSize::Large:
-        RETURN_IF_FAILED(sizesConfig->get_Large(resultSize));
-        break;
-    case ABI::AdaptiveNamespace::TextSize::ExtraLarge:
-        RETURN_IF_FAILED(sizesConfig->get_ExtraLarge(resultSize));
-        break;
-    case ABI::AdaptiveNamespace::TextSize::Default:
-    default:
-        RETURN_IF_FAILED(sizesConfig->get_Default(resultSize));
-        break;
-    }
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GetFontWeight(_In_ ABI::AdaptiveNamespace::IAdaptiveFontWeightsConfig* weightsConfig,
-                      ABI::AdaptiveNamespace::TextWeight desiredWeight,
-                      _Out_ UINT16* resultWeight) noexcept
-try
-{
-    switch (desiredWeight)
-    {
-    case ABI::AdaptiveNamespace::TextWeight::Lighter:
-        RETURN_IF_FAILED(weightsConfig->get_Lighter(resultWeight));
-        break;
-    case ABI::AdaptiveNamespace::TextWeight::Bolder:
-        RETURN_IF_FAILED(weightsConfig->get_Bolder(resultWeight));
-        break;
-    case ABI::AdaptiveNamespace::TextWeight::Default:
-    default:
-        RETURN_IF_FAILED(weightsConfig->get_Default(resultWeight));
-        break;
-    }
-    return S_OK;
-}
-CATCH_RETURN;
-
 HRESULT StringToJsonObject(const std::string& inputString, _COM_Outptr_ IJsonObject** result)
 {
     HString asHstring;
@@ -1529,33 +1122,6 @@ void RemoteResourceElementToRemoteResourceInformationVector(_In_ ABI::AdaptiveNa
 
         hr = vectorIterator->MoveNext(&hasCurrent);
     }
-}
-
-void GetUrlFromString(_In_ ABI::AdaptiveNamespace::IAdaptiveHostConfig* hostConfig,
-                      _In_ HSTRING urlString,
-                      _Outptr_ ABI::Windows::Foundation::IUriRuntimeClass** url)
-{
-    ComPtr<ABI::Windows::Foundation::IUriRuntimeClassFactory> uriActivationFactory;
-    THROW_IF_FAILED(GetActivationFactory(HStringReference(RuntimeClass_Windows_Foundation_Uri).Get(), &uriActivationFactory));
-
-    ComPtr<ABI::Windows::Foundation::IUriRuntimeClass> localUrl;
-
-    // Try to treat URI as absolute
-    boolean isUrlRelative = FAILED(uriActivationFactory->CreateUri(urlString, localUrl.GetAddressOf()));
-
-    // Otherwise, try to treat URI as relative
-    if (isUrlRelative)
-    {
-        HString imageBaseUrl;
-        THROW_IF_FAILED(hostConfig->get_ImageBaseUrl(imageBaseUrl.GetAddressOf()));
-
-        if (imageBaseUrl.Get() != nullptr)
-        {
-            THROW_IF_FAILED(uriActivationFactory->CreateWithRelativeUri(imageBaseUrl.Get(), urlString, localUrl.GetAddressOf()));
-        }
-    }
-
-    THROW_IF_FAILED(localUrl.CopyTo(url));
 }
 
 HRESULT SharedWarningsToAdaptiveWarnings(const std::vector<std::shared_ptr<AdaptiveCardParseWarning>>& sharedWarnings,

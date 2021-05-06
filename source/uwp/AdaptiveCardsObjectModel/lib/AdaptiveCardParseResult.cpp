@@ -5,10 +5,6 @@
 
 #include "AdaptiveCard.h"
 #include <windows.foundation.collections.h>
-#include <Windows.UI.Xaml.h>
-#include "XamlBuilder.h"
-#include "XamlHelpers.h"
-#include "AdaptiveHostConfig.h"
 #include "vector.h"
 
 using namespace concurrency;
@@ -17,9 +13,6 @@ using namespace Microsoft::WRL::Wrappers;
 using namespace ABI::AdaptiveNamespace;
 using namespace ABI::Windows::Foundation;
 using namespace ABI::Windows::Foundation::Collections;
-using namespace ABI::Windows::UI;
-using namespace ABI::Windows::UI::Xaml;
-using namespace ABI::Windows::UI::Xaml::Controls;
 
 namespace AdaptiveNamespace
 {

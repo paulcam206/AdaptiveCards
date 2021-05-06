@@ -35,6 +35,8 @@ namespace AdaptiveNamespace
         std::shared_ptr<ElementParserRegistration> GetSharedParserRegistration();
 
     private:
+        HRESULT RegisterDefaultElementRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration);
+
         bool m_isInitializing;
         std::shared_ptr<RegistrationMap> m_registration;
         std::shared_ptr<ElementParserRegistration> m_sharedParserRegistration;

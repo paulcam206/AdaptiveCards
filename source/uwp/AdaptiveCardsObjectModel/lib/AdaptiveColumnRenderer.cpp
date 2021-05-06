@@ -4,10 +4,8 @@
 
 #include "AdaptiveColumnRenderer.h"
 
-#include "ActionHelpers.h"
 #include "AdaptiveColumn.h"
 #include "AdaptiveElementParserRegistration.h"
-#include "AdaptiveRenderArgs.h"
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;

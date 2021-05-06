@@ -4,19 +4,13 @@
 
 #include "AdaptiveTextBlock.h"
 #include "AdaptiveTextBlockRenderer.h"
-#include "AdaptiveRenderContext.h"
 #include "AdaptiveElementParserRegistration.h"
-#include "TextHelpers.h"
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
 using namespace ABI::AdaptiveNamespace;
 using namespace ABI::Windows::Foundation;
 using namespace ABI::Windows::Foundation::Collections;
-using namespace ABI::Windows::UI::Xaml;
-using namespace ABI::Windows::UI::Xaml::Controls;
-using namespace ABI::Windows::UI::Xaml::Automation;
-using namespace ABI::Windows::UI::Xaml::Automation::Peers;
 
 namespace AdaptiveNamespace
 {

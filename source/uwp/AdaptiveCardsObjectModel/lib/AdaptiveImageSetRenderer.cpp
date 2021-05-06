@@ -5,7 +5,6 @@
 #include "AdaptiveElementParserRegistration.h"
 #include "AdaptiveImageSet.h"
 #include "AdaptiveImageSetRenderer.h"
-#include "AdaptiveRenderArgs.h"
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;

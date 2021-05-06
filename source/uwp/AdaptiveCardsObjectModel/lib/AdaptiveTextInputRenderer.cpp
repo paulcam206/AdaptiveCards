@@ -5,7 +5,6 @@
 #include "AdaptiveElementParserRegistration.h"
 #include "AdaptiveTextInput.h"
 #include "AdaptiveTextInputRenderer.h"
-#include "ActionHelpers.h"
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;

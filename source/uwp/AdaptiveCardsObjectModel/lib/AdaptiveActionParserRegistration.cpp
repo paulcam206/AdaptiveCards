@@ -89,6 +89,21 @@ namespace AdaptiveNamespace
         return m_sharedParserRegistration;
     }
 
+    HRESULT AdaptiveActionParserRegistration::RegisterDefaultActionRenderers(ABI::AdaptiveNamespace::IAdaptiveActionParserRegistration* registration)
+    {
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.OpenUrl").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveOpenUrlActionRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.ShowCard").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveShowCardActionRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.Submit").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveSubmitActionRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.ToggleVisibility").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveToggleVisibilityActionRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.Execute").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveExecuteActionRenderer>().Get()));
+        return S_OK;
+    }
+
     SharedModelActionParser::SharedModelActionParser(AdaptiveNamespace::AdaptiveActionParserRegistration* parserRegistration)
     {
         ComPtr<AdaptiveActionParserRegistration> localParserRegistration(parserRegistration);
@@ -140,4 +155,6 @@ namespace AdaptiveNamespace
     {
         return m_parserRegistration.CopyTo<IAdaptiveActionParserRegistration>(actionParserRegistration);
     }
+
+
 }

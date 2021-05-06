@@ -4,10 +4,8 @@
 
 #include "AdaptiveMedia.h"
 
-#include "ActionHelpers.h"
 #include "AdaptiveMediaRenderer.h"
 #include "AdaptiveElementParserRegistration.h"
-#include "MediaHelpers.h"
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;

@@ -9,14 +9,11 @@
 #include "AdaptiveColumnSetRenderer.h"
 #include "AdaptiveContainerRenderer.h"
 #include "AdaptiveDateInputRenderer.h"
-#include "AdaptiveElementRendererRegistration.h"
 #include "AdaptiveFactSetRenderer.h"
-#include "AdaptiveHostConfig.h"
 #include "AdaptiveImageRenderer.h"
 #include "AdaptiveImageSetRenderer.h"
 #include "AdaptiveMediaRenderer.h"
 #include "AdaptiveNumberInputRenderer.h"
-#include "AdaptiveRenderContext.h"
 #include "AdaptiveRichTextBlockRenderer.h"
 #include "AdaptiveTextBlockRenderer.h"
 #include "AdaptiveTextInputRenderer.h"
@@ -42,7 +39,7 @@ namespace AdaptiveNamespace
         m_sharedParserRegistration = std::make_shared<ElementParserRegistration>();
 
         m_isInitializing = true;
-        RegisterDefaultElementRenderers(this, nullptr);
+        RegisterDefaultElementRenderers(this);
 
         // Register this (UWP) registration with a well known guid string in the shared model
         // registration so we can get it back again
@@ -101,6 +98,44 @@ namespace AdaptiveNamespace
     std::shared_ptr<ElementParserRegistration> AdaptiveElementParserRegistration::GetSharedParserRegistration()
     {
         return m_sharedParserRegistration;
+    }
+
+    HRESULT AdaptiveElementParserRegistration::RegisterDefaultElementRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration)
+    {
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"ActionSet").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveActionSetRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Column").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveColumnRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"ColumnSet").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveColumnSetRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Container").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveContainerRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"FactSet").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveFactSetRenderer>().Get()));
+        RETURN_IF_FAILED(
+            registration->Set(HStringReference(L"Image").Get(), Make<AdaptiveNamespace::AdaptiveImageRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"ImageSet").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveImageSetRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.ChoiceSet").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveChoiceSetInputRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Date").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveDateInputRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Number").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveNumberInputRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Text").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveTextInputRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Time").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveTimeInputRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Toggle").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveToggleInputRenderer>().Get()));
+        RETURN_IF_FAILED(
+            registration->Set(HStringReference(L"Media").Get(), Make<AdaptiveNamespace::AdaptiveMediaRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"RichTextBlock").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveRichTextBlockRenderer>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"TextBlock").Get(),
+                                           Make<AdaptiveNamespace::AdaptiveTextBlockRenderer>().Get()));
+
+        return S_OK;
     }
 
     std::shared_ptr<BaseCardElement> SharedModelElementParser::DeserializeFromString(ParseContext& context, const std::string& jsonString)

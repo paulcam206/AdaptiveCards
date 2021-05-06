@@ -6,6 +6,7 @@
 #include "AdaptiveBackgroundImage.h"
 #include "AdaptiveRefresh.h"
 #include "AdaptiveAuthentication.h"
+#include "AdaptiveRemoteResourceInformation.h"
 
 namespace AdaptiveNamespace
 {

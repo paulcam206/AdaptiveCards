@@ -8,7 +8,6 @@
 #include "AdaptiveCardParseException.h"
 #include "AdaptiveError.h"
 #include "AdaptiveWarning.h"
-#include "AdaptiveRemoteResourceInformation.h"
 #include <BaseCardElement.h>
 
 #include <json.h>

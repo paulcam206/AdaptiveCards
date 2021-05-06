@@ -6,7 +6,6 @@
 #include "AdaptiveOpenUrlActionRenderer.h"
 #include "Util.h"
 #include "AdaptiveElementParserRegistration.h"
-#include "ActionHelpers.h"
 
 using namespace ABI::AdaptiveNamespace;
 using namespace Microsoft::WRL;
@@ -17,16 +16,6 @@ namespace AdaptiveNamespace
     try
     {
         return S_OK;
-    }
-    CATCH_RETURN;
-
-    HRESULT AdaptiveOpenUrlActionRenderer::Render(_In_ IAdaptiveActionElement* action,
-                                                  _In_ IAdaptiveRenderContext* renderContext,
-                                                  _In_ IAdaptiveRenderArgs* renderArgs,
-                                                  _COM_Outptr_ ABI::Windows::UI::Xaml::IUIElement** result) noexcept
-    try
-    {
-        return ActionHelpers::BuildAction(action, renderContext, renderArgs, result);
     }
     CATCH_RETURN;
 

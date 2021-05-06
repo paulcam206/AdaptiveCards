@@ -5,7 +5,6 @@
 #include "AdaptiveToggleVisibilityAction.h"
 #include "AdaptiveToggleVisibilityActionRenderer.h"
 #include "AdaptiveElementParserRegistration.h"
-#include "ActionHelpers.h"
 
 using namespace ABI::AdaptiveNamespace;
 using namespace Microsoft::WRL;

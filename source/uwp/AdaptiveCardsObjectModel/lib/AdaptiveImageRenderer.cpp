@@ -4,11 +4,9 @@
 
 #include "AdaptiveImageRenderer.h"
 
-#include "ActionHelpers.h"
 #include "AdaptiveElementParserRegistration.h"
 #include "AdaptiveImage.h"
 #include "AdaptiveBase64Util.h"
-#include "AdaptiveCardGetResourceStreamArgs.h"
 #include <robuffer.h>
 
 using namespace Microsoft::WRL;
