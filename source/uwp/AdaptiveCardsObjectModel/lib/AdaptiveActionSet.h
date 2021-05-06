@@ -13,7 +13,7 @@ namespace AdaptiveNamespace
                                               Microsoft::WRL::CloakedIid<ITypePeek>,
                                               Microsoft::WRL::CloakedIid<AdaptiveNamespace::AdaptiveCardElementBase>>
     {
-        InspectableClass(RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveActionSet, BaseTrust);
+        InspectableClass(RuntimeClass_AdaptiveCards_ObjectModel_Uwp_AdaptiveActionSet, BaseTrust);
 
     public:
         AdaptiveActionSet();

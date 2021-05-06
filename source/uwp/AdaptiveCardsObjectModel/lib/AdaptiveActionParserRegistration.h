@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 #pragma once
 
-#include "AdaptiveCards.Rendering.Uwp.h"
+#include "AdaptiveCards.ObjectModel.Uwp.h"
 
 namespace AdaptiveNamespace
 {
@@ -34,7 +34,7 @@ namespace AdaptiveNamespace
         std::shared_ptr<ActionParserRegistration> GetSharedParserRegistration();
 
     private:
-        HRESULT RegisterDefaultActionRenderers(ABI::AdaptiveNamespace::IAdaptiveActionParserRegistration* registration);
+        HRESULT RegisterDefaultActionParsers(ABI::AdaptiveNamespace::IAdaptiveActionParserRegistration* registration);
 
         bool m_isInitializing;
         std::shared_ptr<RegistrationMap> m_registration;

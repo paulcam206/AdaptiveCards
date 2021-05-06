@@ -10,7 +10,7 @@ namespace AdaptiveNamespace
         : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<Microsoft::WRL::RuntimeClassType::WinRtClassicComMix>,
                                               ABI::AdaptiveNamespace::IAdaptiveElementParser>
     {
-        InspectableClass(RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetParser, BaseTrust);
+        InspectableClass(RuntimeClass_AdaptiveCards_ObjectModel_Uwp_AdaptiveActionSetParser, BaseTrust);
 
     public:
         HRESULT RuntimeClassInitialize() noexcept;

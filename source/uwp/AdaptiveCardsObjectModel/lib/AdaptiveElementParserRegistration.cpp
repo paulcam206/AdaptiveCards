@@ -39,7 +39,7 @@ namespace AdaptiveNamespace
         m_sharedParserRegistration = std::make_shared<ElementParserRegistration>();
 
         m_isInitializing = true;
-        RegisterDefaultElementRenderers(this);
+        RegisterDefaultElementParsers(this);
 
         // Register this (UWP) registration with a well known guid string in the shared model
         // registration so we can get it back again
@@ -100,7 +100,7 @@ namespace AdaptiveNamespace
         return m_sharedParserRegistration;
     }
 
-    HRESULT AdaptiveElementParserRegistration::RegisterDefaultElementRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration)
+    HRESULT AdaptiveElementParserRegistration::RegisterDefaultElementParsers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration)
     {
         RETURN_IF_FAILED(registration->Set(HStringReference(L"ActionSet").Get(),
                                            Make<AdaptiveNamespace::AdaptiveActionSetParser>().Get()));

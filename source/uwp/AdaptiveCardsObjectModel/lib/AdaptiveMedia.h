@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 #pragma once
 
-#include "AdaptiveCards.Rendering.Uwp.h"
+#include "AdaptiveCards.ObjectModel.Uwp.h"
 #include "AdaptiveCardElement.h"
 #include "Media.h"
 

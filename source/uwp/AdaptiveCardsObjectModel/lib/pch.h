@@ -5,16 +5,12 @@
 //
 #pragma once
 
-#ifdef ADAPTIVE_CARDS_WINDOWS
-#include "winPch.h"
-#else
-#define AdaptiveRuntime(cls) InspectableClass(RuntimeClass_AdaptiveCards_Rendering_Uwp_##cls, BaseTrust)
-#define AdaptiveRuntimeStatic(cls) InspectableClassStatic(RuntimeClass_AdaptiveCards_Rendering_Uwp_##cls, BaseTrust)
-#define AdaptiveRuntimeStringClass(cls) InspectableClass(L"AdaptiveCards.Rendering.Uwp." L#cls, BaseTrust)
-#define AdaptiveNamespace AdaptiveCards::Rendering::Uwp
-#define AdaptiveRuntimeClass RuntimeClass_AdaptiveCards_Rendering_Uwp
+#define AdaptiveRuntime(cls) InspectableClass(RuntimeClass_AdaptiveCards_ObjectModel_Uwp_##cls, BaseTrust)
+#define AdaptiveRuntimeStatic(cls) InspectableClassStatic(RuntimeClass_AdaptiveCards_ObjectModel_Uwp_##cls, BaseTrust)
+#define AdaptiveRuntimeStringClass(cls) InspectableClass(L"AdaptiveCards.ObjectModel.Uwp." L#cls, BaseTrust)
+#define AdaptiveNamespace AdaptiveCards::ObjectModel::Uwp
+#define AdaptiveRuntimeClass RuntimeClass_AdaptiveCards_ObjectModel_Uwp
 #define AdaptivePointerCast dynamic_pointer_cast
-#endif
 
 // don't want windows.h min()/max() definitions as they conflict with std::numeric_limits<T>::min()/max()
 #ifndef NOMINMAX
@@ -42,7 +38,7 @@
 #include "HostConfig.h"
 
 // Commonly-used AdaptiveCardRenderer headers
-#include "AdaptiveCards.Rendering.Uwp.h"
+#include "AdaptiveCards.ObjectModel.Uwp.h"
 #include "AdaptiveCardElement.h"
 #include "ErrorHandling.h"
 #include "Util.h"

@@ -5,7 +5,7 @@
 #include <wrl/wrappers/corewrappers.h>
 #include <string>
 
-#include "AdaptiveCards.Rendering.Uwp.h"
+#include "AdaptiveCards.ObjectModel.Uwp.h"
 #include <BaseCardElement.h>
 #include <BaseActionElement.h>
 #include <ChoiceInput.h>

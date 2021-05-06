@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 #pragma once
 
-#include "AdaptiveCards.Rendering.Uwp.h"
+#include "AdaptiveCards.ObjectModel.Uwp.h"
 
 namespace AdaptiveNamespace
 {
@@ -32,9 +32,9 @@ namespace AdaptiveNamespace
 
     class AdaptiveErrorFactory : public Microsoft::WRL::AgileActivationFactory<ABI::AdaptiveNamespace::IAdaptiveErrorFactory>
     {
-        IFACEMETHODIMP CreateInstance(ABI::AdaptiveCards::Rendering::Uwp::ErrorStatusCode statusCode,
+        IFACEMETHODIMP CreateInstance(ABI::AdaptiveNamespace::ErrorStatusCode statusCode,
                                       _In_ HSTRING message,
-                                      _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveError** result) override
+                                      _COM_Outptr_ ABI::AdaptiveNamespace::IAdaptiveError** result) override
         {
             return Microsoft::WRL::Details::MakeAndInitialize<AdaptiveError>(result, statusCode, message);
         }

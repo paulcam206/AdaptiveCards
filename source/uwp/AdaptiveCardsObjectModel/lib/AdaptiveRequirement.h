@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 #pragma once
 
-#include "AdaptiveCards.Rendering.Uwp.h"
+#include "AdaptiveCards.ObjectModel.Uwp.h"
 
 namespace AdaptiveNamespace
 {
@@ -34,7 +34,7 @@ namespace AdaptiveNamespace
     {
         IFACEMETHODIMP CreateInstance(_In_ HSTRING name,
                                       _In_ HSTRING version,
-                                      _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRequirement** result) override
+                                      _COM_Outptr_ ABI::AdaptiveNamespace::IAdaptiveRequirement** result) override
         {
             return Microsoft::WRL::Details::MakeAndInitialize<AdaptiveRequirement>(result, name, version);
         }

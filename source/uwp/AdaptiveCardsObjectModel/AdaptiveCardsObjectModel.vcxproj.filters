@@ -67,7 +67,6 @@
     <ClCompile Include="lib\AdaptiveTextRun.cpp" />
     <ClCompile Include="lib\AdaptiveTextElement.cpp" />
     <ClCompile Include="lib\AdaptiveFeatureRegistration.cpp" />
-    <ClCompile Include="lib\ElementTagContent.cpp" />
     <ClCompile Include="lib\AdaptiveRequirement.cpp" />
     <ClCompile Include="lib\LinkButton.cpp" />
     <ClCompile Include="lib\AdaptiveExecuteAction.cpp" />
@@ -147,7 +146,6 @@
     <ClInclude Include="lib\AdaptiveTextRun.h" />
     <ClInclude Include="lib\AdaptiveTextElement.h" />
     <ClInclude Include="lib\AdaptiveFeatureRegistration.h" />
-    <ClInclude Include="lib\ElementTagContent.h" />
     <ClInclude Include="lib\AdaptiveRequirement.h" />
     <ClInclude Include="lib\LinkButton.h" />
     <ClInclude Include="lib\AdaptiveExecuteAction.h" />
@@ -159,7 +157,7 @@
     <ClInclude Include="lib\AdaptiveRemoteResourceInformation.h" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="idl\AdaptiveCards.Rendering.Uwp.idl" />
+    <Midl Include="idl\AdaptiveCards.ObjectModel.Uwp.idl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
