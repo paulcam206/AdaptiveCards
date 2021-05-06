@@ -216,9 +216,6 @@ HRESULT GetAdaptiveElementParserRegistrationFromSharedModel(
     const std::shared_ptr<AdaptiveSharedNamespace::ElementParserRegistration>& sharedElementParserRegistration,
     _COM_Outptr_ ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration** adaptiveElementParserRegistration);
 
-HRESULT RegisterDefaultElementRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration);
-HRESULT RegisterDefaultActionRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration);
-
 template<typename T, typename TInterface, typename C>
 HRESULT IterateOverVectorWithFailure(_In_ ABI::Windows::Foundation::Collections::IVector<T*>* vector, const boolean stopOnFailure, C iterationCallback)
 {
