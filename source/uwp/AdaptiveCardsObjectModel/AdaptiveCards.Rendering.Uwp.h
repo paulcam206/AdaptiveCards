@@ -955,313 +955,313 @@ namespace ABI {
 
 #endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveInputElement_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveTextBlockRenderer;
+                interface IAdaptiveTextBlockParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTextBlockRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTextBlockParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveRichTextBlockRenderer;
+                interface IAdaptiveRichTextBlockParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRichTextBlockRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRichTextBlockParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveImageRenderer;
+                interface IAdaptiveImageParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveImageSetRenderer;
+                interface IAdaptiveImageSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageSetRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageSetParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveContainerRenderer;
+                interface IAdaptiveContainerParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveContainerRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveContainerParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveColumnRenderer;
+                interface IAdaptiveColumnParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveColumnRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveColumnParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveColumnSetRenderer;
+                interface IAdaptiveColumnSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveColumnSetRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveColumnSetParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveFactRenderer;
+                interface IAdaptiveFactParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveFactRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveFactParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveChoiceSetInputRenderer;
+                interface IAdaptiveChoiceSetInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveChoiceSetInputRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveChoiceSetInputParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveDateInputRenderer;
+                interface IAdaptiveDateInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveDateInputRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveDateInputParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveNumberInputRenderer;
+                interface IAdaptiveNumberInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveNumberInputRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveNumberInputParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveTextInputRenderer;
+                interface IAdaptiveTextInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTextInputRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTextInputParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveTimeInputRenderer;
+                interface IAdaptiveTimeInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTimeInputRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTimeInputParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveToggleInputRenderer;
+                interface IAdaptiveToggleInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveToggleInputRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveToggleInputParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveFactSetRenderer;
+                interface IAdaptiveFactSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveFactSetRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveFactSetParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveMediaRenderer;
+                interface IAdaptiveMediaParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveMediaRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveMediaParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveActionSetRenderer;
+                interface IAdaptiveActionSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionSetRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionSetParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveOpenUrlActionRenderer;
+                interface IAdaptiveOpenUrlActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveOpenUrlActionRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveOpenUrlActionParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveShowCardActionRenderer;
+                interface IAdaptiveShowCardActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardActionRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardActionParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveSubmitActionRenderer;
+                interface IAdaptiveSubmitActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveSubmitActionRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveSubmitActionParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveExecuteActionRenderer;
+                interface IAdaptiveExecuteActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveExecuteActionRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveExecuteActionParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_FWD_DEFINED__
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_FWD_DEFINED__
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                interface IAdaptiveToggleVisibilityActionRenderer;
+                interface IAdaptiveToggleVisibilityActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveToggleVisibilityActionRenderer
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveToggleVisibilityActionParser
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_FWD_DEFINED__
 
 #ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveError_FWD_DEFINED__
 #define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveError_FWD_DEFINED__
@@ -3585,7 +3585,6 @@ namespace ABI {
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
-
 
 
 
@@ -8562,7 +8561,7 @@ namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveTextBlockRenderer;
+                class AdaptiveTextBlockParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -8571,50 +8570,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("5d2fa37d-cc12-5d29-9720-003959b6608d"), version, object, exclusiveto] */
-                MIDL_INTERFACE("5d2fa37d-cc12-5d29-9720-003959b6608d")
-                IAdaptiveTextBlockRenderer : public IInspectable
+                /* [uuid("6b59b5f4-0d22-528e-8914-0a3d85d9f4e5"), version, object, exclusiveto] */
+                MIDL_INTERFACE("6b59b5f4-0d22-528e-8914-0a3d85d9f4e5")
+                IAdaptiveTextBlockParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveTextBlockRenderer=_uuidof(IAdaptiveTextBlockRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveTextBlockParser=_uuidof(IAdaptiveTextBlockParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -8623,16 +8622,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBloc
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveRichTextBlockRenderer;
+                class AdaptiveRichTextBlockParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -8641,50 +8640,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveRichTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveRichTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("06a0f9ac-b205-54ee-a3b5-c98f2d8ff373"), version, object, exclusiveto] */
-                MIDL_INTERFACE("06a0f9ac-b205-54ee-a3b5-c98f2d8ff373")
-                IAdaptiveRichTextBlockRenderer : public IInspectable
+                /* [uuid("f8fa6a10-8960-5472-9d04-6535b95dcb02"), version, object, exclusiveto] */
+                MIDL_INTERFACE("f8fa6a10-8960-5472-9d04-6535b95dcb02")
+                IAdaptiveRichTextBlockParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveRichTextBlockRenderer=_uuidof(IAdaptiveRichTextBlockRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveRichTextBlockParser=_uuidof(IAdaptiveRichTextBlockParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -8693,16 +8692,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichText
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveImageRenderer;
+                class AdaptiveImageParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -8711,50 +8710,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("1a3257d5-9c4a-5113-9dc1-cb8dc0127b71"), version, object, exclusiveto] */
-                MIDL_INTERFACE("1a3257d5-9c4a-5113-9dc1-cb8dc0127b71")
-                IAdaptiveImageRenderer : public IInspectable
+                /* [uuid("688facd2-9f0c-56dd-8790-b3b177eeb4f7"), version, object, exclusiveto] */
+                MIDL_INTERFACE("688facd2-9f0c-56dd-8790-b3b177eeb4f7")
+                IAdaptiveImageParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveImageRenderer=_uuidof(IAdaptiveImageRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveImageParser=_uuidof(IAdaptiveImageParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -8763,16 +8762,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRen
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveImageSetRenderer;
+                class AdaptiveImageSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -8781,50 +8780,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("75ab33ff-a8b3-5c2f-8a3a-46236cdec4c7"), version, object, exclusiveto] */
-                MIDL_INTERFACE("75ab33ff-a8b3-5c2f-8a3a-46236cdec4c7")
-                IAdaptiveImageSetRenderer : public IInspectable
+                /* [uuid("014f5c98-3dc9-54a4-afc4-52516dbf2d02"), version, object, exclusiveto] */
+                MIDL_INTERFACE("014f5c98-3dc9-54a4-afc4-52516dbf2d02")
+                IAdaptiveImageSetParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveImageSetRenderer=_uuidof(IAdaptiveImageSetRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveImageSetParser=_uuidof(IAdaptiveImageSetParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -8833,16 +8832,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSet
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageSetParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveContainerRenderer;
+                class AdaptiveContainerParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -8851,50 +8850,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveContainerRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveContainerParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveContainerRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveContainerParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("7712af51-ff06-5879-b4c2-60def5127eff"), version, object, exclusiveto] */
-                MIDL_INTERFACE("7712af51-ff06-5879-b4c2-60def5127eff")
-                IAdaptiveContainerRenderer : public IInspectable
+                /* [uuid("26299484-89be-5c91-bef5-339ead50ebde"), version, object, exclusiveto] */
+                MIDL_INTERFACE("26299484-89be-5c91-bef5-339ead50ebde")
+                IAdaptiveContainerParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveContainerRenderer=_uuidof(IAdaptiveContainerRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveContainerParser=_uuidof(IAdaptiveContainerParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveContainerRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveContainerParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -8903,16 +8902,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContaine
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveContainerRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveContainerRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveContainerParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveContainerParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveColumnRenderer;
+                class AdaptiveColumnParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -8921,50 +8920,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("14de825e-13cd-5df2-be0f-e22550d1481d"), version, object, exclusiveto] */
-                MIDL_INTERFACE("14de825e-13cd-5df2-be0f-e22550d1481d")
-                IAdaptiveColumnRenderer : public IInspectable
+                /* [uuid("6b02bd41-cef8-5dbc-af5e-61fa0e1f466e"), version, object, exclusiveto] */
+                MIDL_INTERFACE("6b02bd41-cef8-5dbc-af5e-61fa0e1f466e")
+                IAdaptiveColumnParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveColumnRenderer=_uuidof(IAdaptiveColumnRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveColumnParser=_uuidof(IAdaptiveColumnParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -8973,16 +8972,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveColumnSetRenderer;
+                class AdaptiveColumnSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -8991,50 +8990,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("25a820f8-5db8-5635-bfff-4711f8035003"), version, object, exclusiveto] */
-                MIDL_INTERFACE("25a820f8-5db8-5635-bfff-4711f8035003")
-                IAdaptiveColumnSetRenderer : public IInspectable
+                /* [uuid("3b10362d-e740-53e2-8229-5ae9ad7c0f23"), version, object, exclusiveto] */
+                MIDL_INTERFACE("3b10362d-e740-53e2-8229-5ae9ad7c0f23")
+                IAdaptiveColumnSetParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveColumnSetRenderer=_uuidof(IAdaptiveColumnSetRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveColumnSetParser=_uuidof(IAdaptiveColumnSetParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9043,16 +9042,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveFactRenderer;
+                class AdaptiveFactParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9061,50 +9060,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("3779db69-8626-570a-a229-161b6a6e4308"), version, object, exclusiveto] */
-                MIDL_INTERFACE("3779db69-8626-570a-a229-161b6a6e4308")
-                IAdaptiveFactRenderer : public IInspectable
+                /* [uuid("3fa8a946-cbfb-5c85-9e51-031c6617d7a1"), version, object, exclusiveto] */
+                MIDL_INTERFACE("3fa8a946-cbfb-5c85-9e51-031c6617d7a1")
+                IAdaptiveFactParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveFactRenderer=_uuidof(IAdaptiveFactRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveFactParser=_uuidof(IAdaptiveFactParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9113,16 +9112,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRend
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveChoiceSetInputRenderer;
+                class AdaptiveChoiceSetInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9131,50 +9130,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveChoiceSetInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveChoiceSetInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("7fae8da4-0848-5acb-a937-f42328328f1a"), version, object, exclusiveto] */
-                MIDL_INTERFACE("7fae8da4-0848-5acb-a937-f42328328f1a")
-                IAdaptiveChoiceSetInputRenderer : public IInspectable
+                /* [uuid("d01fb095-320f-5a85-bae1-ed8fb0e34ab4"), version, object, exclusiveto] */
+                MIDL_INTERFACE("d01fb095-320f-5a85-bae1-ed8fb0e34ab4")
+                IAdaptiveChoiceSetInputParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveChoiceSetInputRenderer=_uuidof(IAdaptiveChoiceSetInputRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveChoiceSetInputParser=_uuidof(IAdaptiveChoiceSetInputParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9183,16 +9182,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveDateInputRenderer;
+                class AdaptiveDateInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9201,50 +9200,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveDateInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveDateInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveDateInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveDateInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("00b07803-0ad0-5bd4-bfbf-1b100b865489"), version, object, exclusiveto] */
-                MIDL_INTERFACE("00b07803-0ad0-5bd4-bfbf-1b100b865489")
-                IAdaptiveDateInputRenderer : public IInspectable
+                /* [uuid("0d8bea78-f522-5dc1-8d0f-f5e7a659b80d"), version, object, exclusiveto] */
+                MIDL_INTERFACE("0d8bea78-f522-5dc1-8d0f-f5e7a659b80d")
+                IAdaptiveDateInputParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveDateInputRenderer=_uuidof(IAdaptiveDateInputRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveDateInputParser=_uuidof(IAdaptiveDateInputParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveDateInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveDateInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9253,16 +9252,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInpu
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveDateInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveDateInputParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveNumberInputRenderer;
+                class AdaptiveNumberInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9271,50 +9270,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveNumberInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveNumberInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("63bcf332-aecb-5a82-b6f9-470d19a28022"), version, object, exclusiveto] */
-                MIDL_INTERFACE("63bcf332-aecb-5a82-b6f9-470d19a28022")
-                IAdaptiveNumberInputRenderer : public IInspectable
+                /* [uuid("6f7b5888-668d-5dce-a032-92475171c546"), version, object, exclusiveto] */
+                MIDL_INTERFACE("6f7b5888-668d-5dce-a032-92475171c546")
+                IAdaptiveNumberInputParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveNumberInputRenderer=_uuidof(IAdaptiveNumberInputRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveNumberInputParser=_uuidof(IAdaptiveNumberInputParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9323,16 +9322,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberIn
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveTextInputRenderer;
+                class AdaptiveTextInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9341,50 +9340,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("7607e90a-63e3-5b8a-89b9-955d54a9ca34"), version, object, exclusiveto] */
-                MIDL_INTERFACE("7607e90a-63e3-5b8a-89b9-955d54a9ca34")
-                IAdaptiveTextInputRenderer : public IInspectable
+                /* [uuid("0a6068e7-5119-53a2-be8d-276a1c918459"), version, object, exclusiveto] */
+                MIDL_INTERFACE("0a6068e7-5119-53a2-be8d-276a1c918459")
+                IAdaptiveTextInputParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveTextInputRenderer=_uuidof(IAdaptiveTextInputRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveTextInputParser=_uuidof(IAdaptiveTextInputParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9393,16 +9392,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInpu
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextInputParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveTimeInputRenderer;
+                class AdaptiveTimeInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9411,50 +9410,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTimeInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTimeInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("c8c75d1d-815d-5339-aa76-c7fee12cd90f"), version, object, exclusiveto] */
-                MIDL_INTERFACE("c8c75d1d-815d-5339-aa76-c7fee12cd90f")
-                IAdaptiveTimeInputRenderer : public IInspectable
+                /* [uuid("b2f817f7-32a7-5532-bdc3-c4447e1169a0"), version, object, exclusiveto] */
+                MIDL_INTERFACE("b2f817f7-32a7-5532-bdc3-c4447e1169a0")
+                IAdaptiveTimeInputParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveTimeInputRenderer=_uuidof(IAdaptiveTimeInputRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveTimeInputParser=_uuidof(IAdaptiveTimeInputParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9463,16 +9462,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInpu
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveToggleInputRenderer;
+                class AdaptiveToggleInputParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9481,50 +9480,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("f43371bb-a2fd-5ba2-995f-be069b6e4517"), version, object, exclusiveto] */
-                MIDL_INTERFACE("f43371bb-a2fd-5ba2-995f-be069b6e4517")
-                IAdaptiveToggleInputRenderer : public IInspectable
+                /* [uuid("e90ca7b7-1186-5325-b03c-176a2bc0f886"), version, object, exclusiveto] */
+                MIDL_INTERFACE("e90ca7b7-1186-5325-b03c-176a2bc0f886")
+                IAdaptiveToggleInputParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveToggleInputRenderer=_uuidof(IAdaptiveToggleInputRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveToggleInputParser=_uuidof(IAdaptiveToggleInputParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9533,16 +9532,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleIn
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveFactSetRenderer;
+                class AdaptiveFactSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9551,50 +9550,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("3a78462c-7b8f-577e-96c7-0ae666633d72"), version, object, exclusiveto] */
-                MIDL_INTERFACE("3a78462c-7b8f-577e-96c7-0ae666633d72")
-                IAdaptiveFactSetRenderer : public IInspectable
+                /* [uuid("e734a0ef-24d4-5f76-a696-4ec083dbed57"), version, object, exclusiveto] */
+                MIDL_INTERFACE("e734a0ef-24d4-5f76-a696-4ec083dbed57")
+                IAdaptiveFactSetParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveFactSetRenderer=_uuidof(IAdaptiveFactSetRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveFactSetParser=_uuidof(IAdaptiveFactSetParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9603,16 +9602,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetR
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactSetParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveMediaRenderer;
+                class AdaptiveMediaParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9621,50 +9620,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveMediaRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveMediaParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveMediaRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveMediaParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("e12fd6f0-3797-57f2-b67b-dcbc2a8cd3b3"), version, object, exclusiveto] */
-                MIDL_INTERFACE("e12fd6f0-3797-57f2-b67b-dcbc2a8cd3b3")
-                IAdaptiveMediaRenderer : public IInspectable
+                /* [uuid("649fceac-1b89-5eaf-9e9b-80e5299bd82a"), version, object, exclusiveto] */
+                MIDL_INTERFACE("649fceac-1b89-5eaf-9e9b-80e5299bd82a")
+                IAdaptiveMediaParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveMediaRenderer=_uuidof(IAdaptiveMediaRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveMediaParser=_uuidof(IAdaptiveMediaParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveMediaRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveMediaParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9673,16 +9672,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRen
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveMediaRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveMediaRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveMediaParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveMediaParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveActionSetRenderer;
+                class AdaptiveActionSetParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9691,50 +9690,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveActionSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveActionSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveActionSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveActionSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("80d5c2bf-11ed-599b-96b0-21f721b0dfcd"), version, object, exclusiveto] */
-                MIDL_INTERFACE("80d5c2bf-11ed-599b-96b0-21f721b0dfcd")
-                IAdaptiveActionSetRenderer : public IInspectable
+                /* [uuid("b3bdbf7e-7b5f-52b4-927f-b707fb3f1cb9"), version, object, exclusiveto] */
+                MIDL_INTERFACE("b3bdbf7e-7b5f-52b4-927f-b707fb3f1cb9")
+                IAdaptiveActionSetParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveActionSetRenderer=_uuidof(IAdaptiveActionSetRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveActionSetParser=_uuidof(IAdaptiveActionSetParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveActionSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveActionSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9743,16 +9742,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveActionSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveActionSetParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveOpenUrlActionRenderer;
+                class AdaptiveOpenUrlActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9761,50 +9760,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveOpenUrlActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveOpenUrlActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("06919991-86b0-5750-bada-8b5ad4fdeb19"), version, object, exclusiveto] */
-                MIDL_INTERFACE("06919991-86b0-5750-bada-8b5ad4fdeb19")
-                IAdaptiveOpenUrlActionRenderer : public IInspectable
+                /* [uuid("04a2b4b8-29fc-554d-a7a1-373eda34daea"), version, object, exclusiveto] */
+                MIDL_INTERFACE("04a2b4b8-29fc-554d-a7a1-373eda34daea")
+                IAdaptiveOpenUrlActionParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveOpenUrlActionRenderer=_uuidof(IAdaptiveOpenUrlActionRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveOpenUrlActionParser=_uuidof(IAdaptiveOpenUrlActionParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9813,16 +9812,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlA
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveShowCardActionRenderer;
+                class AdaptiveShowCardActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9831,50 +9830,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveShowCardActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveShowCardActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("c66da84c-5a04-50e8-86cf-4332570ccca1"), version, object, exclusiveto] */
-                MIDL_INTERFACE("c66da84c-5a04-50e8-86cf-4332570ccca1")
-                IAdaptiveShowCardActionRenderer : public IInspectable
+                /* [uuid("bd0d1685-fd80-57cf-8d4b-2822c37ce704"), version, object, exclusiveto] */
+                MIDL_INTERFACE("bd0d1685-fd80-57cf-8d4b-2822c37ce704")
+                IAdaptiveShowCardActionParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveShowCardActionRenderer=_uuidof(IAdaptiveShowCardActionRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveShowCardActionParser=_uuidof(IAdaptiveShowCardActionParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9883,16 +9882,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCard
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveSubmitActionRenderer;
+                class AdaptiveSubmitActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9901,50 +9900,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveSubmitActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveSubmitActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("4ce84c6d-473b-5662-b3bf-a34100033a7e"), version, object, exclusiveto] */
-                MIDL_INTERFACE("4ce84c6d-473b-5662-b3bf-a34100033a7e")
-                IAdaptiveSubmitActionRenderer : public IInspectable
+                /* [uuid("af607372-85ee-5b6a-a547-937797aa1b10"), version, object, exclusiveto] */
+                MIDL_INTERFACE("af607372-85ee-5b6a-a547-937797aa1b10")
+                IAdaptiveSubmitActionParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveSubmitActionRenderer=_uuidof(IAdaptiveSubmitActionRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveSubmitActionParser=_uuidof(IAdaptiveSubmitActionParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -9953,16 +9952,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitAc
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveExecuteActionRenderer;
+                class AdaptiveExecuteActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -9971,50 +9970,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveExecuteActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveExecuteActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("0c071907-6426-55ec-84a8-1d80043dd6fd"), version, object, exclusiveto] */
-                MIDL_INTERFACE("0c071907-6426-55ec-84a8-1d80043dd6fd")
-                IAdaptiveExecuteActionRenderer : public IInspectable
+                /* [uuid("16a6c413-2484-59e9-9ad3-838c7ac27d41"), version, object, exclusiveto] */
+                MIDL_INTERFACE("16a6c413-2484-59e9-9ad3-838c7ac27d41")
+                IAdaptiveExecuteActionParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveExecuteActionRenderer=_uuidof(IAdaptiveExecuteActionRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveExecuteActionParser=_uuidof(IAdaptiveExecuteActionParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -10023,16 +10022,16 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteA
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionParser";
 #endif
 
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                class AdaptiveToggleVisibilityActionRenderer;
+                class AdaptiveToggleVisibilityActionParser;
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
@@ -10041,50 +10040,50 @@ namespace ABI {
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleVisibilityActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer";
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleVisibilityActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser";
 namespace ABI {
     namespace AdaptiveCards {
         namespace Rendering {
             namespace Uwp {
-                /* [uuid("5dc170d5-bd51-531e-9577-75b8d1f28adc"), version, object, exclusiveto] */
-                MIDL_INTERFACE("5dc170d5-bd51-531e-9577-75b8d1f28adc")
-                IAdaptiveToggleVisibilityActionRenderer : public IInspectable
+                /* [uuid("379cf29d-c81f-53f2-9464-c2873a056926"), version, object, exclusiveto] */
+                MIDL_INTERFACE("379cf29d-c81f-53f2-9464-c2873a056926")
+                IAdaptiveToggleVisibilityActionParser : public IInspectable
                 {
                 public:
                     
                 };
 
-                extern MIDL_CONST_ID IID & IID_IAdaptiveToggleVisibilityActionRenderer=_uuidof(IAdaptiveToggleVisibilityActionRenderer);
+                extern MIDL_CONST_ID IID & IID_IAdaptiveToggleVisibilityActionParser=_uuidof(IAdaptiveToggleVisibilityActionParser);
                 
             } /* Uwp */
         } /* Rendering */
     } /* AdaptiveCards */} /* ABI */
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -10093,9 +10092,9 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVi
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionParser";
 #endif
 
 
@@ -10643,137 +10642,137 @@ typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveInputElement 
 
 #endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveInputElement_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_FWD_DEFINED__
 
-#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_FWD_DEFINED__
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_FWD_DEFINED__
-typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer;
+#ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_FWD_DEFINED__
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_FWD_DEFINED__
+typedef interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser;
 
-#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_FWD_DEFINED__
+#endif // ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_FWD_DEFINED__
 
 #ifndef ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveError_FWD_DEFINED__
 #define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveError_FWD_DEFINED__
@@ -17667,7 +17666,6 @@ interface __FIReference_1_boolean
 #pragma warning (disable:4001) 
 #pragma once 
 #pragma warning (pop)
-
 
 
 /*
@@ -25814,98 +25812,98 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveInputEle
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer";
-/* [uuid("5d2fa37d-cc12-5d29-9720-003959b6608d"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser";
+/* [uuid("6b59b5f4-0d22-528e-8914-0a3d85d9f4e5"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBlockParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextBlockParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -25914,107 +25912,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextBloc
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextBlockParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveRichTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer";
-/* [uuid("06a0f9ac-b205-54ee-a3b5-c98f2d8ff373"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveRichTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser";
+/* [uuid("f8fa6a10-8960-5472-9d04-6535b95dcb02"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichTextBlockParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveRichTextBlockParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26023,107 +26021,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveRichText
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveRichTextBlockParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveRichTextBlockParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer";
-/* [uuid("1a3257d5-9c4a-5113-9dc1-cb8dc0127b71"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser";
+/* [uuid("688facd2-9f0c-56dd-8790-b3b177eeb4f7"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26132,107 +26130,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageRen
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveImageSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer";
-/* [uuid("75ab33ff-a8b3-5c2f-8a3a-46236cdec4c7"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveImageSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser";
+/* [uuid("014f5c98-3dc9-54a4-afc4-52516dbf2d02"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveImageSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveImageSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26241,107 +26239,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveImageSet
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveImageSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveImageSetParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveContainerRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveContainerParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveContainerRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer";
-/* [uuid("7712af51-ff06-5879-b4c2-60def5127eff"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveContainerParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser";
+/* [uuid("26299484-89be-5c91-bef5-339ead50ebde"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContainerParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveContainerRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveContainerParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveContainerRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveContainerParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26350,107 +26348,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveContaine
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveContainerRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveContainerRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveContainerParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveContainerParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveContainerParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer";
-/* [uuid("14de825e-13cd-5df2-be0f-e22550d1481d"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser";
+/* [uuid("6b02bd41-cef8-5dbc-af5e-61fa0e1f466e"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26459,107 +26457,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnRe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer";
-/* [uuid("25a820f8-5db8-5635-bfff-4711f8035003"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveColumnSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser";
+/* [uuid("3b10362d-e740-53e2-8229-5ae9ad7c0f23"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveColumnSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26568,107 +26566,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveColumnSe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveColumnSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveColumnSetParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer";
-/* [uuid("3779db69-8626-570a-a229-161b6a6e4308"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser";
+/* [uuid("3fa8a946-cbfb-5c85-9e51-031c6617d7a1"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26677,107 +26675,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactRend
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveChoiceSetInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer";
-/* [uuid("7fae8da4-0848-5acb-a937-f42328328f1a"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveChoiceSetInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser";
+/* [uuid("d01fb095-320f-5a85-bae1-ed8fb0e34ab4"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSetInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveChoiceSetInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26786,107 +26784,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveChoiceSe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveChoiceSetInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveChoiceSetInputParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveDateInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveDateInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveDateInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer";
-/* [uuid("00b07803-0ad0-5bd4-bfbf-1b100b865489"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveDateInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser";
+/* [uuid("0d8bea78-f522-5dc1-8d0f-f5e7a659b80d"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveDateInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveDateInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveDateInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -26895,107 +26893,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveDateInpu
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveDateInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveDateInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveDateInputParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveNumberInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer";
-/* [uuid("63bcf332-aecb-5a82-b6f9-470d19a28022"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveNumberInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser";
+/* [uuid("6f7b5888-668d-5dce-a032-92475171c546"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveNumberInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27004,107 +27002,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveNumberIn
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveNumberInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveNumberInputParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTextInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer";
-/* [uuid("7607e90a-63e3-5b8a-89b9-955d54a9ca34"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTextInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser";
+/* [uuid("0a6068e7-5119-53a2-be8d-276a1c918459"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveTextInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveTextInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27113,107 +27111,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTextInpu
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTextInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTextInputParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTimeInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer";
-/* [uuid("c8c75d1d-815d-5339-aa76-c7fee12cd90f"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveTimeInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser";
+/* [uuid("b2f817f7-32a7-5532-bdc3-c4447e1169a0"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveTimeInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27222,107 +27220,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveTimeInpu
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveTimeInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveTimeInputParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer";
-/* [uuid("f43371bb-a2fd-5ba2-995f-be069b6e4517"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleInputParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser";
+/* [uuid("e90ca7b7-1186-5325-b03c-176a2bc0f886"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleInputParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleInputParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27331,107 +27329,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleIn
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleInputParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleInputParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveFactSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer";
-/* [uuid("3a78462c-7b8f-577e-96c7-0ae666633d72"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveFactSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser";
+/* [uuid("e734a0ef-24d4-5f76-a696-4ec083dbed57"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveFactSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveFactSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27440,107 +27438,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveFactSetR
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveFactSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveFactSetParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveMediaRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveMediaParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveMediaRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer";
-/* [uuid("e12fd6f0-3797-57f2-b67b-dcbc2a8cd3b3"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveMediaParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser";
+/* [uuid("649fceac-1b89-5eaf-9e9b-80e5299bd82a"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveMediaRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveMediaParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveMediaRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveMediaParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27549,107 +27547,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveMediaRen
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveMediaRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveMediaRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveMediaParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveMediaParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveMediaParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveActionSetRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveActionSetParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveActionSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer";
-/* [uuid("80d5c2bf-11ed-599b-96b0-21f721b0dfcd"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveActionSetParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser";
+/* [uuid("b3bdbf7e-7b5f-52b4-927f-b707fb3f1cb9"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSetParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveActionSetRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveActionSetParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveActionSetParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27658,107 +27656,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveActionSe
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveActionSetRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveActionSetParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveActionSetParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveOpenUrlActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer";
-/* [uuid("06919991-86b0-5750-bada-8b5ad4fdeb19"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveOpenUrlActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser";
+/* [uuid("04a2b4b8-29fc-554d-a7a1-373eda34daea"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveOpenUrlActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27767,107 +27765,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveOpenUrlA
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveOpenUrlActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveOpenUrlActionParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveShowCardActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer";
-/* [uuid("c66da84c-5a04-50e8-86cf-4332570ccca1"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveShowCardActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser";
+/* [uuid("bd0d1685-fd80-57cf-8d4b-2822c37ce704"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCardActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveShowCardActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27876,107 +27874,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveShowCard
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveShowCardActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveShowCardActionParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveSubmitActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer";
-/* [uuid("4ce84c6d-473b-5662-b3bf-a34100033a7e"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveSubmitActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser";
+/* [uuid("af607372-85ee-5b6a-a547-937797aa1b10"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveSubmitActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -27985,107 +27983,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveSubmitAc
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveSubmitActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveSubmitActionParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveExecuteActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer";
-/* [uuid("0c071907-6426-55ec-84a8-1d80043dd6fd"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveExecuteActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser";
+/* [uuid("16a6c413-2484-59e9-9ad3-838c7ac27d41"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveExecuteActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -28094,107 +28092,107 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveExecuteA
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveExecuteActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveExecuteActionParser";
 #endif
 
 
 
 /*
  *
- * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer
+ * Interface AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser
  *
- * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionRenderer
+ * Interface is a part of the implementation of type AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionParser
  *
  *
  * The IID for this interface was automatically generated by MIDLRT.
  *
- * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer:
+ * Interface IID generation seed: AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser:
  *
  *
  */
-#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_INTERFACE_DEFINED__)
-#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_INTERFACE_DEFINED__
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleVisibilityActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer";
-/* [uuid("5dc170d5-bd51-531e-9577-75b8d1f28adc"), version, object, exclusiveto] */
-typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRendererVtbl
+#if !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_INTERFACE_DEFINED__)
+#define ____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_INTERFACE_DEFINED__
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_AdaptiveCards_Rendering_Uwp_IAdaptiveToggleVisibilityActionParser[] = L"AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser";
+/* [uuid("379cf29d-c81f-53f2-9464-c2873a056926"), version, object, exclusiveto] */
+typedef struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParserVtbl
 {
     BEGIN_INTERFACE
     HRESULT ( STDMETHODCALLTYPE *QueryInterface)(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser * This,
     /* [in] */ __RPC__in REFIID riid,
     /* [annotation][iid_is][out] */
     _COM_Outptr_  void **ppvObject
     );
 
 ULONG ( STDMETHODCALLTYPE *AddRef )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser * This
     );
 
 ULONG ( STDMETHODCALLTYPE *Release )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer * This
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser * This
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetIids )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser * This,
     /* [out] */ __RPC__out ULONG *iidCount,
     /* [size_is][size_is][out] */ __RPC__deref_out_ecount_full_opt(*iidCount) IID **iids
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser * This,
     /* [out] */ __RPC__deref_out_opt HSTRING *className
     );
 
 HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )(
-    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer * This,
+    __RPC__in __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser * This,
     /* [OUT ] */ __RPC__out TrustLevel *trustLevel
     );
 END_INTERFACE
     
-} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRendererVtbl;
+} __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParserVtbl;
 
-interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer
+interface __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser
 {
-    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRendererVtbl *lpVtbl;
+    CONST_VTBL struct __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParserVtbl *lpVtbl;
 };
 
 #ifdef COBJMACROS
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_QueryInterface(This,riid,ppvObject) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_QueryInterface(This,riid,ppvObject) \
 ( (This)->lpVtbl->QueryInterface(This,riid,ppvObject) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_AddRef(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_AddRef(This) \
         ( (This)->lpVtbl->AddRef(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_Release(This) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_Release(This) \
         ( (This)->lpVtbl->Release(This) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_GetIids(This,iidCount,iids) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_GetIids(This,iidCount,iids) \
         ( (This)->lpVtbl->GetIids(This,iidCount,iids) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_GetRuntimeClassName(This,className) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_GetRuntimeClassName(This,className) \
         ( (This)->lpVtbl->GetRuntimeClassName(This,className) )
 
-#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_GetTrustLevel(This,trustLevel) \
+#define __x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_GetTrustLevel(This,trustLevel) \
         ( (This)->lpVtbl->GetTrustLevel(This,trustLevel) )
 
 
 #endif /* COBJMACROS */
 
 
-EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer;
-#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionRenderer_INTERFACE_DEFINED__) */
+EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser;
+#endif /* !defined(____x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVisibilityActionParser_INTERFACE_DEFINED__) */
 
 
 /*
  *
- * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionRenderer
+ * Class AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionParser
  *
  * RuntimeClass can be activated.
  *
  * Class implements the following interfaces:
- *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionRenderer ** Default Interface **
+ *    AdaptiveCards.Rendering.Uwp.IAdaptiveToggleVisibilityActionParser ** Default Interface **
  *    AdaptiveCards.Rendering.Uwp.IAdaptiveElementParser
  *
  * Class Threading Model:  Both Single and Multi Threaded Apartment
@@ -28203,9 +28201,9 @@ EXTERN_C const IID IID___x_ABI_CAdaptiveCards_CRendering_CUwp_CIAdaptiveToggleVi
  *
  */
 
-#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionRenderer_DEFINED
-#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionRenderer_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionRenderer[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionRenderer";
+#ifndef RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionParser_DEFINED
+#define RUNTIMECLASS_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionParser_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_AdaptiveCards_Rendering_Uwp_AdaptiveToggleVisibilityActionParser[] = L"AdaptiveCards.Rendering.Uwp.AdaptiveToggleVisibilityActionParser";
 #endif
 
 

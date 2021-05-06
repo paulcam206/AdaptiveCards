@@ -16,7 +16,6 @@ namespace AdaptiveCards
         namespace Uwp
         {
             runtimeclass AdaptiveCardParseResult;
-            runtimeclass AdaptiveHostConfigParseResult;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum TextSize {
                 Small = 0,
@@ -710,111 +709,111 @@ namespace AdaptiveCards
                 String Label;
             };
 
-            [default_interface] runtimeclass AdaptiveTextBlockRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveTextBlockParser : IAdaptiveElementParser
             {
-                AdaptiveTextBlockRenderer();
+                AdaptiveTextBlockParser();
             };
 
-            [default_interface] runtimeclass AdaptiveRichTextBlockRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveRichTextBlockParser : IAdaptiveElementParser
             {
-                AdaptiveRichTextBlockRenderer();
+                AdaptiveRichTextBlockParser();
             };
 
-            [default_interface] runtimeclass AdaptiveImageRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveImageParser : IAdaptiveElementParser
             {
-                AdaptiveImageRenderer();
+                AdaptiveImageParser();
             };
 
-            [default_interface] runtimeclass AdaptiveImageSetRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveImageSetParser : IAdaptiveElementParser
             {
-                AdaptiveImageSetRenderer();
+                AdaptiveImageSetParser();
             };
 
-            [default_interface] runtimeclass AdaptiveContainerRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveContainerParser : IAdaptiveElementParser
             {
-                AdaptiveContainerRenderer();
+                AdaptiveContainerParser();
             };
 
-            [default_interface] runtimeclass AdaptiveColumnRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveColumnParser : IAdaptiveElementParser
             {
-                AdaptiveColumnRenderer();
+                AdaptiveColumnParser();
             };
 
-            [default_interface] runtimeclass AdaptiveColumnSetRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveColumnSetParser : IAdaptiveElementParser
             {
-                AdaptiveColumnSetRenderer();
+                AdaptiveColumnSetParser();
             };
 
-            [default_interface] runtimeclass AdaptiveFactRenderer : IAdaptiveElementParser { AdaptiveFactRenderer(); };
+            [default_interface] runtimeclass AdaptiveFactParser : IAdaptiveElementParser { AdaptiveFactParser(); };
 
-            [default_interface] runtimeclass AdaptiveChoiceSetInputRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveChoiceSetInputParser : IAdaptiveElementParser
             {
-                AdaptiveChoiceSetInputRenderer();
+                AdaptiveChoiceSetInputParser();
             };
 
-            [default_interface] runtimeclass AdaptiveDateInputRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveDateInputParser : IAdaptiveElementParser
             {
-                AdaptiveDateInputRenderer();
+                AdaptiveDateInputParser();
             };
 
-            [default_interface] runtimeclass AdaptiveNumberInputRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveNumberInputParser : IAdaptiveElementParser
             {
-                AdaptiveNumberInputRenderer();
+                AdaptiveNumberInputParser();
             };
 
-            [default_interface] runtimeclass AdaptiveTextInputRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveTextInputParser : IAdaptiveElementParser
             {
-                AdaptiveTextInputRenderer();
+                AdaptiveTextInputParser();
             };
 
-            [default_interface] runtimeclass AdaptiveTimeInputRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveTimeInputParser : IAdaptiveElementParser
             {
-                AdaptiveTimeInputRenderer();
+                AdaptiveTimeInputParser();
             };
 
-            [default_interface] runtimeclass AdaptiveToggleInputRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveToggleInputParser : IAdaptiveElementParser
             {
-                AdaptiveToggleInputRenderer();
+                AdaptiveToggleInputParser();
             };
 
-            [default_interface] runtimeclass AdaptiveFactSetRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveFactSetParser : IAdaptiveElementParser
             {
-                AdaptiveFactSetRenderer();
+                AdaptiveFactSetParser();
             };
 
-            [default_interface] runtimeclass AdaptiveMediaRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveMediaParser : IAdaptiveElementParser
             {
-                AdaptiveMediaRenderer();
+                AdaptiveMediaParser();
             };
 
-            [default_interface] runtimeclass AdaptiveActionSetRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveActionSetParser : IAdaptiveElementParser
             {
-                AdaptiveActionSetRenderer();
+                AdaptiveActionSetParser();
             };
 
-            [default_interface] runtimeclass AdaptiveOpenUrlActionRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveOpenUrlActionParser : IAdaptiveElementParser
             {
-                AdaptiveOpenUrlActionRenderer();
+                AdaptiveOpenUrlActionParser();
             };
 
-            [default_interface] runtimeclass AdaptiveShowCardActionRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveShowCardActionParser : IAdaptiveElementParser
             {
-                AdaptiveShowCardActionRenderer();
+                AdaptiveShowCardActionParser();
             };
 
-            [default_interface] runtimeclass AdaptiveSubmitActionRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveSubmitActionParser : IAdaptiveElementParser
             {
-                AdaptiveSubmitActionRenderer();
+                AdaptiveSubmitActionParser();
             };
 
-            [default_interface] runtimeclass AdaptiveExecuteActionRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveExecuteActionParser : IAdaptiveElementParser
             {
-                AdaptiveExecuteActionRenderer();
+                AdaptiveExecuteActionParser();
             };
 
-            [default_interface] runtimeclass AdaptiveToggleVisibilityActionRenderer : IAdaptiveElementParser
+            [default_interface] runtimeclass AdaptiveToggleVisibilityActionParser : IAdaptiveElementParser
             {
-                AdaptiveToggleVisibilityActionRenderer();
+                AdaptiveToggleVisibilityActionParser();
             };
 
             runtimeclass AdaptiveError

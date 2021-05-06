@@ -6,11 +6,11 @@
 #include "CustomActionWrapper.h"
 #include "Util.h"
 #include "Vector.h"
-#include "AdaptiveShowCardActionRenderer.h"
-#include "AdaptiveSubmitActionRenderer.h"
-#include "AdaptiveOpenUrlActionRenderer.h"
-#include "AdaptiveToggleVisibilityActionRenderer.h"
-#include "AdaptiveExecuteActionRenderer.h"
+#include "AdaptiveShowCardActionParser.h"
+#include "AdaptiveSubmitActionParser.h"
+#include "AdaptiveOpenUrlActionParser.h"
+#include "AdaptiveToggleVisibilityActionParser.h"
+#include "AdaptiveExecuteActionParser.h"
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
@@ -92,15 +92,15 @@ namespace AdaptiveNamespace
     HRESULT AdaptiveActionParserRegistration::RegisterDefaultActionRenderers(ABI::AdaptiveNamespace::IAdaptiveActionParserRegistration* registration)
     {
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.OpenUrl").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveOpenUrlActionRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveOpenUrlActionParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.ShowCard").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveShowCardActionRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveShowCardActionParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.Submit").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveSubmitActionRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveSubmitActionParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.ToggleVisibility").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveToggleVisibilityActionRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveToggleVisibilityActionParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Action.Execute").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveExecuteActionRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveExecuteActionParser>().Get()));
         return S_OK;
     }
 

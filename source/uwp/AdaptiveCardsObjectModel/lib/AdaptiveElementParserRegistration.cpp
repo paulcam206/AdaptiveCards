@@ -3,22 +3,22 @@
 #include "pch.h"
 #include "AdaptiveElementParserRegistration.h"
 #include "AdaptiveActionParserRegistration.h"
-#include "AdaptiveActionSetRenderer.h"
-#include "AdaptiveChoiceSetInputRenderer.h"
-#include "AdaptiveColumnRenderer.h"
-#include "AdaptiveColumnSetRenderer.h"
-#include "AdaptiveContainerRenderer.h"
-#include "AdaptiveDateInputRenderer.h"
-#include "AdaptiveFactSetRenderer.h"
-#include "AdaptiveImageRenderer.h"
-#include "AdaptiveImageSetRenderer.h"
-#include "AdaptiveMediaRenderer.h"
-#include "AdaptiveNumberInputRenderer.h"
-#include "AdaptiveRichTextBlockRenderer.h"
-#include "AdaptiveTextBlockRenderer.h"
-#include "AdaptiveTextInputRenderer.h"
-#include "AdaptiveTimeInputRenderer.h"
-#include "AdaptiveToggleInputRenderer.h"
+#include "AdaptiveActionSetParser.h"
+#include "AdaptiveChoiceSetInputParser.h"
+#include "AdaptiveColumnParser.h"
+#include "AdaptiveColumnSetParser.h"
+#include "AdaptiveContainerParser.h"
+#include "AdaptiveDateInputParser.h"
+#include "AdaptiveFactSetParser.h"
+#include "AdaptiveImageParser.h"
+#include "AdaptiveImageSetParser.h"
+#include "AdaptiveMediaParser.h"
+#include "AdaptiveNumberInputParser.h"
+#include "AdaptiveRichTextBlockParser.h"
+#include "AdaptiveTextBlockParser.h"
+#include "AdaptiveTextInputParser.h"
+#include "AdaptiveTimeInputParser.h"
+#include "AdaptiveToggleInputParser.h"
 #include "CustomElementWrapper.h"
 #include "Util.h"
 #include "Vector.h"
@@ -103,37 +103,37 @@ namespace AdaptiveNamespace
     HRESULT AdaptiveElementParserRegistration::RegisterDefaultElementRenderers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration)
     {
         RETURN_IF_FAILED(registration->Set(HStringReference(L"ActionSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveActionSetRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveActionSetParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Column").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveColumnRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveColumnParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"ColumnSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveColumnSetRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveColumnSetParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Container").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveContainerRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveContainerParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"FactSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveFactSetRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveFactSetParser>().Get()));
         RETURN_IF_FAILED(
-            registration->Set(HStringReference(L"Image").Get(), Make<AdaptiveNamespace::AdaptiveImageRenderer>().Get()));
+            registration->Set(HStringReference(L"Image").Get(), Make<AdaptiveNamespace::AdaptiveImageParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"ImageSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveImageSetRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveImageSetParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.ChoiceSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveChoiceSetInputRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveChoiceSetInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Date").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveDateInputRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveDateInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Number").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveNumberInputRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveNumberInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Text").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTextInputRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveTextInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Time").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTimeInputRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveTimeInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Toggle").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveToggleInputRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveToggleInputParser>().Get()));
         RETURN_IF_FAILED(
-            registration->Set(HStringReference(L"Media").Get(), Make<AdaptiveNamespace::AdaptiveMediaRenderer>().Get()));
+            registration->Set(HStringReference(L"Media").Get(), Make<AdaptiveNamespace::AdaptiveMediaParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"RichTextBlock").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveRichTextBlockRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveRichTextBlockParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"TextBlock").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTextBlockRenderer>().Get()));
+                                           Make<AdaptiveNamespace::AdaptiveTextBlockParser>().Get()));
 
         return S_OK;
     }
