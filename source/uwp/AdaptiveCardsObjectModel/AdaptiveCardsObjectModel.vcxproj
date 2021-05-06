@@ -141,7 +141,6 @@
     <ClCompile Include="lib\AdaptiveRemoteResourceInformation.cpp" />
     <ClCompile Include="lib\AdaptiveRequirement.cpp" />
     <ClCompile Include="lib\AdaptiveTokenExchangeResource.cpp" />
-    <ClCompile Include="lib\LinkButton.cpp" />
     <ClInclude Include="lib\AdaptiveActionElement.h" />
     <ClInclude Include="lib\AdaptiveActionParserRegistration.h" />
     <ClInclude Include="lib\AdaptiveActionSet.h" />
@@ -175,7 +174,6 @@
     <ClInclude Include="lib\AdaptiveRequirement.h" />
     <ClInclude Include="lib\AdaptiveRichTextBlock.h" />
     <ClInclude Include="lib\AdaptiveRichTextBlockParser.h" />
-    <ClInclude Include="lib\AdaptiveSeparator.h" />
     <ClInclude Include="lib\AdaptiveShowCardActionParser.h" />
     <ClInclude Include="lib\AdaptiveSubmitActionParser.h" />
     <ClInclude Include="lib\AdaptiveTextBlockParser.h" />
@@ -194,7 +192,6 @@
     <ClInclude Include="lib\CustomActionWrapper.h" />
     <ClInclude Include="lib\CustomElementWrapper.h" />
     <ClInclude Include="lib\DateTimeParser.h" />
-    <ClInclude Include="lib\LinkButton.h" />
     <ClInclude Include="lib\AdaptiveCard.h" />
     <ClInclude Include="lib\AdaptiveChoiceInput.h" />
     <ClInclude Include="lib\AdaptiveChoiceSetInput.h" />
@@ -214,7 +211,6 @@
     <ClInclude Include="lib\AdaptiveShowCardAction.h" />
     <ClInclude Include="lib\AdaptiveSubmitAction.h" />
     <ClInclude Include="lib\AdaptiveTextBlock.h" />
-    <ClInclude Include="lib\DefaultResourceDictionary.h" />
     <ClInclude Include="lib\ErrorHandling.h" />
     <ClInclude Include="lib\pch.h" />
     <ClInclude Include="lib\Util.h" />
@@ -266,7 +262,6 @@
     <ClCompile Include="lib\AdaptiveImageSetParser.cpp" />
     <ClCompile Include="lib\AdaptiveInputElement.cpp" />
     <ClCompile Include="lib\AdaptiveNumberInputParser.cpp" />
-    <ClCompile Include="lib\AdaptiveSeparator.cpp" />
     <ClCompile Include="lib\AdaptiveTextBlockParser.cpp" />
     <ClCompile Include="lib\AdaptiveTextInputParser.cpp" />
     <ClCompile Include="lib\AdaptiveTimeInputParser.cpp" />

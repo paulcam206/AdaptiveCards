@@ -17,21 +17,6 @@ using namespace ABI::Windows::Foundation;
 using namespace ABI::Windows::Foundation::Collections;
 using namespace ABI::Windows::Storage;
 using namespace ABI::Windows::Storage::Streams;
-using namespace ABI::Windows::UI;
-using namespace ABI::Windows::UI::Text;
-using namespace ABI::Windows::UI::Xaml;
-using namespace ABI::Windows::UI::Xaml::Data;
-using namespace ABI::Windows::UI::Xaml::Documents;
-using namespace ABI::Windows::UI::Xaml::Controls;
-using namespace ABI::Windows::UI::Xaml::Controls::Primitives;
-using namespace ABI::Windows::UI::Xaml::Markup;
-using namespace ABI::Windows::UI::Xaml::Media;
-using namespace ABI::Windows::UI::Xaml::Media::Imaging;
-using namespace ABI::Windows::UI::Xaml::Shapes;
-using namespace ABI::Windows::UI::Xaml::Input;
-using namespace ABI::Windows::UI::Xaml::Automation;
-using namespace ABI::Windows::Web::Http;
-using namespace ABI::Windows::Web::Http::Filters;
 
 namespace AdaptiveNamespace
 {

@@ -27,12 +27,6 @@
 #include <limits>
 #include <string>
 
-// The #define of this in winbase.h windows.ui.xaml.media.animation.h's IStoryboard defintion
-// so we need to remove it
-#ifdef GetCurrentTime
-#undef GetCurrentTime
-#endif
-
 // Shared Model headers
 #include "Enums.h"
 #include "HostConfig.h"
@@ -55,11 +49,6 @@
 
 #include <windows.foundation.h>
 #include <windows.foundation.collections.h>
-#include <windows.ui.xaml.shapes.h>
-#include <windows.ui.xaml.markup.h>
 
 #include <winrt/base.h>
-#include <winrt/Windows.UI.Xaml.Automation.h>
-#include <winrt/Windows.UI.Xaml.Automation.Peers.h>
-#include <winrt/Windows.UI.Xaml.Controls.h>
-#include <winrt/Windows.UI.Xaml.Controls.Primitives.h>
+

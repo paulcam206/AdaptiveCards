@@ -19,7 +19,6 @@ using namespace ABI::AdaptiveNamespace;
 using namespace ABI::Windows::Data::Json;
 using namespace ABI::Windows::Foundation;
 using namespace ABI::Windows::Foundation::Collections;
-using namespace ABI::Windows::UI::Xaml;
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
 

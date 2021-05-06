@@ -20,10 +20,6 @@
 #include "AdaptiveCardParseWarning.h"
 #include "RemoteResourceInformation.h"
 
-#ifdef ADAPTIVE_CARDS_WINDOWS
-using namespace InternalNamespace;
-#endif
-
 class bad_string_conversion : public std::exception
 {
 public:

@@ -25,7 +25,6 @@
 #include "AdaptiveOpenUrlAction.h"
 #include "AdaptiveRequirement.h"
 #include "AdaptiveRichTextBlock.h"
-#include "AdaptiveSeparator.h"
 #include "AdaptiveShowCardAction.h"
 #include "AdaptiveSubmitAction.h"
 #include "AdaptiveTextBlock.h"
@@ -859,38 +858,6 @@ try
 
         RETURN_IF_FAILED(projectedParentContainer->Append(projectedContainedElement.Detach()));
     }
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GenerateSeparatorProjection(const std::shared_ptr<AdaptiveSharedNamespace::Separator>& sharedSeparator,
-                                    _COM_Outptr_ ABI::AdaptiveNamespace::IAdaptiveSeparator** projectedSeparator) noexcept
-try
-{
-    *projectedSeparator = nullptr;
-    if (sharedSeparator != nullptr)
-    {
-        return MakeAndInitialize<::AdaptiveNamespace::AdaptiveSeparator>(projectedSeparator, sharedSeparator);
-    }
-    return S_OK;
-}
-CATCH_RETURN;
-
-HRESULT GenerateSharedSeparator(_In_ ABI::AdaptiveNamespace::IAdaptiveSeparator* separator,
-                                _Out_ std::shared_ptr<AdaptiveSharedNamespace::Separator>* sharedSeparatorOut) noexcept
-try
-{
-    ABI::AdaptiveNamespace::ForegroundColor color;
-    RETURN_IF_FAILED(separator->get_Color(&color));
-
-    ABI::AdaptiveNamespace::SeparatorThickness thickness;
-    RETURN_IF_FAILED(separator->get_Thickness(&thickness));
-
-    auto sharedSeparator = std::make_shared<Separator>();
-    sharedSeparator->SetColor(static_cast<AdaptiveSharedNamespace::ForegroundColor>(color));
-    sharedSeparator->SetThickness(static_cast<AdaptiveSharedNamespace::SeparatorThickness>(thickness));
-
-    *sharedSeparatorOut = sharedSeparator;
     return S_OK;
 }
 CATCH_RETURN;
