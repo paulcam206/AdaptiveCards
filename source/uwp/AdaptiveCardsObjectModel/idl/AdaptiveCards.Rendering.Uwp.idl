@@ -7,7 +7,7 @@ import "Windows.Foundation.idl";
 import "Windows.UI.Xaml.idl";
 import "Windows.Data.Json.idl";
 
-#define AdaptiveNamespace AdaptiveCards::Rendering::Uwp
+#define AdaptiveNamespace AdaptiveCards::ObjectModel::Uwp
 
 namespace AdaptiveCards
 {
