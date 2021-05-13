@@ -23,7 +23,11 @@ namespace AdaptiveCards
                 ExtraLarge
             } TextSize;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum TextWeight { Lighter = 0, Default, Bolder } TextWeight;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum TextWeight {
+                Lighter = 0,
+                Default,
+                Bolder,
+            } TextWeight;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ForegroundColor {
                 Default = 0,
@@ -35,9 +39,17 @@ namespace AdaptiveCards
                 Attention
             } ForegroundColor;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum HAlignment { Left = 0, Center, Right } HAlignment;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum HAlignment {
+                Left = 0,
+                Center,
+                Right,
+            } HAlignment;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum VAlignment { Top = 0, Center, Bottom } VAlignment;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum VAlignment {
+                Top = 0,
+                Center,
+                Bottom,
+            } VAlignment;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum BackgroundImageFillMode {
                 Cover = 0,
@@ -80,7 +92,10 @@ namespace AdaptiveCards
                 Custom
             } ActionType;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ImageStyle { Default = 0, Person } ImageStyle;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ImageStyle {
+                Default = 0,
+                Person,
+            } ImageStyle;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ImageSize {
                 None = 0,
@@ -118,9 +133,10 @@ namespace AdaptiveCards
                 Stretch,
             } ActionAlignment;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ActionMode { Inline = 0, Popup } ActionMode;
-
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ChoiceSetStyle { Compact = 0, Expanded } ChoiceSetStyle;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ChoiceSetStyle {
+                Compact = 0,
+                Expanded,
+            } ChoiceSetStyle;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum TextInputStyle {
                 Text = 0,
@@ -139,7 +155,10 @@ namespace AdaptiveCards
                 Accent
             } ContainerStyle;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum FontType { Default = 0, Monospace } FontType;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum FontType {
+                Default = 0,
+                Monospace,
+            } FontType;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ErrorStatusCode {
                 InvalidJson = 0,
@@ -177,7 +196,10 @@ namespace AdaptiveCards
                 Bottom
             } VerticalContentAlignment;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum HeightType { Auto = 0, Stretch } HeightType;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum HeightType {
+                Auto = 0,
+                Stretch,
+            } HeightType;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum IsVisible {
                 IsVisibleToggle = 0,
@@ -185,7 +207,11 @@ namespace AdaptiveCards
                 IsVisibleFalse
             } IsVisible;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum FallbackType { None = 0, Drop, Content } FallbackType;
+            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum FallbackType {
+                None = 0,
+                Drop,
+                Content,
+            } FallbackType;
 
             [version(NTDDI_WIN10_RS1), flags] typedef[v1_enum] enum BleedDirection {
                 None = 0x0000,
