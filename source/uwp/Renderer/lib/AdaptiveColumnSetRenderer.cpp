@@ -50,7 +50,7 @@ namespace AdaptiveCards::Rendering::Uwp
         ComPtr<IAdaptiveContainerBase> columnSetAsContainerBase;
         RETURN_IF_FAILED(adaptiveColumnSet.As(&columnSetAsContainerBase));
 
-        ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle containerStyle;
+        ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle containerStyle;
         RETURN_IF_FAILED(XamlHelpers::HandleStylingAndPadding(
             columnSetAsContainerBase.Get(), columnSetBorder.Get(), renderContext, renderArgs, &containerStyle));
 
@@ -200,7 +200,7 @@ namespace AdaptiveCards::Rendering::Uwp
         ComPtr<IAdaptiveCardElement> columnSetAsCardElement;
         RETURN_IF_FAILED(adaptiveColumnSet.As(&columnSetAsCardElement));
 
-        ABI::AdaptiveCards::Rendering::Uwp::HeightType columnSetHeightType;
+        ABI::AdaptiveCards::ObjectModel::Uwp::HeightType columnSetHeightType;
         RETURN_IF_FAILED(columnSetAsCardElement->get_Height(&columnSetHeightType));
 
         ComPtr<IAdaptiveContainerBase> columnAsContainerBase;
@@ -234,7 +234,7 @@ namespace AdaptiveCards::Rendering::Uwp
         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveElementParserRegistration* elementParserRegistration,
         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionParserRegistration* actionParserRegistration,
         _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::Rendering::Uwp::AdaptiveWarning*>* adaptiveWarnings,
-        _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement** element) noexcept
+        _COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement** element) noexcept
     try
     {
         return AdaptiveCards::Rendering::Uwp::FromJson<AdaptiveCards::Rendering::Uwp::AdaptiveColumnSet, AdaptiveCards::ColumnSet, AdaptiveCards::ColumnSetParser>(

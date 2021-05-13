@@ -3970,58 +3970,6 @@ namespace ABI {
 
 /*
  *
- * Typedef of AdaptiveCards.ObjectModel.Uwp.ActionsOrientation
- *
- */
-namespace ABI {
-    namespace AdaptiveCards {
-        namespace ObjectModel {
-            namespace Uwp {
-                /* [version, v1_enum] */
-                typedef 
-                MIDL_ENUM ActionsOrientation : int
-                {
-                    Vertical = 0,
-                    Horizontal,
-                } ActionsOrientation;
-                const ActionsOrientation ActionsOrientation_Vertical = ActionsOrientation::Vertical;
-                const ActionsOrientation ActionsOrientation_Horizontal = ActionsOrientation::Horizontal;
-                
-            } /* Uwp */
-        } /* ObjectModel */
-    } /* AdaptiveCards */} /* ABI */
-
-
-/*
- *
- * Typedef of AdaptiveCards.ObjectModel.Uwp.ActionAlignment
- *
- */
-namespace ABI {
-    namespace AdaptiveCards {
-        namespace ObjectModel {
-            namespace Uwp {
-                /* [version, v1_enum] */
-                typedef 
-                MIDL_ENUM ActionAlignment : int
-                {
-                    Left = 0,
-                    Center,
-                    Right,
-                    Stretch,
-                } ActionAlignment;
-                const ActionAlignment ActionAlignment_Left = ActionAlignment::Left;
-                const ActionAlignment ActionAlignment_Center = ActionAlignment::Center;
-                const ActionAlignment ActionAlignment_Right = ActionAlignment::Right;
-                const ActionAlignment ActionAlignment_Stretch = ActionAlignment::Stretch;
-                
-            } /* Uwp */
-        } /* ObjectModel */
-    } /* AdaptiveCards */} /* ABI */
-
-
-/*
- *
  * Typedef of AdaptiveCards.ObjectModel.Uwp.ChoiceSetStyle
  *
  */
@@ -4144,17 +4092,17 @@ namespace ABI {
                 MIDL_ENUM ErrorStatusCode : int
                 {
                     InvalidJson = 0,
-                    RenderFailed,
                     RequiredPropertyMissing,
                     InvalidPropertyValue,
                     UnsupportedParserOverride,
+                    IdCollision,
                     CustomError,
                 } ErrorStatusCode;
                 const ErrorStatusCode ErrorStatusCode_InvalidJson = ErrorStatusCode::InvalidJson;
-                const ErrorStatusCode ErrorStatusCode_RenderFailed = ErrorStatusCode::RenderFailed;
                 const ErrorStatusCode ErrorStatusCode_RequiredPropertyMissing = ErrorStatusCode::RequiredPropertyMissing;
                 const ErrorStatusCode ErrorStatusCode_InvalidPropertyValue = ErrorStatusCode::InvalidPropertyValue;
                 const ErrorStatusCode ErrorStatusCode_UnsupportedParserOverride = ErrorStatusCode::UnsupportedParserOverride;
+                const ErrorStatusCode ErrorStatusCode_IdCollision = ErrorStatusCode::IdCollision;
                 const ErrorStatusCode ErrorStatusCode_CustomError = ErrorStatusCode::CustomError;
                 
             } /* Uwp */
@@ -4176,41 +4124,23 @@ namespace ABI {
                 MIDL_ENUM WarningStatusCode : int
                 {
                     UnknownElementType = 0,
-                    UnknownActionElementType,
-                    UnknownPropertyOnElement,
-                    UnknownEnumValue,
-                    NoRendererForType,
-                    InteractivityNotSupported,
-                    MaxActionsExceeded,
-                    AssetLoadFailed,
                     UnsupportedSchemaVersion,
-                    UnsupportedMediaType,
                     InvalidMediaMix,
-                    InvalidValue,
-                    UnsupportedValue,
-                    PerformingFallback,
                     CustomWarning,
-                    EmptyLabelInRequiredInput,
-                    MissingValidationErrorMessage,
+                    InvalidColorFormat,
+                    InvalidDimensionSpecified,
+                    InvalidLanguage,
+                    InvalidValue,
                     RequiredPropertyMissing,
                 } WarningStatusCode;
                 const WarningStatusCode WarningStatusCode_UnknownElementType = WarningStatusCode::UnknownElementType;
-                const WarningStatusCode WarningStatusCode_UnknownActionElementType = WarningStatusCode::UnknownActionElementType;
-                const WarningStatusCode WarningStatusCode_UnknownPropertyOnElement = WarningStatusCode::UnknownPropertyOnElement;
-                const WarningStatusCode WarningStatusCode_UnknownEnumValue = WarningStatusCode::UnknownEnumValue;
-                const WarningStatusCode WarningStatusCode_NoRendererForType = WarningStatusCode::NoRendererForType;
-                const WarningStatusCode WarningStatusCode_InteractivityNotSupported = WarningStatusCode::InteractivityNotSupported;
-                const WarningStatusCode WarningStatusCode_MaxActionsExceeded = WarningStatusCode::MaxActionsExceeded;
-                const WarningStatusCode WarningStatusCode_AssetLoadFailed = WarningStatusCode::AssetLoadFailed;
                 const WarningStatusCode WarningStatusCode_UnsupportedSchemaVersion = WarningStatusCode::UnsupportedSchemaVersion;
-                const WarningStatusCode WarningStatusCode_UnsupportedMediaType = WarningStatusCode::UnsupportedMediaType;
                 const WarningStatusCode WarningStatusCode_InvalidMediaMix = WarningStatusCode::InvalidMediaMix;
-                const WarningStatusCode WarningStatusCode_InvalidValue = WarningStatusCode::InvalidValue;
-                const WarningStatusCode WarningStatusCode_UnsupportedValue = WarningStatusCode::UnsupportedValue;
-                const WarningStatusCode WarningStatusCode_PerformingFallback = WarningStatusCode::PerformingFallback;
                 const WarningStatusCode WarningStatusCode_CustomWarning = WarningStatusCode::CustomWarning;
-                const WarningStatusCode WarningStatusCode_EmptyLabelInRequiredInput = WarningStatusCode::EmptyLabelInRequiredInput;
-                const WarningStatusCode WarningStatusCode_MissingValidationErrorMessage = WarningStatusCode::MissingValidationErrorMessage;
+                const WarningStatusCode WarningStatusCode_InvalidColorFormat = WarningStatusCode::InvalidColorFormat;
+                const WarningStatusCode WarningStatusCode_InvalidDimensionSpecified = WarningStatusCode::InvalidDimensionSpecified;
+                const WarningStatusCode WarningStatusCode_InvalidLanguage = WarningStatusCode::InvalidLanguage;
+                const WarningStatusCode WarningStatusCode_InvalidValue = WarningStatusCode::InvalidValue;
                 const WarningStatusCode WarningStatusCode_RequiredPropertyMissing = WarningStatusCode::RequiredPropertyMissing;
                 
             } /* Uwp */
@@ -17860,36 +17790,6 @@ enum __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CSpacing
 
 /*
  *
- * Typedef of AdaptiveCards.ObjectModel.Uwp.ActionsOrientation
- *
- */
-/* [version, v1_enum] */
-typedef 
-enum __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CActionsOrientation
-{
-    ActionsOrientation_Vertical = 0,
-    ActionsOrientation_Horizontal,
-} __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CActionsOrientation;
-
-
-/*
- *
- * Typedef of AdaptiveCards.ObjectModel.Uwp.ActionAlignment
- *
- */
-/* [version, v1_enum] */
-typedef 
-enum __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CActionAlignment
-{
-    ActionAlignment_Left = 0,
-    ActionAlignment_Center,
-    ActionAlignment_Right,
-    ActionAlignment_Stretch,
-} __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CActionAlignment;
-
-
-/*
- *
  * Typedef of AdaptiveCards.ObjectModel.Uwp.ChoiceSetStyle
  *
  */
@@ -17961,10 +17861,10 @@ typedef
 enum __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CErrorStatusCode
 {
     ErrorStatusCode_InvalidJson = 0,
-    ErrorStatusCode_RenderFailed,
     ErrorStatusCode_RequiredPropertyMissing,
     ErrorStatusCode_InvalidPropertyValue,
     ErrorStatusCode_UnsupportedParserOverride,
+    ErrorStatusCode_IdCollision,
     ErrorStatusCode_CustomError,
 } __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CErrorStatusCode;
 
@@ -17979,22 +17879,13 @@ typedef
 enum __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CWarningStatusCode
 {
     WarningStatusCode_UnknownElementType = 0,
-    WarningStatusCode_UnknownActionElementType,
-    WarningStatusCode_UnknownPropertyOnElement,
-    WarningStatusCode_UnknownEnumValue,
-    WarningStatusCode_NoRendererForType,
-    WarningStatusCode_InteractivityNotSupported,
-    WarningStatusCode_MaxActionsExceeded,
-    WarningStatusCode_AssetLoadFailed,
     WarningStatusCode_UnsupportedSchemaVersion,
-    WarningStatusCode_UnsupportedMediaType,
     WarningStatusCode_InvalidMediaMix,
-    WarningStatusCode_InvalidValue,
-    WarningStatusCode_UnsupportedValue,
-    WarningStatusCode_PerformingFallback,
     WarningStatusCode_CustomWarning,
-    WarningStatusCode_EmptyLabelInRequiredInput,
-    WarningStatusCode_MissingValidationErrorMessage,
+    WarningStatusCode_InvalidColorFormat,
+    WarningStatusCode_InvalidDimensionSpecified,
+    WarningStatusCode_InvalidLanguage,
+    WarningStatusCode_InvalidValue,
     WarningStatusCode_RequiredPropertyMissing,
 } __x_ABI_CAdaptiveCards_CObjectModel_CUwp_CWarningStatusCode;
 

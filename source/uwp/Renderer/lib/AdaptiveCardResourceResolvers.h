@@ -14,12 +14,12 @@ namespace AdaptiveCards::Rendering::Uwp
     public:
         HRESULT RuntimeClassInitialize() noexcept;
 
-        IFACEMETHODIMP Set(_In_ HSTRING scheme, _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardResourceResolver* resolver);
+        IFACEMETHODIMP Set(_In_ HSTRING scheme, _In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardResourceResolver* resolver);
         IFACEMETHODIMP Get(_In_ HSTRING scheme,
-                           _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardResourceResolver** resolver);
+                           _COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardResourceResolver** resolver);
 
     private:
-        std::map<std::string, Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardResourceResolver>> m_resourceResolvers;
+        std::map<std::string, Microsoft::WRL::ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardResourceResolver>> m_resourceResolvers;
     };
 
     ActivatableClass(AdaptiveCardResourceResolvers);

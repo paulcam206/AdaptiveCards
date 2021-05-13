@@ -83,7 +83,7 @@ namespace AdaptiveCards::Rendering::Uwp::ActionHelpers
     void ArrangeButtonContent(_In_ IAdaptiveActionElement* action,
                               _In_ IAdaptiveActionsConfig* actionsConfig,
                               _In_ IAdaptiveRenderContext* renderContext,
-                              ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle containerStyle,
+                              ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle containerStyle,
                               _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveHostConfig* hostConfig,
                               bool allActionsHaveIcons,
                               _In_ IButton* button)
@@ -371,7 +371,7 @@ namespace AdaptiveCards::Rendering::Uwp::ActionHelpers
             }
         }
 
-        ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle containerStyle;
+        ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle containerStyle;
         RETURN_IF_FAILED(renderArgs->get_ContainerStyle(&containerStyle));
 
         boolean allowAboveTitleIconPlacement;
@@ -856,7 +856,7 @@ namespace AdaptiveCards::Rendering::Uwp::ActionHelpers
         return S_OK;
     }
 
-    HRESULT BuildActionSetHelper(_In_opt_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* adaptiveCard,
+    HRESULT BuildActionSetHelper(_In_opt_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* adaptiveCard,
                                  _In_opt_ IAdaptiveActionSet* adaptiveActionSet,
                                  _In_ IVector<IAdaptiveActionElement*>* children,
                                  _In_ IAdaptiveRenderContext* renderContext,
@@ -1110,7 +1110,7 @@ namespace AdaptiveCards::Rendering::Uwp::ActionHelpers
         return actionSetAsPanel.CopyTo(actionSetControl);
     }
 
-    void CreateAppropriateButton(ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement* action, ComPtr<IButton>& button)
+    void CreateAppropriateButton(ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement* action, ComPtr<IButton>& button)
     {
         if (action != nullptr)
         {

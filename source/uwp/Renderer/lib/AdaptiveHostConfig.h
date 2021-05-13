@@ -45,8 +45,8 @@ namespace AdaptiveCards::Rendering::Uwp
         IFACEMETHODIMP get_Separator(_COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveSeparatorConfig** separatorConfigConfig);
         IFACEMETHODIMP put_Separator(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveSeparatorConfig* separatorConfigConfig);
 
-        IFACEMETHODIMP get_AdaptiveCard(_COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardConfig** adaptiveCardConfigConfig);
-        IFACEMETHODIMP put_AdaptiveCard(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardConfig* adaptiveCardConfigConfig);
+        IFACEMETHODIMP get_AdaptiveCard(_COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardConfig** adaptiveCardConfigConfig);
+        IFACEMETHODIMP put_AdaptiveCard(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardConfig* adaptiveCardConfigConfig);
 
         IFACEMETHODIMP get_ImageSet(_COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageSetConfig** imageSetConfigConfig);
         IFACEMETHODIMP put_ImageSet(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageSetConfig* imageSetConfigConfig);
@@ -81,7 +81,7 @@ namespace AdaptiveCards::Rendering::Uwp
         Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageSizesConfig> m_imageSizes;
         Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveSpacingConfig> m_spacing;
         Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveSeparatorConfig> m_separator;
-        Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardConfig> m_adaptiveCard;
+        Microsoft::WRL::ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardConfig> m_adaptiveCard;
         Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageSetConfig> m_imageSet;
         Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImageConfig> m_image;
         Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveFactSetConfig> m_factSet;

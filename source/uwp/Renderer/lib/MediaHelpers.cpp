@@ -103,7 +103,7 @@ void AddDefaultPlayIcon(_In_ IPanel* posterPanel, _In_ IAdaptiveHostConfig* host
     THROW_IF_FAILED(rectangleAsUIElement->put_Opacity(c_playIconOpacity));
 
     // Outline it in the Dark color
-    ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle containerStyle;
+    ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle containerStyle;
     THROW_IF_FAILED(renderArgs->get_ContainerStyle(&containerStyle));
 
     ComPtr<IColorsStatics> colorsStatics;

@@ -37,7 +37,7 @@ namespace AdaptiveCards::Rendering::Uwp
         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveElementParserRegistration* elementParserRegistration,
         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionParserRegistration* actionParserRegistration,
         _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::Rendering::Uwp::AdaptiveWarning*>* adaptiveWarnings,
-        _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement** element) noexcept
+        _COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement** element) noexcept
     try
     {
         return AdaptiveCards::Rendering::Uwp::FromJson<AdaptiveCards::Rendering::Uwp::AdaptiveShowCardAction, AdaptiveCards::ShowCardAction, AdaptiveCards::ShowCardActionParser>(
@@ -61,7 +61,7 @@ namespace AdaptiveCards::Rendering::Uwp
         ComPtr<IAdaptiveShowCardActionConfig> showCardActionConfig;
         RETURN_IF_FAILED(actionsConfig->get_ShowCard(&showCardActionConfig));
 
-        ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle showCardConfigStyle;
+        ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle showCardConfigStyle;
         RETURN_IF_FAILED(showCardActionConfig->get_Style(&showCardConfigStyle));
 
         boolean wasInShowCard;

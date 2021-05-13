@@ -55,9 +55,9 @@ namespace AdaptiveCards::Rendering::Uwp
         RETURN_IF_FAILED(columnDefinitions->Append(valueColumn.Get()));
 
         GridLength factSetGridHeight = {0, GridUnitType::GridUnitType_Auto};
-        ABI::AdaptiveCards::Rendering::Uwp::HeightType heightType;
+        ABI::AdaptiveCards::ObjectModel::Uwp::HeightType heightType;
         RETURN_IF_FAILED(cardElement->get_Height(&heightType));
-        if (heightType == ABI::AdaptiveCards::Rendering::Uwp::HeightType::Stretch)
+        if (heightType == ABI::AdaptiveCards::ObjectModel::Uwp::HeightType::Stretch)
         {
             factSetGridHeight = {1, GridUnitType::GridUnitType_Star};
         }
@@ -173,7 +173,7 @@ namespace AdaptiveCards::Rendering::Uwp
         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveElementParserRegistration* elementParserRegistration,
         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionParserRegistration* actionParserRegistration,
         _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::Rendering::Uwp::AdaptiveWarning*>* adaptiveWarnings,
-        _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement** element) noexcept
+        _COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement** element) noexcept
     try
     {
         return AdaptiveCards::Rendering::Uwp::FromJson<AdaptiveCards::Rendering::Uwp::AdaptiveFactSet, AdaptiveCards::FactSet, AdaptiveCards::FactSetParser>(

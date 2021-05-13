@@ -360,7 +360,7 @@ namespace AdaptiveCards::Rendering::Uwp
         m_frameworkElement = value;
     }
 
-    void RenderedAdaptiveCard::SetOriginatingCard(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* value)
+    void RenderedAdaptiveCard::SetOriginatingCard(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* value)
     {
         m_originatingCard = value;
     }
@@ -387,8 +387,8 @@ namespace AdaptiveCards::Rendering::Uwp
     }
     CATCH_RETURN;
 
-    HRESULT RenderedAdaptiveCard::AddInlineShowCard(ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* adaptiveCard,
-                                                    ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardAction* showCardAction,
+    HRESULT RenderedAdaptiveCard::AddInlineShowCard(ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* adaptiveCard,
+                                                    ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardAction* showCardAction,
                                                     ABI::Windows::UI::Xaml::IUIElement* showCardFrameworkElement,
                                                     ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs)
     try
@@ -405,7 +405,7 @@ namespace AdaptiveCards::Rendering::Uwp
     CATCH_RETURN;
 
     HRESULT RenderedAdaptiveCard::AddInlineShowCardHelper(AdaptiveCards::InternalId& actionSetId,
-                                                          ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardAction* showCardAction,
+                                                          ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardAction* showCardAction,
                                                           ABI::Windows::UI::Xaml::IUIElement* showCardFrameworkElement,
                                                           ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs)
     try
@@ -432,19 +432,19 @@ namespace AdaptiveCards::Rendering::Uwp
         return m_inputs->AddInputValue(inputItem, renderArgs);
     }
 
-    HRESULT RenderedAdaptiveCard::LinkActionToCard(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement* action,
+    HRESULT RenderedAdaptiveCard::LinkActionToCard(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement* action,
                                                    _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs)
     {
         return m_inputs->LinkSubmitActionToCard(action, renderArgs);
     }
 
-    InternalId GetInternalIdFromCard(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* card)
+    InternalId GetInternalIdFromCard(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* card)
     {
         ComPtr<AdaptiveCard> cardImpl = PeekInnards<AdaptiveCards::Rendering::Uwp::AdaptiveCard>(card);
         return cardImpl->GetInternalId();
     }
 
-    HRESULT RenderedAdaptiveCard::LinkCardToParent(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* card,
+    HRESULT RenderedAdaptiveCard::LinkCardToParent(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* card,
                                                    _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs)
     {
         // We get the card internal id from the showcard action

@@ -178,7 +178,7 @@ std::shared_ptr<TSharedBaseType> GetSharedModel(_In_ TAdaptiveBaseType* item)
     }
 }
 
-HRESULT GenerateSharedElement(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement* item,
+HRESULT GenerateSharedElement(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement* item,
                               std::shared_ptr<AdaptiveCards::BaseCardElement>& baseCardElement)
 {
     ABI::AdaptiveCards::Rendering::Uwp::ElementType elementType;
@@ -188,87 +188,87 @@ HRESULT GenerateSharedElement(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptive
     {
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::ActionSet:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveActionSet>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveActionSet>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::ChoiceSetInput:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveChoiceSetInput>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveChoiceSetInput>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::Column:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveColumn>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveColumn>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::ColumnSet:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveColumnSet>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveColumnSet>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::Container:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveContainer>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveContainer>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::DateInput:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveDateInput>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveDateInput>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::FactSet:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveFactSet>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveFactSet>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::Image:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveImage>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveImage>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::ImageSet:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveImageSet>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveImageSet>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::NumberInput:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveNumberInput>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveNumberInput>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::Media:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveMedia>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveMedia>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::RichTextBlock:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveRichTextBlock>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveRichTextBlock>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::TextBlock:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveTextBlock>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveTextBlock>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::TextInput:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveTextInput>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveTextInput>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::TimeInput:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveTimeInput>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveTimeInput>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::ToggleInput:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveToggleInput>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveToggleInput>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::Unsupported:
         baseCardElement =
-            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveUnsupportedElement>(
+            GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveUnsupportedElement>(
                 item);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ElementType::Custom:
@@ -284,13 +284,13 @@ HRESULT GenerateSharedElement(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptive
     return S_OK;
 }
 
-HRESULT GenerateSharedElements(_In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement*>* items,
+HRESULT GenerateSharedElements(_In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement*>* items,
                                std::vector<std::shared_ptr<AdaptiveCards::BaseCardElement>>& containedElements)
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement>(
-        items, [&](ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement* item) {
+    XamlHelpers::IterateOverVector<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement>(
+        items, [&](ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement* item) {
             std::shared_ptr<AdaptiveCards::BaseCardElement> baseCardElement;
             RETURN_IF_FAILED(GenerateSharedElement(item, baseCardElement));
             containedElements.push_back(std::move(baseCardElement));
@@ -301,7 +301,7 @@ HRESULT GenerateSharedElements(_In_ ABI::Windows::Foundation::Collections::IVect
     return S_OK;
 }
 
-HRESULT GenerateSharedAction(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement* action,
+HRESULT GenerateSharedAction(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement* action,
                              std::shared_ptr<AdaptiveCards::BaseActionElement>& sharedAction)
 {
     ABI::AdaptiveCards::Rendering::Uwp::ActionType actionType;
@@ -311,27 +311,27 @@ HRESULT GenerateSharedAction(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveA
     {
     case ABI::AdaptiveCards::Rendering::Uwp::ActionType::OpenUrl:
         sharedAction =
-            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveOpenUrlAction>(
+            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveOpenUrlAction>(
                 action);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ActionType::ShowCard:
         sharedAction =
-            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveShowCardAction>(
+            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveShowCardAction>(
                 action);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ActionType::Submit:
         sharedAction =
-            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveSubmitAction>(
+            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveSubmitAction>(
                 action);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ActionType::ToggleVisibility:
         sharedAction =
-            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveToggleVisibilityAction>(
+            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveToggleVisibilityAction>(
                 action);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ActionType::Execute:
         sharedAction =
-            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveExecuteAction>(
+            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveExecuteAction>(
                 action);
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ActionType::Custom:
@@ -339,20 +339,20 @@ HRESULT GenerateSharedAction(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveA
         break;
     case ABI::AdaptiveCards::Rendering::Uwp::ActionType::Unsupported:
         sharedAction =
-            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveUnsupportedAction>(
+            GetSharedModel<AdaptiveCards::BaseActionElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement, AdaptiveCards::Rendering::Uwp::AdaptiveUnsupportedAction>(
                 action);
     }
 
     return S_OK;
 }
 
-HRESULT GenerateSharedActions(_In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement*>* actions,
+HRESULT GenerateSharedActions(_In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement*>* actions,
                               std::vector<std::shared_ptr<AdaptiveCards::BaseActionElement>>& containedElements)
 {
     containedElements.clear();
 
-    XamlHelpers::IterateOverVector<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement>(
-        actions, [&](ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement* action) {
+    XamlHelpers::IterateOverVector<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement>(
+        actions, [&](ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement* action) {
             std::shared_ptr<AdaptiveCards::BaseActionElement> baseActionElement;
             GenerateSharedAction(action, baseActionElement);
             containedElements.push_back(baseActionElement);
@@ -407,11 +407,11 @@ HRESULT GenerateSharedImages(_In_ ABI::Windows::Foundation::Collections::IVector
     XamlHelpers::IterateOverVector<ABI::AdaptiveCards::Rendering::Uwp::AdaptiveImage, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImage>(
         images, [&](ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImage* image) {
             ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveImage> localImage = image;
-            ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement> imageAsElement;
+            ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement> imageAsElement;
             localImage.As(&imageAsElement);
 
             std::shared_ptr<AdaptiveCards::BaseCardElement> sharedImage =
-                GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveImage>(
+                GetSharedModel<AdaptiveCards::BaseCardElement, ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement, AdaptiveCards::Rendering::Uwp::AdaptiveImage>(
                     imageAsElement.Get());
             containedElements.push_back(std::AdaptivePointerCast<AdaptiveCards::Image>(sharedImage));
 
@@ -569,7 +569,7 @@ HRESULT GenerateSharedToggleElements(
 }
 
 HRESULT GenerateElementProjection(_In_ const std::shared_ptr<AdaptiveCards::BaseCardElement>& baseElement,
-                                  _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement** projectedElement) noexcept
+                                  _COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement** projectedElement) noexcept
 try
 {
     *projectedElement = nullptr;
@@ -656,12 +656,12 @@ CATCH_RETURN;
 
 HRESULT GenerateContainedElementsProjection(
     const std::vector<std::shared_ptr<AdaptiveCards::BaseCardElement>>& containedElements,
-    _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement*>* projectedParentContainer) noexcept
+    _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement*>* projectedParentContainer) noexcept
 try
 {
     for (auto& containedElement : containedElements)
     {
-        ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement> projectedContainedElement;
+        ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement> projectedContainedElement;
         GenerateElementProjection(containedElement, &projectedContainedElement);
         if (projectedContainedElement != nullptr)
         {
@@ -674,12 +674,12 @@ CATCH_RETURN;
 
 HRESULT GenerateActionsProjection(
     const std::vector<std::shared_ptr<AdaptiveCards::BaseActionElement>>& containedActions,
-    _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement*>* projectedParentContainer) noexcept
+    _In_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement*>* projectedParentContainer) noexcept
 try
 {
     for (auto& containedAction : containedActions)
     {
-        ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement> projectedContainedAction;
+        ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement> projectedContainedAction;
         RETURN_IF_FAILED(GenerateActionProjection(containedAction, &projectedContainedAction));
 
         RETURN_IF_FAILED(projectedParentContainer->Append(projectedContainedAction.Detach()));
@@ -689,7 +689,7 @@ try
 CATCH_RETURN;
 
 HRESULT GenerateActionProjection(const std::shared_ptr<AdaptiveCards::BaseActionElement>& action,
-                                 _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement** projectedAction) noexcept
+                                 _COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement** projectedAction) noexcept
 try
 {
     if (action == nullptr)
@@ -963,7 +963,7 @@ try
 }
 CATCH_RETURN;
 
-HRESULT GetContainerStyleDefinition(ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle style,
+HRESULT GetContainerStyleDefinition(ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle style,
                                     _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveHostConfig* hostConfig,
                                     _Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveContainerStyleDefinition** styleDefinition) noexcept
 try
@@ -973,22 +973,22 @@ try
 
     switch (style)
     {
-    case ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle::Accent:
+    case ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle::Accent:
         RETURN_IF_FAILED(containerStyles->get_Accent(styleDefinition));
         break;
-    case ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle::Attention:
+    case ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle::Attention:
         RETURN_IF_FAILED(containerStyles->get_Attention(styleDefinition));
         break;
-    case ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle::Emphasis:
+    case ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle::Emphasis:
         RETURN_IF_FAILED(containerStyles->get_Emphasis(styleDefinition));
         break;
-    case ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle::Good:
+    case ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle::Good:
         RETURN_IF_FAILED(containerStyles->get_Good(styleDefinition));
         break;
-    case ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle::Warning:
+    case ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle::Warning:
         RETURN_IF_FAILED(containerStyles->get_Warning(styleDefinition));
         break;
-    case ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle::Default:
+    case ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle::Default:
     default:
         RETURN_IF_FAILED(containerStyles->get_Default(styleDefinition));
         break;
@@ -999,7 +999,7 @@ CATCH_RETURN;
 
 HRESULT GetColorFromAdaptiveColor(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveHostConfig* hostConfig,
                                   ABI::AdaptiveCards::Rendering::Uwp::ForegroundColor adaptiveColor,
-                                  ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle containerStyle,
+                                  ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle containerStyle,
                                   bool isSubtle,
                                   bool highlight,
                                   _Out_ ABI::Windows::UI::Color* uiColor) noexcept
@@ -1071,7 +1071,7 @@ HRESULT GetHighlighter(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTextEle
     boolean isSubtle;
     RETURN_IF_FAILED(adaptiveTextElement->get_IsSubtle(&isSubtle));
 
-    ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle containerStyle;
+    ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle containerStyle;
     RETURN_IF_FAILED(renderArgs->get_ContainerStyle(&containerStyle));
 
     ABI::Windows::UI::Color backgroundColor;
@@ -1125,7 +1125,7 @@ try
 }
 CATCH_RETURN;
 
-HRESULT GetBackgroundColorFromStyle(ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle style,
+HRESULT GetBackgroundColorFromStyle(ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle style,
                                     _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveHostConfig* hostConfig,
                                     _Out_ ABI::Windows::UI::Color* backgroundColor) noexcept
 try
@@ -1475,7 +1475,7 @@ HRESULT ProjectedElementTypeToHString(ABI::AdaptiveCards::Rendering::Uwp::Elemen
     return UTF8ToHString(CardElementTypeToString(sharedElementType), result);
 }
 
-HRESULT MeetsRequirements(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement* cardElement,
+HRESULT MeetsRequirements(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement* cardElement,
                           _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveFeatureRegistration* featureRegistration,
                           _Out_ bool* meetsRequirements)
 {
@@ -1490,11 +1490,11 @@ HRESULT MeetsRequirements(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard
     return S_OK;
 }
 
-HRESULT IsBackgroundImageValid(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveBackgroundImage* backgroundImageElement,
+HRESULT IsBackgroundImageValid(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveBackgroundImage* backgroundImageElement,
                                _Out_ BOOL* isValid)
 {
     *isValid = FALSE;
-    ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveBackgroundImage> backgroundImage(backgroundImageElement);
+    ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveBackgroundImage> backgroundImage(backgroundImageElement);
     if (backgroundImage != NULL)
     {
         HString url;
@@ -1504,7 +1504,7 @@ HRESULT IsBackgroundImageValid(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiv
     return S_OK;
 }
 
-void RemoteResourceElementToRemoteResourceInformationVector(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveElementWithRemoteResources* remoteResourceElement,
+void RemoteResourceElementToRemoteResourceInformationVector(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveElementWithRemoteResources* remoteResourceElement,
                                                             std::vector<RemoteResourceInformation>& resourceUris)
 {
     ComPtr<ABI::Windows::Foundation::Collections::IVectorView<ABI::AdaptiveCards::Rendering::Uwp::AdaptiveRemoteResourceInformation*>> remoteResources;

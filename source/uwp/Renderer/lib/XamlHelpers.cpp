@@ -150,16 +150,16 @@ namespace AdaptiveCards::Rendering::Uwp::XamlHelpers
                                     _In_ IBorder* containerBorder,
                                     _In_ IAdaptiveRenderContext* renderContext,
                                     _In_ IAdaptiveRenderArgs* renderArgs,
-                                    _Out_ ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle* containerStyle)
+                                    _Out_ ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle* containerStyle)
     {
-        ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle localContainerStyle;
+        ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle localContainerStyle;
         RETURN_IF_FAILED(adaptiveContainer->get_Style(&localContainerStyle));
 
-        ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle parentContainerStyle;
+        ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle parentContainerStyle;
         RETURN_IF_FAILED(renderArgs->get_ContainerStyle(&parentContainerStyle));
 
         bool hasExplicitContainerStyle{true};
-        if (localContainerStyle == ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle::None)
+        if (localContainerStyle == ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle::None)
         {
             hasExplicitContainerStyle = false;
             localContainerStyle = parentContainerStyle;
@@ -536,7 +536,7 @@ namespace AdaptiveCards::Rendering::Uwp::XamlHelpers
                 RETURN_IF_FAILED(newControlAsFrameworkElement->put_Name(id.Get()));
             }
 
-            ABI::AdaptiveCards::Rendering::Uwp::HeightType heightType{};
+            ABI::AdaptiveCards::ObjectModel::Uwp::HeightType heightType{};
             RETURN_IF_FAILED(element->get_Height(&heightType));
 
             ComPtr<ElementTagContent> tagContent;

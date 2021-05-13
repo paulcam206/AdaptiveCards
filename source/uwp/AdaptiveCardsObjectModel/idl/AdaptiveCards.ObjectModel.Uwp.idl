@@ -121,18 +121,6 @@ namespace AdaptiveCards
                 Padding
             } Spacing;
 
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ActionsOrientation {
-                Vertical = 0,
-                Horizontal
-            } ActionsOrientation;
-
-            [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ActionAlignment {
-                Left = 0,
-                Center,
-                Right,
-                Stretch,
-            } ActionAlignment;
-
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ChoiceSetStyle {
                 Compact = 0,
                 Expanded,
@@ -162,32 +150,23 @@ namespace AdaptiveCards
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum ErrorStatusCode {
                 InvalidJson = 0,
-                RenderFailed,
                 RequiredPropertyMissing,
                 InvalidPropertyValue,
                 UnsupportedParserOverride,
+                IdCollision,
                 CustomError,
             } ErrorStatusCode;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum WarningStatusCode {
                 UnknownElementType = 0,
-                UnknownActionElementType,
-                UnknownPropertyOnElement,
-                UnknownEnumValue,
-                NoRendererForType,
-                InteractivityNotSupported,
-                MaxActionsExceeded,
-                AssetLoadFailed,
                 UnsupportedSchemaVersion,
-                UnsupportedMediaType,
                 InvalidMediaMix,
-                InvalidValue,
-                UnsupportedValue,
-                PerformingFallback,
                 CustomWarning,
-                EmptyLabelInRequiredInput,
-                MissingValidationErrorMessage,
-                RequiredPropertyMissing
+                InvalidColorFormat,
+                InvalidDimensionSpecified,
+                InvalidLanguage,
+                InvalidValue,
+                RequiredPropertyMissing,
             } WarningStatusCode;
 
             [version(NTDDI_WIN10_RS1)] typedef[v1_enum] enum VerticalContentAlignment {

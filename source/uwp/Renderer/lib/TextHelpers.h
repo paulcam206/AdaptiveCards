@@ -138,7 +138,7 @@ HRESULT StyleTextElement(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveTextE
         boolean isSubtle = false;
         RETURN_IF_FAILED(adaptiveTextElement->get_IsSubtle(&isSubtle));
 
-        ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle containerStyle;
+        ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle containerStyle;
         RETURN_IF_FAILED(renderArgs->get_ContainerStyle(&containerStyle));
 
         ABI::Windows::UI::Color fontColor;

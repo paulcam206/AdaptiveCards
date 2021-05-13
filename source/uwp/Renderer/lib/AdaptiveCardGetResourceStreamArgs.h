@@ -7,7 +7,7 @@ namespace AdaptiveCards::Rendering::Uwp
 {
     class AdaptiveCardGetResourceStreamArgs
         : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<Microsoft::WRL::RuntimeClassType::WinRt>,
-                                              ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardGetResourceStreamArgs>
+                                              ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardGetResourceStreamArgs>
     {
         AdaptiveRuntime(AdaptiveCardGetResourceStreamArgs);
 

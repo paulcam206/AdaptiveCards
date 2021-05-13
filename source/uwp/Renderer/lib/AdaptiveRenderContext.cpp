@@ -116,8 +116,8 @@ namespace AdaptiveCards::Rendering::Uwp
         return (warnings->Append(warning.Detach()));
     }
 
-    HRESULT AdaptiveRenderContext::AddInlineShowCard(ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* adaptiveCard,
-                                                     ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardAction* showCardAction,
+    HRESULT AdaptiveRenderContext::AddInlineShowCard(ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* adaptiveCard,
+                                                     ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardAction* showCardAction,
                                                      ABI::Windows::UI::Xaml::IUIElement* showCardFrameworkElement,
                                                      ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs)
     {
@@ -144,7 +144,7 @@ namespace AdaptiveCards::Rendering::Uwp
         return renderResult->AddInputValue(inputValue, renderArgs);
     }
 
-    HRESULT AdaptiveRenderContext::LinkSubmitActionToCard(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement* action,
+    HRESULT AdaptiveRenderContext::LinkSubmitActionToCard(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement* action,
                                                           _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs)
     {
         ComPtr<RenderedAdaptiveCard> renderResult;
@@ -153,7 +153,7 @@ namespace AdaptiveCards::Rendering::Uwp
         return renderResult->LinkActionToCard(action, renderArgs);
     }
 
-    HRESULT AdaptiveRenderContext::LinkCardToParent(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* card,
+    HRESULT AdaptiveRenderContext::LinkCardToParent(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* card,
                                                     _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs)
     {
         ComPtr<RenderedAdaptiveCard> renderResult;

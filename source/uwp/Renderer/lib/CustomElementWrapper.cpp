@@ -8,7 +8,7 @@ using namespace ABI::AdaptiveCards::Rendering::Uwp;
 
 namespace AdaptiveCards::Rendering::Uwp
 {
-    CustomElementWrapper::CustomElementWrapper(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement* cardElement) :
+    CustomElementWrapper::CustomElementWrapper(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement* cardElement) :
         BaseCardElement(AdaptiveCards::CardElementType::Custom), m_cardElement(cardElement)
     {
         BaseElement::SetId(GetCardElementId());
@@ -61,14 +61,14 @@ namespace AdaptiveCards::Rendering::Uwp
 
     void CustomElementWrapper::GetResourceInformation(std::vector<RemoteResourceInformation>& resourceInfo)
     {
-        ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveElementWithRemoteResources> remoteResources;
+        ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveElementWithRemoteResources> remoteResources;
         if (SUCCEEDED(m_cardElement.As(&remoteResources)))
         {
             RemoteResourceElementToRemoteResourceInformationVector(remoteResources.Get(), resourceInfo);
         }
     }
 
-    HRESULT CustomElementWrapper::GetWrappedElement(_COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardElement** cardElement)
+    HRESULT CustomElementWrapper::GetWrappedElement(_COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement** cardElement)
     {
         return m_cardElement.CopyTo(cardElement);
     }

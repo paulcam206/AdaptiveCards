@@ -38,12 +38,12 @@ namespace AdaptiveCards::Rendering::Uwp
         IFACEMETHODIMP get_UserInputs(_COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveInputs** value) override;
         IFACEMETHODIMP AddInputValue(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveInputValue* inputValue,
                                      _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs) override;
-        IFACEMETHODIMP LinkSubmitActionToCard(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionElement* submitAction,
+        IFACEMETHODIMP LinkSubmitActionToCard(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionElement* submitAction,
                                               _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs) override;
-        IFACEMETHODIMP LinkCardToParent(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* card,
+        IFACEMETHODIMP LinkCardToParent(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* card,
                                         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs) override;
-        IFACEMETHODIMP AddInlineShowCard(_In_opt_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveActionSet* actionSet,
-                                         _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardAction* showCardAction,
+        IFACEMETHODIMP AddInlineShowCard(_In_opt_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionSet* actionSet,
+                                         _In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardAction* showCardAction,
                                          _In_ ABI::Windows::UI::Xaml::IUIElement* showCardUIElement,
                                          _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs) override;
         IFACEMETHODIMP GetInputValue(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveInputElement* inputElement,
@@ -57,8 +57,8 @@ namespace AdaptiveCards::Rendering::Uwp
         IFACEMETHODIMP AddError(ABI::AdaptiveCards::Rendering::Uwp::ErrorStatusCode statusCode, _In_ HSTRING message) override;
         IFACEMETHODIMP AddWarning(ABI::AdaptiveCards::Rendering::Uwp::WarningStatusCode statusCode, _In_ HSTRING message) override;
 
-        HRESULT AddInlineShowCard(_In_opt_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCard* adaptiveCard,
-                                  _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardAction* showCardAction,
+        HRESULT AddInlineShowCard(_In_opt_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCard* adaptiveCard,
+                                  _In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardAction* showCardAction,
                                   _In_ ABI::Windows::UI::Xaml::IUIElement* showCardUIElement,
                                   _In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveRenderArgs* renderArgs);
 

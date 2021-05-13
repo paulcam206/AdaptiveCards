@@ -14,8 +14,8 @@ namespace AdaptiveCards::Rendering::Uwp
         HRESULT RuntimeClassInitialize() noexcept;
         HRESULT RuntimeClassInitialize(AdaptiveCards::ActionsConfig actionsConfig) noexcept;
 
-        IFACEMETHODIMP get_ShowCard(_COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardActionConfig** value);
-        IFACEMETHODIMP put_ShowCard(_In_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardActionConfig* value);
+        IFACEMETHODIMP get_ShowCard(_COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardActionConfig** value);
+        IFACEMETHODIMP put_ShowCard(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardActionConfig* value);
 
         IFACEMETHODIMP get_ActionsOrientation(_Out_ ABI::AdaptiveCards::Rendering::Uwp::ActionsOrientation* value);
         IFACEMETHODIMP put_ActionsOrientation(ABI::AdaptiveCards::Rendering::Uwp::ActionsOrientation value);
@@ -47,7 +47,7 @@ namespace AdaptiveCards::Rendering::Uwp
         ABI::AdaptiveCards::Rendering::Uwp::IconPlacement m_iconPlacement;
         UINT m_iconSize;
 
-        Microsoft::WRL::ComPtr<ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveShowCardActionConfig> m_showCardActionConfig;
+        Microsoft::WRL::ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveShowCardActionConfig> m_showCardActionConfig;
     };
 
     ActivatableClass(AdaptiveActionsConfig);

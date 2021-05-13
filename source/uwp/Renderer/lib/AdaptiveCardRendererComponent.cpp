@@ -215,7 +215,7 @@ namespace AdaptiveCards::Rendering::Uwp
     }
 
     HRESULT AdaptiveCardRenderer::CreateAdaptiveCardFromJsonString(_In_ HSTRING adaptiveJson,
-                                                                   _COM_Outptr_ ABI::AdaptiveCards::Rendering::Uwp::IAdaptiveCardParseResult** parseResult)
+                                                                   _COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardParseResult** parseResult)
     {
         ComPtr<IAdaptiveCardStatics> adaptiveCardStatics;
         RETURN_IF_FAILED(MakeAndInitialize<AdaptiveCardStaticsImpl>(&adaptiveCardStatics));
@@ -307,7 +307,7 @@ namespace AdaptiveCards::Rendering::Uwp
         ABI::Windows::UI::Color accentColor;
         THROW_IF_FAILED(GetColorFromAdaptiveColor(m_hostConfig.Get(),
                                                   ABI::AdaptiveCards::Rendering::Uwp::ForegroundColor_Accent,
-                                                  ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle_Default,
+                                                  ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle_Default,
                                                   false, // isSubtle
                                                   false, // highlight
                                                   &accentColor));
@@ -315,7 +315,7 @@ namespace AdaptiveCards::Rendering::Uwp
         ABI::Windows::UI::Color attentionColor;
         THROW_IF_FAILED(GetColorFromAdaptiveColor(m_hostConfig.Get(),
                                                   ABI::AdaptiveCards::Rendering::Uwp::ForegroundColor_Attention,
-                                                  ABI::AdaptiveCards::Rendering::Uwp::ContainerStyle_Default,
+                                                  ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle_Default,
                                                   false, // isSubtle
                                                   false, // highlight
                                                   &attentionColor));
