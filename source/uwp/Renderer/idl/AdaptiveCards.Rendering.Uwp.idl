@@ -6,6 +6,7 @@ import "inspectable.idl";
 import "Windows.Foundation.idl";
 import "Windows.UI.Xaml.idl";
 import "Windows.Data.Json.idl";
+import "AdaptiveCards.ObjectModel.Uwp.idl";
 
 namespace AdaptiveCards
 {
