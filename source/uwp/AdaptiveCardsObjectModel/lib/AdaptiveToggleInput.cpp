@@ -6,21 +6,20 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     HRESULT AdaptiveToggleInput::RuntimeClassInitialize() noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::ToggleInput> toggleInput =
-            std::make_shared<AdaptiveSharedNamespace::ToggleInput>();
+        std::shared_ptr<AdaptiveCards::ToggleInput> toggleInput = std::make_shared<AdaptiveCards::ToggleInput>();
         return RuntimeClassInitialize(toggleInput);
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveToggleInput::RuntimeClassInitialize(const std::shared_ptr<AdaptiveSharedNamespace::ToggleInput>& sharedToggleInput)
+    HRESULT AdaptiveToggleInput::RuntimeClassInitialize(const std::shared_ptr<AdaptiveCards::ToggleInput>& sharedToggleInput)
     try
     {
         if (sharedToggleInput == nullptr)
@@ -73,11 +72,10 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveToggleInput::GetSharedModel(std::shared_ptr<AdaptiveSharedNamespace::BaseCardElement>& sharedModel)
+    HRESULT AdaptiveToggleInput::GetSharedModel(std::shared_ptr<AdaptiveCards::BaseCardElement>& sharedModel)
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::ToggleInput> toggleInput =
-            std::make_shared<AdaptiveSharedNamespace::ToggleInput>();
+        std::shared_ptr<AdaptiveCards::ToggleInput> toggleInput = std::make_shared<AdaptiveCards::ToggleInput>();
 
         RETURN_IF_FAILED(CopySharedElementProperties(*toggleInput));
 

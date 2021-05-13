@@ -7,8 +7,6 @@ import "Windows.Foundation.idl";
 import "Windows.UI.Xaml.idl";
 import "Windows.Data.Json.idl";
 
-#define AdaptiveNamespace AdaptiveCards::ObjectModel::Uwp
-
 namespace AdaptiveCards
 {
     namespace ObjectModel
@@ -719,10 +717,7 @@ namespace AdaptiveCards
                 AdaptiveRichTextBlockParser();
             };
 
-            [default_interface] runtimeclass AdaptiveImageParser : IAdaptiveElementParser
-            {
-                AdaptiveImageParser();
-            };
+            [default_interface] runtimeclass AdaptiveImageParser : IAdaptiveElementParser { AdaptiveImageParser(); };
 
             [default_interface] runtimeclass AdaptiveImageSetParser : IAdaptiveElementParser
             {
@@ -734,10 +729,7 @@ namespace AdaptiveCards
                 AdaptiveContainerParser();
             };
 
-            [default_interface] runtimeclass AdaptiveColumnParser : IAdaptiveElementParser
-            {
-                AdaptiveColumnParser();
-            };
+            [default_interface] runtimeclass AdaptiveColumnParser : IAdaptiveElementParser { AdaptiveColumnParser(); };
 
             [default_interface] runtimeclass AdaptiveColumnSetParser : IAdaptiveElementParser
             {
@@ -781,10 +773,7 @@ namespace AdaptiveCards
                 AdaptiveFactSetParser();
             };
 
-            [default_interface] runtimeclass AdaptiveMediaParser : IAdaptiveElementParser
-            {
-                AdaptiveMediaParser();
-            };
+            [default_interface] runtimeclass AdaptiveMediaParser : IAdaptiveElementParser { AdaptiveMediaParser(); };
 
             [default_interface] runtimeclass AdaptiveActionSetParser : IAdaptiveElementParser
             {

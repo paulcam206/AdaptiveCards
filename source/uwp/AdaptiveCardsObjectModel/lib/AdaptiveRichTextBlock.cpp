@@ -7,23 +7,22 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     AdaptiveRichTextBlock::AdaptiveRichTextBlock() { m_inlines = Microsoft::WRL::Make<Vector<IAdaptiveInline*>>(); }
 
     HRESULT AdaptiveRichTextBlock::RuntimeClassInitialize() noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::RichTextBlock> richTextBlock =
-            std::make_shared<AdaptiveSharedNamespace::RichTextBlock>();
+        std::shared_ptr<AdaptiveCards::RichTextBlock> richTextBlock = std::make_shared<AdaptiveCards::RichTextBlock>();
         return RuntimeClassInitialize(richTextBlock);
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveRichTextBlock::RuntimeClassInitialize(const std::shared_ptr<AdaptiveSharedNamespace::RichTextBlock>& sharedRichTextBlock) noexcept
+    HRESULT AdaptiveRichTextBlock::RuntimeClassInitialize(const std::shared_ptr<AdaptiveCards::RichTextBlock>& sharedRichTextBlock) noexcept
     try
     {
         if (sharedRichTextBlock == nullptr)
@@ -31,7 +30,8 @@ namespace AdaptiveNamespace
             return E_INVALIDARG;
         }
 
-        m_horizontalAlignment = static_cast<ABI::AdaptiveNamespace::HAlignment>(sharedRichTextBlock->GetHorizontalAlignment());
+        m_horizontalAlignment =
+            static_cast<ABI::AdaptiveCards::ObjectModel::Uwp::HAlignment>(sharedRichTextBlock->GetHorizontalAlignment());
 
         GenerateInlinesProjection(sharedRichTextBlock->GetInlines(), m_inlines.Get());
 
@@ -40,20 +40,20 @@ namespace AdaptiveNamespace
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveRichTextBlock::get_HorizontalAlignment(_Out_ ABI::AdaptiveNamespace::HAlignment* alignment)
+    HRESULT AdaptiveRichTextBlock::get_HorizontalAlignment(_Out_ ABI::AdaptiveCards::ObjectModel::Uwp::HAlignment* alignment)
     {
         *alignment = m_horizontalAlignment;
         return S_OK;
     }
 
-    HRESULT AdaptiveRichTextBlock::put_HorizontalAlignment(ABI::AdaptiveNamespace::HAlignment alignment)
+    HRESULT AdaptiveRichTextBlock::put_HorizontalAlignment(ABI::AdaptiveCards::ObjectModel::Uwp::HAlignment alignment)
     {
         m_horizontalAlignment = alignment;
         return S_OK;
     }
 
     HRESULT AdaptiveRichTextBlock::get_Inlines(
-        _COM_Outptr_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::IAdaptiveInline*>** inlines)
+        _COM_Outptr_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveInline*>** inlines)
     {
         return m_inlines.CopyTo(inlines);
     }
@@ -64,15 +64,14 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveRichTextBlock::GetSharedModel(std::shared_ptr<AdaptiveSharedNamespace::BaseCardElement>& sharedRichTextBlock) noexcept
+    HRESULT AdaptiveRichTextBlock::GetSharedModel(std::shared_ptr<AdaptiveCards::BaseCardElement>& sharedRichTextBlock) noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::RichTextBlock> richTextBlock =
-            std::make_shared<AdaptiveSharedNamespace::RichTextBlock>();
+        std::shared_ptr<AdaptiveCards::RichTextBlock> richTextBlock = std::make_shared<AdaptiveCards::RichTextBlock>();
 
         RETURN_IF_FAILED(CopySharedElementProperties(*richTextBlock));
 
-        richTextBlock->SetHorizontalAlignment(static_cast<AdaptiveSharedNamespace::HorizontalAlignment>(m_horizontalAlignment));
+        richTextBlock->SetHorizontalAlignment(static_cast<AdaptiveCards::HorizontalAlignment>(m_horizontalAlignment));
 
         RETURN_IF_FAILED(GenerateSharedInlines(m_inlines.Get(), richTextBlock->GetInlines()));
 

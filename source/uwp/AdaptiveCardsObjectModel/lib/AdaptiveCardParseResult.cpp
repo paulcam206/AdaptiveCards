@@ -10,11 +10,11 @@
 using namespace concurrency;
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     AdaptiveCardParseResult::AdaptiveCardParseResult() {}
 
@@ -37,13 +37,13 @@ namespace AdaptiveNamespace
     }
 
     HRESULT AdaptiveCardParseResult::get_Errors(
-        _COM_Outptr_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveError*>** value)
+        _COM_Outptr_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::AdaptiveError*>** value)
     {
         return m_errors.CopyTo(value);
     }
 
     HRESULT AdaptiveCardParseResult::get_Warnings(
-        _COM_Outptr_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveWarning*>** value)
+        _COM_Outptr_ ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::AdaptiveWarning*>** value)
     {
         return m_warnings.CopyTo(value);
     }

@@ -6,10 +6,10 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     HRESULT AdaptiveTextRun::RuntimeClassInitialize() noexcept
     try
@@ -19,7 +19,7 @@ namespace AdaptiveNamespace
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveTextRun::RuntimeClassInitialize(const std::shared_ptr<AdaptiveSharedNamespace::TextRun>& sharedTextRun) noexcept
+    HRESULT AdaptiveTextRun::RuntimeClassInitialize(const std::shared_ptr<AdaptiveCards::TextRun>& sharedTextRun) noexcept
     try
     {
         m_highlight = sharedTextRun->GetHighlight();
@@ -92,10 +92,10 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveTextRun::GetSharedModel(std::shared_ptr<AdaptiveSharedNamespace::TextRun>& sharedModel) noexcept
+    HRESULT AdaptiveTextRun::GetSharedModel(std::shared_ptr<AdaptiveCards::TextRun>& sharedModel) noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::TextRun> textRun = std::make_shared<AdaptiveSharedNamespace::TextRun>();
+        std::shared_ptr<AdaptiveCards::TextRun> textRun = std::make_shared<AdaptiveCards::TextRun>();
         RETURN_IF_FAILED(AdaptiveTextElement::CopyTextElementProperties(*textRun));
 
         textRun->SetItalic(m_italic);

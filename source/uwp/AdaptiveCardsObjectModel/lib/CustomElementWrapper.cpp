@@ -4,12 +4,12 @@
 #include "CustomElementWrapper.h"
 
 using namespace Microsoft::WRL;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
-    CustomElementWrapper::CustomElementWrapper(_In_ ABI::AdaptiveNamespace::IAdaptiveCardElement* cardElement) :
-        BaseCardElement(AdaptiveSharedNamespace::CardElementType::Custom), m_cardElement(cardElement)
+    CustomElementWrapper::CustomElementWrapper(_In_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement* cardElement) :
+        BaseCardElement(AdaptiveCards::CardElementType::Custom), m_cardElement(cardElement)
     {
         BaseElement::SetId(GetCardElementId());
     }
@@ -21,14 +21,11 @@ namespace AdaptiveNamespace
         return hasSeparator;
     }
 
-    void CustomElementWrapper::SetSeparator(bool value)
-    {
-        THROW_IF_FAILED(m_cardElement->put_Separator(value));
-    }
+    void CustomElementWrapper::SetSeparator(bool value) { THROW_IF_FAILED(m_cardElement->put_Separator(value)); }
 
     Spacing CustomElementWrapper::GetSpacing() const
     {
-        ABI::AdaptiveNamespace::Spacing spacing;
+        ABI::AdaptiveCards::ObjectModel::Uwp::Spacing spacing;
         THROW_IF_FAILED(m_cardElement->get_Spacing(&spacing));
 
         return static_cast<Spacing>(spacing);
@@ -36,7 +33,7 @@ namespace AdaptiveNamespace
 
     void CustomElementWrapper::SetSpacing(Spacing value)
     {
-        THROW_IF_FAILED(m_cardElement->put_Spacing(static_cast<ABI::AdaptiveNamespace::Spacing>(value)));
+        THROW_IF_FAILED(m_cardElement->put_Spacing(static_cast<ABI::AdaptiveCards::ObjectModel::Uwp::Spacing>(value)));
     }
 
     void CustomElementWrapper::SetId(std::string&& value)
@@ -64,14 +61,14 @@ namespace AdaptiveNamespace
 
     void CustomElementWrapper::GetResourceInformation(std::vector<RemoteResourceInformation>& resourceInfo)
     {
-        ComPtr<ABI::AdaptiveNamespace::IAdaptiveElementWithRemoteResources> remoteResources;
+        ComPtr<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveElementWithRemoteResources> remoteResources;
         if (SUCCEEDED(m_cardElement.As(&remoteResources)))
         {
             RemoteResourceElementToRemoteResourceInformationVector(remoteResources.Get(), resourceInfo);
         }
     }
 
-    HRESULT CustomElementWrapper::GetWrappedElement(_COM_Outptr_ ABI::AdaptiveNamespace::IAdaptiveCardElement** cardElement)
+    HRESULT CustomElementWrapper::GetWrappedElement(_COM_Outptr_ ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement** cardElement)
     {
         return m_cardElement.CopyTo(cardElement);
     }

@@ -10,25 +10,26 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
-    AdaptiveColumnSet::AdaptiveColumnSet() : m_bleedDirection(ABI::AdaptiveNamespace::BleedDirection::None)
+    AdaptiveColumnSet::AdaptiveColumnSet() :
+        m_bleedDirection(ABI::AdaptiveCards::ObjectModel::Uwp::BleedDirection::None)
     {
-        m_columns = Microsoft::WRL::Make<Vector<ABI::AdaptiveNamespace::AdaptiveColumn*>>();
+        m_columns = Microsoft::WRL::Make<Vector<ABI::AdaptiveCards::ObjectModel::Uwp::AdaptiveColumn*>>();
     }
 
     HRESULT AdaptiveColumnSet::RuntimeClassInitialize() noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::ColumnSet> columnSet = std::make_shared<AdaptiveSharedNamespace::ColumnSet>();
+        std::shared_ptr<AdaptiveCards::ColumnSet> columnSet = std::make_shared<AdaptiveCards::ColumnSet>();
         return RuntimeClassInitialize(columnSet);
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveColumnSet::RuntimeClassInitialize(const std::shared_ptr<AdaptiveSharedNamespace::ColumnSet>& sharedColumnSet) noexcept
+    HRESULT AdaptiveColumnSet::RuntimeClassInitialize(const std::shared_ptr<AdaptiveCards::ColumnSet>& sharedColumnSet) noexcept
     try
     {
         if (sharedColumnSet == nullptr)
@@ -39,10 +40,11 @@ namespace AdaptiveNamespace
         GenerateColumnsProjection(sharedColumnSet->GetColumns(), m_columns.Get());
         GenerateActionProjection(sharedColumnSet->GetSelectAction(), &m_selectAction);
 
-        m_style = static_cast<ABI::AdaptiveNamespace::ContainerStyle>(sharedColumnSet->GetStyle());
+        m_style = static_cast<ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle>(sharedColumnSet->GetStyle());
         m_minHeight = sharedColumnSet->GetMinHeight();
         m_bleed = sharedColumnSet->GetBleed();
-        m_bleedDirection = static_cast<ABI::AdaptiveNamespace::BleedDirection>(sharedColumnSet->GetBleedDirection());
+        m_bleedDirection =
+            static_cast<ABI::AdaptiveCards::ObjectModel::Uwp::BleedDirection>(sharedColumnSet->GetBleedDirection());
 
         InitializeBaseElement(std::static_pointer_cast<BaseCardElement>(sharedColumnSet));
 
@@ -50,7 +52,7 @@ namespace AdaptiveNamespace
     }
     CATCH_RETURN;
 
-    IFACEMETHODIMP AdaptiveColumnSet::get_Columns(_COM_Outptr_ IVector<ABI::AdaptiveNamespace::AdaptiveColumn*>** columns)
+    IFACEMETHODIMP AdaptiveColumnSet::get_Columns(_COM_Outptr_ IVector<ABI::AdaptiveCards::ObjectModel::Uwp::AdaptiveColumn*>** columns)
     {
         return m_columns.CopyTo(columns);
     }
@@ -66,13 +68,13 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveColumnSet::get_Style(_Out_ ABI::AdaptiveNamespace::ContainerStyle* style)
+    HRESULT AdaptiveColumnSet::get_Style(_Out_ ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle* style)
     {
         *style = m_style;
         return S_OK;
     }
 
-    HRESULT AdaptiveColumnSet::put_Style(ABI::AdaptiveNamespace::ContainerStyle style)
+    HRESULT AdaptiveColumnSet::put_Style(ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle style)
     {
         m_style = style;
         return S_OK;
@@ -102,7 +104,7 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveColumnSet::get_BleedDirection(ABI::AdaptiveNamespace::BleedDirection* bleedDirection)
+    HRESULT AdaptiveColumnSet::get_BleedDirection(ABI::AdaptiveCards::ObjectModel::Uwp::BleedDirection* bleedDirection)
     {
         // TODO: Current behavior is broken because it doesn't update when bleed updates. Unfortunately, neither does
         // the shared model logic. https://github.com/Microsoft/AdaptiveCards/issues/2678
@@ -116,10 +118,10 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveColumnSet::GetSharedModel(std::shared_ptr<AdaptiveSharedNamespace::BaseCardElement>& sharedModel) noexcept
+    HRESULT AdaptiveColumnSet::GetSharedModel(std::shared_ptr<AdaptiveCards::BaseCardElement>& sharedModel) noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::ColumnSet> columnSet = std::make_shared<AdaptiveSharedNamespace::ColumnSet>();
+        std::shared_ptr<AdaptiveCards::ColumnSet> columnSet = std::make_shared<AdaptiveCards::ColumnSet>();
         RETURN_IF_FAILED(CopySharedElementProperties(*columnSet));
 
         if (m_selectAction != nullptr)
@@ -129,14 +131,15 @@ namespace AdaptiveNamespace
             columnSet->SetSelectAction(std::move(sharedAction));
         }
 
-        IterateOverVector<ABI::AdaptiveNamespace::AdaptiveColumn, IAdaptiveColumn>(m_columns.Get(), [&](IAdaptiveColumn* column) {
-            ComPtr<AdaptiveNamespace::AdaptiveColumn> columnImpl = PeekInnards<AdaptiveNamespace::AdaptiveColumn>(column);
+        IterateOverVector<ABI::AdaptiveCards::ObjectModel::Uwp::AdaptiveColumn, IAdaptiveColumn>(m_columns.Get(), [&](IAdaptiveColumn* column) {
+            ComPtr<AdaptiveCards::ObjectModel::Uwp::AdaptiveColumn> columnImpl =
+                PeekInnards<AdaptiveCards::ObjectModel::Uwp::AdaptiveColumn>(column);
 
             std::shared_ptr<BaseCardElement> sharedColumnBaseElement;
             RETURN_IF_FAILED(columnImpl->GetSharedModel(sharedColumnBaseElement));
 
-            std::shared_ptr<AdaptiveSharedNamespace::Column> sharedColumn =
-                std::AdaptivePointerCast<AdaptiveSharedNamespace::Column>(sharedColumnBaseElement);
+            std::shared_ptr<AdaptiveCards::Column> sharedColumn =
+                std::AdaptivePointerCast<AdaptiveCards::Column>(sharedColumnBaseElement);
             if (sharedColumn == nullptr)
             {
                 return E_UNEXPECTED;
@@ -147,7 +150,7 @@ namespace AdaptiveNamespace
             return S_OK;
         });
 
-        columnSet->SetStyle(static_cast<AdaptiveSharedNamespace::ContainerStyle>(m_style));
+        columnSet->SetStyle(static_cast<AdaptiveCards::ContainerStyle>(m_style));
         columnSet->SetMinHeight(m_minHeight);
         columnSet->SetBleed(m_bleed);
 

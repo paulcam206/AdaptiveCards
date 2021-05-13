@@ -5,11 +5,11 @@
 #include "AdaptiveCards.ObjectModel.Uwp.h"
 #include "Util.h"
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     class DECLSPEC_UUID("34988ccd-4c0d-4043-b53d-3c1d2868860b") AdaptiveFeatureRegistration
         : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<Microsoft::WRL::RuntimeClassType::WinRtClassicComMix>,
-                                              Microsoft::WRL::Implements<ABI::AdaptiveNamespace::IAdaptiveFeatureRegistration>,
+                                              Microsoft::WRL::Implements<ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveFeatureRegistration>,
                                               Microsoft::WRL::CloakedIid<ITypePeek>,
                                               Microsoft::WRL::FtmBase>
     {
@@ -18,7 +18,7 @@ namespace AdaptiveNamespace
     public:
         AdaptiveFeatureRegistration();
         HRESULT RuntimeClassInitialize() noexcept;
-        HRESULT RuntimeClassInitialize(std::shared_ptr<AdaptiveSharedNamespace::FeatureRegistration> sharedParserRegistration) noexcept;
+        HRESULT RuntimeClassInitialize(std::shared_ptr<AdaptiveCards::FeatureRegistration> sharedParserRegistration) noexcept;
 
         // IAdaptiveFeatureRegistration
         IFACEMETHODIMP Set(_In_ HSTRING name, _In_ HSTRING version) noexcept;

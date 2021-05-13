@@ -6,21 +6,20 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     HRESULT AdaptiveUnsupportedElement::RuntimeClassInitialize() noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::UnknownElement> unknownElement =
-            std::make_shared<AdaptiveSharedNamespace::UnknownElement>();
+        std::shared_ptr<AdaptiveCards::UnknownElement> unknownElement = std::make_shared<AdaptiveCards::UnknownElement>();
         return RuntimeClassInitialize(unknownElement);
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveUnsupportedElement::RuntimeClassInitialize(const std::shared_ptr<AdaptiveSharedNamespace::UnknownElement>& sharedUnknown)
+    HRESULT AdaptiveUnsupportedElement::RuntimeClassInitialize(const std::shared_ptr<AdaptiveCards::UnknownElement>& sharedUnknown)
     try
     {
         if (sharedUnknown == nullptr)
@@ -40,11 +39,10 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveUnsupportedElement::GetSharedModel(std::shared_ptr<AdaptiveSharedNamespace::BaseCardElement>& sharedUnknown)
+    HRESULT AdaptiveUnsupportedElement::GetSharedModel(std::shared_ptr<AdaptiveCards::BaseCardElement>& sharedUnknown)
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::UnknownElement> unknownElement =
-            std::make_shared<AdaptiveSharedNamespace::UnknownElement>();
+        std::shared_ptr<AdaptiveCards::UnknownElement> unknownElement = std::make_shared<AdaptiveCards::UnknownElement>();
 
         unknownElement->SetElementTypeString(m_actualType);
         RETURN_IF_FAILED(CopySharedElementProperties(*unknownElement));

@@ -6,14 +6,14 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
-    HRESULT AdaptiveInputElementBase::InitializeBaseElement(const std::shared_ptr<AdaptiveSharedNamespace::BaseInputElement>& sharedModel)
+    HRESULT AdaptiveInputElementBase::InitializeBaseElement(const std::shared_ptr<AdaptiveCards::BaseInputElement>& sharedModel)
     {
-        AdaptiveCardElementBase::InitializeBaseElement(std::static_pointer_cast<AdaptiveSharedNamespace::BaseCardElement>(sharedModel));
+        AdaptiveCardElementBase::InitializeBaseElement(std::static_pointer_cast<AdaptiveCards::BaseCardElement>(sharedModel));
         m_isRequired = sharedModel->GetIsRequired();
         RETURN_IF_FAILED(UTF8ToHString(sharedModel->GetErrorMessage(), m_errorMessage.GetAddressOf()));
         RETURN_IF_FAILED(UTF8ToHString(sharedModel->GetLabel(), m_label.GetAddressOf()));
@@ -41,7 +41,7 @@ namespace AdaptiveNamespace
 
     HRESULT AdaptiveInputElementBase::put_Label(_In_ HSTRING label) { return m_label.Set(label); }
 
-    HRESULT AdaptiveInputElementBase::CopySharedElementProperties(AdaptiveSharedNamespace::BaseInputElement& sharedCardElement)
+    HRESULT AdaptiveInputElementBase::CopySharedElementProperties(AdaptiveCards::BaseInputElement& sharedCardElement)
     {
         AdaptiveCardElementBase::CopySharedElementProperties(sharedCardElement);
         sharedCardElement.SetIsRequired(m_isRequired);

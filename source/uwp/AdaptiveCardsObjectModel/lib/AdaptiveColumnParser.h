@@ -4,11 +4,11 @@
 
 #include "Column.h"
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     class AdaptiveColumnParser
         : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::RuntimeClassFlags<Microsoft::WRL::RuntimeClassType::WinRtClassicComMix>,
-                                              ABI::AdaptiveNamespace::IAdaptiveElementParser>
+                                              ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveElementParser>
     {
         AdaptiveRuntime(AdaptiveColumnParser);
 
@@ -16,10 +16,10 @@ namespace AdaptiveNamespace
         HRESULT RuntimeClassInitialize() noexcept;
 
         IFACEMETHODIMP FromJson(ABI::Windows::Data::Json::IJsonObject*,
-                                ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* elementParsers,
-                                ABI::AdaptiveNamespace::IAdaptiveActionParserRegistration* actionParsers,
-                                ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveNamespace::AdaptiveWarning*>* adaptiveWarnings,
-                                ABI::AdaptiveNamespace::IAdaptiveCardElement** element) noexcept override;
+                                ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveElementParserRegistration* elementParsers,
+                                ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveActionParserRegistration* actionParsers,
+                                ABI::Windows::Foundation::Collections::IVector<ABI::AdaptiveCards::ObjectModel::Uwp::AdaptiveWarning*>* adaptiveWarnings,
+                                ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveCardElement** element) noexcept override;
     };
 
     ActivatableClass(AdaptiveColumnParser);

@@ -25,10 +25,10 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::UI;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     AdaptiveElementParserRegistration::AdaptiveElementParserRegistration() {}
 
@@ -100,40 +100,40 @@ namespace AdaptiveNamespace
         return m_sharedParserRegistration;
     }
 
-    HRESULT AdaptiveElementParserRegistration::RegisterDefaultElementParsers(ABI::AdaptiveNamespace::IAdaptiveElementParserRegistration* registration)
+    HRESULT AdaptiveElementParserRegistration::RegisterDefaultElementParsers(ABI::AdaptiveCards::ObjectModel::Uwp::IAdaptiveElementParserRegistration* registration)
     {
         RETURN_IF_FAILED(registration->Set(HStringReference(L"ActionSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveActionSetParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveActionSetParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Column").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveColumnParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveColumnParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"ColumnSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveColumnSetParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveColumnSetParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Container").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveContainerParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveContainerParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"FactSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveFactSetParser>().Get()));
-        RETURN_IF_FAILED(
-            registration->Set(HStringReference(L"Image").Get(), Make<AdaptiveNamespace::AdaptiveImageParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveFactSetParser>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Image").Get(),
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveImageParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"ImageSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveImageSetParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveImageSetParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.ChoiceSet").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveChoiceSetInputParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveChoiceSetInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Date").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveDateInputParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveDateInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Number").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveNumberInputParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveNumberInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Text").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTextInputParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveTextInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Time").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTimeInputParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveTimeInputParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"Input.Toggle").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveToggleInputParser>().Get()));
-        RETURN_IF_FAILED(
-            registration->Set(HStringReference(L"Media").Get(), Make<AdaptiveNamespace::AdaptiveMediaParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveToggleInputParser>().Get()));
+        RETURN_IF_FAILED(registration->Set(HStringReference(L"Media").Get(),
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveMediaParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"RichTextBlock").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveRichTextBlockParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveRichTextBlockParser>().Get()));
         RETURN_IF_FAILED(registration->Set(HStringReference(L"TextBlock").Get(),
-                                           Make<AdaptiveNamespace::AdaptiveTextBlockParser>().Get()));
+                                           Make<AdaptiveCards::ObjectModel::Uwp::AdaptiveTextBlockParser>().Get()));
 
         return S_OK;
     }
@@ -143,7 +143,7 @@ namespace AdaptiveNamespace
         return Deserialize(context, ParseUtil::GetJsonValueFromString(jsonString));
     }
 
-    SharedModelElementParser::SharedModelElementParser(AdaptiveNamespace::AdaptiveElementParserRegistration* parserRegistration)
+    SharedModelElementParser::SharedModelElementParser(AdaptiveCards::ObjectModel::Uwp::AdaptiveElementParserRegistration* parserRegistration)
     {
         ComPtr<AdaptiveElementParserRegistration> localParserRegistration(parserRegistration);
         localParserRegistration.AsWeak(&m_parserRegistration);

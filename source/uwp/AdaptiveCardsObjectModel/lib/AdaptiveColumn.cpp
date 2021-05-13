@@ -10,12 +10,12 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
-    AdaptiveColumn::AdaptiveColumn() : m_bleedDirection(ABI::AdaptiveNamespace::BleedDirection::None)
+    AdaptiveColumn::AdaptiveColumn() : m_bleedDirection(ABI::AdaptiveCards::ObjectModel::Uwp::BleedDirection::None)
     {
         m_items = Microsoft::WRL::Make<Vector<IAdaptiveCardElement*>>();
     }
@@ -23,22 +23,22 @@ namespace AdaptiveNamespace
     HRESULT AdaptiveColumn::RuntimeClassInitialize() noexcept
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::Column> column = std::make_shared<AdaptiveSharedNamespace::Column>();
+        std::shared_ptr<AdaptiveCards::Column> column = std::make_shared<AdaptiveCards::Column>();
         return RuntimeClassInitialize(column);
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveColumn::RuntimeClassInitialize(const std::shared_ptr<AdaptiveSharedNamespace::Column>& sharedColumn)
+    HRESULT AdaptiveColumn::RuntimeClassInitialize(const std::shared_ptr<AdaptiveCards::Column>& sharedColumn)
     try
     {
         GenerateContainedElementsProjection(sharedColumn->GetItems(), m_items.Get());
         GenerateActionProjection(sharedColumn->GetSelectAction(), &m_selectAction);
 
-        m_style = static_cast<ABI::AdaptiveNamespace::ContainerStyle>(sharedColumn->GetStyle());
-        m_verticalAlignment =
-            static_cast<ABI::AdaptiveNamespace::VerticalContentAlignment>(sharedColumn->GetVerticalContentAlignment());
+        m_style = static_cast<ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle>(sharedColumn->GetStyle());
+        m_verticalAlignment = static_cast<ABI::AdaptiveCards::ObjectModel::Uwp::VerticalContentAlignment>(
+            sharedColumn->GetVerticalContentAlignment());
         m_bleed = sharedColumn->GetBleed();
-        m_bleedDirection = static_cast<ABI::AdaptiveNamespace::BleedDirection>(sharedColumn->GetBleedDirection());
+        m_bleedDirection = static_cast<ABI::AdaptiveCards::ObjectModel::Uwp::BleedDirection>(sharedColumn->GetBleedDirection());
 
         RETURN_IF_FAILED(UTF8ToHString(sharedColumn->GetWidth(), m_width.GetAddressOf()));
         m_pixelWidth = sharedColumn->GetPixelWidth();
@@ -75,25 +75,25 @@ namespace AdaptiveNamespace
 
     HRESULT AdaptiveColumn::put_PixelWidth(UINT32 pixelWidth) { return m_pixelWidth = pixelWidth; }
 
-    HRESULT AdaptiveColumn::get_Style(_Out_ ABI::AdaptiveNamespace::ContainerStyle* style)
+    HRESULT AdaptiveColumn::get_Style(_Out_ ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle* style)
     {
         *style = m_style;
         return S_OK;
     }
 
-    HRESULT AdaptiveColumn::put_Style(ABI::AdaptiveNamespace::ContainerStyle style)
+    HRESULT AdaptiveColumn::put_Style(ABI::AdaptiveCards::ObjectModel::Uwp::ContainerStyle style)
     {
         m_style = style;
         return S_OK;
     }
 
-    HRESULT AdaptiveColumn::get_VerticalContentAlignment(_Out_ ABI::AdaptiveNamespace::VerticalContentAlignment* verticalAlignment)
+    HRESULT AdaptiveColumn::get_VerticalContentAlignment(_Out_ ABI::AdaptiveCards::ObjectModel::Uwp::VerticalContentAlignment* verticalAlignment)
     {
         *verticalAlignment = m_verticalAlignment;
         return S_OK;
     }
 
-    HRESULT AdaptiveColumn::put_VerticalContentAlignment(ABI::AdaptiveNamespace::VerticalContentAlignment verticalAlignment)
+    HRESULT AdaptiveColumn::put_VerticalContentAlignment(ABI::AdaptiveCards::ObjectModel::Uwp::VerticalContentAlignment verticalAlignment)
     {
         m_verticalAlignment = verticalAlignment;
         return S_OK;
@@ -161,7 +161,7 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveColumn::get_BleedDirection(ABI::AdaptiveNamespace::BleedDirection* bleedDirection)
+    HRESULT AdaptiveColumn::get_BleedDirection(ABI::AdaptiveCards::ObjectModel::Uwp::BleedDirection* bleedDirection)
     {
         // TODO: Current behavior is broken because it doesn't update when bleed updates. Unfortunately, neither does
         // the shared model logic.
@@ -175,14 +175,14 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveColumn::GetSharedModel(std::shared_ptr<AdaptiveSharedNamespace::BaseCardElement>& sharedModel)
+    HRESULT AdaptiveColumn::GetSharedModel(std::shared_ptr<AdaptiveCards::BaseCardElement>& sharedModel)
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::Column> column = std::make_shared<AdaptiveSharedNamespace::Column>();
+        std::shared_ptr<AdaptiveCards::Column> column = std::make_shared<AdaptiveCards::Column>();
         RETURN_IF_FAILED(CopySharedElementProperties(*column));
 
-        column->SetStyle(static_cast<AdaptiveSharedNamespace::ContainerStyle>(m_style));
-        column->SetVerticalContentAlignment(static_cast<AdaptiveSharedNamespace::VerticalContentAlignment>(m_verticalAlignment));
+        column->SetStyle(static_cast<AdaptiveCards::ContainerStyle>(m_style));
+        column->SetVerticalContentAlignment(static_cast<AdaptiveCards::VerticalContentAlignment>(m_verticalAlignment));
 
         if (m_pixelWidth)
         {
@@ -197,7 +197,7 @@ namespace AdaptiveNamespace
         column->SetBleed(m_bleed);
 
         ComPtr<AdaptiveBackgroundImage> adaptiveBackgroundImage = PeekInnards<AdaptiveBackgroundImage>(m_backgroundImage);
-        std::shared_ptr<AdaptiveSharedNamespace::BackgroundImage> sharedBackgroundImage;
+        std::shared_ptr<AdaptiveCards::BackgroundImage> sharedBackgroundImage;
         if (adaptiveBackgroundImage && SUCCEEDED(adaptiveBackgroundImage->GetSharedModel(sharedBackgroundImage)))
         {
             column->SetBackgroundImage(std::move(sharedBackgroundImage));

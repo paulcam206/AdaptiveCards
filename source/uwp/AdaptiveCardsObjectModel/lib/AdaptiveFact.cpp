@@ -6,10 +6,10 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
-using namespace ABI::AdaptiveNamespace;
+using namespace ABI::AdaptiveCards::ObjectModel::Uwp;
 using namespace ABI::Windows::Foundation::Collections;
 
-namespace AdaptiveNamespace
+namespace AdaptiveCards::ObjectModel::Uwp
 {
     HRESULT AdaptiveFact::RuntimeClassInitialize() noexcept
     try
@@ -19,7 +19,7 @@ namespace AdaptiveNamespace
     }
     CATCH_RETURN;
 
-    HRESULT AdaptiveFact::RuntimeClassInitialize(const std::shared_ptr<AdaptiveSharedNamespace::Fact>& sharedFact)
+    HRESULT AdaptiveFact::RuntimeClassInitialize(const std::shared_ptr<AdaptiveCards::Fact>& sharedFact)
     {
         RETURN_IF_FAILED(UTF8ToHString(sharedFact->GetTitle(), m_title.GetAddressOf()));
         RETURN_IF_FAILED(UTF8ToHString(sharedFact->GetValue(), m_value.GetAddressOf()));
@@ -45,10 +45,10 @@ namespace AdaptiveNamespace
         return S_OK;
     }
 
-    HRESULT AdaptiveFact::GetSharedModel(std::shared_ptr<AdaptiveSharedNamespace::Fact>& sharedModel)
+    HRESULT AdaptiveFact::GetSharedModel(std::shared_ptr<AdaptiveCards::Fact>& sharedModel)
     try
     {
-        std::shared_ptr<AdaptiveSharedNamespace::Fact> fact = std::make_shared<AdaptiveSharedNamespace::Fact>();
+        std::shared_ptr<AdaptiveCards::Fact> fact = std::make_shared<AdaptiveCards::Fact>();
 
         std::string title;
         RETURN_IF_FAILED(HStringToUTF8(m_title.Get(), title));
