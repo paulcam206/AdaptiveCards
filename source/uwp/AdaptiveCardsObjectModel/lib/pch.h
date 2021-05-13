@@ -1,8 +1,5 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
-//
-//    Copyright (C) Microsoft.  All rights reserved.
-//
 #pragma once
 
 #define AdaptiveRuntime(cls) InspectableClass(RuntimeClass_AdaptiveCards_ObjectModel_Uwp_##cls, BaseTrust)
