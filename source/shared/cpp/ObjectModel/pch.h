@@ -18,6 +18,11 @@
 #include <unordered_set>
 #include <vector>
 
+#if defined(__EMSCRIPTEN__)
+#include <emscripten/bind.h>
+using namespace emscripten;
+#endif
+
 #if defined(_MSC_BUILD) && !defined(__ANDROID__) && !defined(__APPLE__)
 #define USE_CPPCORECHECK
 #endif
