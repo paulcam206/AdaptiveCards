@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <script async type="text/javascript" src="ObjectModel.js"></script>
+    <script type="text/javascript">
+
+      var Module = {
+        onRuntimeInitialized: function() {
+          var steve = new Module.baseElement();
+          console.log("what are the odds? " + steve.toString());
+
+          let derivedElement = Module.baseElement.extend("baseElement", {
+            __construct: function() {
+              this.__parent.__construct.call(this);
+            },
+            setId: function(str) {
+              Module.baseElement.prototype.setId.call(this, `JS? '${str}'`);
+            }
+          });
+
+          let derivedInstance = new derivedElement();
+          derivedInstance.setId("this thing on?");
+          derivedInstance.setElementType("JavascriptElement");
+          console.log(derivedInstance.toString());
+        }
+      };
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
