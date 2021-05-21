@@ -6,22 +6,28 @@
 
       var Module = {
         onRuntimeInitialized: function() {
-          var steve = new Module.baseElement();
-          console.log("what are the odds? " + steve.toString());
-
-          let derivedElement = Module.baseElement.extend("baseElement", {
+          let myCustomElement = Module.baseElement.extend("baseCardElement", {
             __construct: function() {
               this.__parent.__construct.call(this);
             },
             setId: function(str) {
               Module.baseElement.prototype.setId.call(this, `JS? '${str}'`);
-            }
+            },
+            getElementType: function() {
+              return "MyCustomElement";
+            },
+            customProperty: 8
           });
 
-          let derivedInstance = new derivedElement();
-          derivedInstance.setId("this thing on?");
-          derivedInstance.setElementType("JavascriptElement");
+          let derivedInstance = new myCustomElement();
           console.log(derivedInstance.toString());
+
+          let customParser = Module.baseCardElementParser.extend("baseCardElementParser", {
+            DeserializeFromString: function(ctx, jsonStr) {
+              console.log("what the what?");
+
+            }
+          });
         }
       };
     </script>
