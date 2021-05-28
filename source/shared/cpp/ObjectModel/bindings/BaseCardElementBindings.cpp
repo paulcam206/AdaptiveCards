@@ -24,8 +24,8 @@ namespace AdaptiveCards
     EMSCRIPTEN_BINDINGS(BaseCardElement)
     {
         class_<BaseCardElement, base<BaseElement>>("baseCardElement")
-            .smart_ptr<std::shared_ptr<BaseCardElement>>("BaseCardElement")
-            .allow_subclass<BaseCardElementWrapper>("BaseCardElementWrapper")
+            .smart_ptr<std::shared_ptr<BaseCardElement>>("baseCardElement")
+            .allow_subclass<BaseCardElementWrapper>("baseCardElementWrapper")
             .function("getSeparator", &BaseCardElement::GetSeparator)
             .function("setSeparator", &BaseCardElement::SetSeparator)
             .function("getElementType", &BaseCardElement::GetElementType)

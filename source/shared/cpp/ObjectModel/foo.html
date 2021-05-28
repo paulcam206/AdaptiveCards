@@ -6,7 +6,7 @@
 
       var Module = {
         onRuntimeInitialized: function() {
-          let myCustomElement = Module.baseElement.extend("baseCardElement", {
+          let myCustomElement = Module.baseCardElement.extend("baseCardElement", {
             __construct: function() {
               this.__parent.__construct.call(this);
             },
@@ -23,11 +23,41 @@
           console.log(derivedInstance.toString());
 
           let customParser = Module.baseCardElementParser.extend("baseCardElementParser", {
-            DeserializeFromString: function(ctx, jsonStr) {
+            __construct: function() {
+              this.__parent.__construct.call(this);
+              console.log("custom ctor");
+            },
+            deserialize: function(ctx, jsonObj) {
+              // TODO: something
+              console.log("E_NOTIMPL");
+              let retval = new myCustomElement();
+              console.log("seriously not implemented");
+              return retval;
+            },
+            deserializeFromString: function(ctx, jsonStr) {
               console.log("what the what?");
-
+              let customElem = new myCustomElement();
+              let jsonObj = JSON.parse(jsonStr);
+              if (jsonObj["customProperty"]) {
+                customElem.customProperty = jsonObj["customProperty"];
+              }
+              return customElem;
             }
           });
+
+          let parseContext = new Module.parseContext();
+          let registration = parseContext.elementParserRegistration;
+          registration.addParser("MyCustomElement", new customParser());
+
+          let customParseInstance = parseContext.elementParserRegistration.getParser("MyCustomElement");
+
+          // console.log("about to parse empty json doc");
+          // let emptyObj = customParseInstance.deserializeFromString(parseContext, "{}");
+
+          let customStr = `{ "type": "MyCustomElement", "id": "steve", "customProperty": 1 }`;
+          console.log(`about to parse: "${customStr}"`);
+          let customObj = customParseInstance.deserializeFromString(parseContext, customStr);
+          console.log(`Could it be?\ntype: ${customObj.getElementType()}\nid: ${customObj.getId}\ncustomprop: ${customObj.customProperty}`);
         }
       };
     </script>

@@ -14,9 +14,9 @@ namespace AdaptiveCards
     EMSCRIPTEN_BINDINGS(BaseElement)
     {
         class_<BaseElement>("baseElement")
-            .smart_ptr<std::shared_ptr<BaseElement>>("BaseElement")
-            .allow_subclass<BaseElementWrapper>("BaseElementWrapper")
-            .constructor()
+            .smart_ptr_constructor<std::shared_ptr<BaseElement>>("baseElement", &std::make_shared<BaseElement>)
+            .allow_subclass<BaseElementWrapper>("baseElementWrapper")
+            //.constructor()
             .function("getElementType", &BaseElement::GetElementTypeString)
             .function("setElementType", select_overload<void(const std::string&)>(&BaseElement::SetElementTypeString))
             .function("getId", &BaseElement::GetId)

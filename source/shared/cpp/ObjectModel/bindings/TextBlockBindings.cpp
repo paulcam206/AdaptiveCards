@@ -9,7 +9,7 @@ namespace AdaptiveCards
     EMSCRIPTEN_BINDINGS(TextBlock)
     {
         class_<TextBlock, base<BaseCardElement>>("textBlock")
-            .smart_ptr<std::shared_ptr<TextBlock>>("TextBlock")
+            .smart_ptr_constructor<std::shared_ptr<TextBlock>>("TextBlock", &std::make_shared<TextBlock>)
             .property("text", &TextBlock::GetText, &TextBlock::SetText);
     }
 }

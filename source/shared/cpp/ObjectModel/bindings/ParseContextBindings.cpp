@@ -7,7 +7,7 @@ namespace AdaptiveCards
     EMSCRIPTEN_BINDINGS(ParseContext)
     {
         class_<ParseContext>("parseContext")
-            .constructor()
+            .smart_ptr_constructor<std::shared_ptr<ParseContext>>("parseContext", &std::make_shared<ParseContext>)
             .property("elementParserRegistration", &ParseContext::elementParserRegistration);
     }
 }

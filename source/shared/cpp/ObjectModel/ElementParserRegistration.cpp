@@ -34,7 +34,7 @@ namespace AdaptiveCards
         const InternalId internalId = InternalId::Next();
 
         context.PushElement(idProperty, internalId);
-        std::shared_ptr<BaseCardElement> element = m_parser->Deserialize(context, value);
+        auto element = m_parser->Deserialize(context, value);
         context.PopElement();
 
         return element;
@@ -42,7 +42,14 @@ namespace AdaptiveCards
 
     std::shared_ptr<BaseCardElement> BaseCardElementParserWrapper::DeserializeFromString(ParseContext& context, const std::string& value)
     {
-        return Deserialize(context, ParseUtil::GetJsonValueFromString(value));
+        const auto& idProperty = ParseUtil::GetString(value, AdaptiveCardSchemaKey::Id);
+        const InternalId internalId = InternalId::Next();
+
+        context.PushElement(idProperty, internalId);
+        auto element = m_parser->DeserializeFromString(context, value);
+        context.PopElement();
+
+        return element;
     }
 
     ElementParserRegistration::ElementParserRegistration()
