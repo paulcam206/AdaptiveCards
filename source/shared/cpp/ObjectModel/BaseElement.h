@@ -66,6 +66,9 @@ namespace AdaptiveCards
         std::unordered_map<std::string, AdaptiveCards::SemanticVersion>& GetRequirements();
         const std::unordered_map<std::string, AdaptiveCards::SemanticVersion>& GetRequirements() const;
 
+        void DeserializeBaseProperties(ParseContext& context, const Json::Value& json);
+        void DeserializeBasePropertiesFromString(ParseContext& context, const std::string& jsonString);
+
         // Misc.
         virtual void GetResourceInformation(std::vector<RemoteResourceInformation>& resourceUris);
 

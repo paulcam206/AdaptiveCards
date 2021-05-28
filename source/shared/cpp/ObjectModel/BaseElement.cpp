@@ -58,6 +58,16 @@ namespace AdaptiveCards
     void BaseElement::SetAdditionalProperties(Json::Value&& value) { m_additionalProperties = std::move(value); }
     void BaseElement::SetAdditionalProperties(const Json::Value& value) { m_additionalProperties = value; }
 
+    void BaseElement::DeserializeBasePropertiesFromString(ParseContext& context, const std::string& jsonString)
+    {
+        DeserializeBaseProperties(context, ParseUtil::GetJsonValueFromString(jsonString));
+    }
+
+    void BaseElement::DeserializeBaseProperties(ParseContext& context, const Json::Value& json)
+    {
+        SetId(ParseUtil::GetString(json, AdaptiveCardSchemaKey::Id));
+    }
+
     // Given a map of what our host provides, determine if this element's requirements are satisfied.
     bool BaseElement::MeetsRequirements(const AdaptiveCards::FeatureRegistration& featureRegistration) const
     {

@@ -9,6 +9,7 @@ namespace AdaptiveCards
     public:
         EMSCRIPTEN_WRAPPER(BaseElementWrapper);
         void setId(const std::string& value) { return call<void>("setId", value); }
+        const std::string& getId() { return call<const std::string&>("getId"); }
     };
 
     EMSCRIPTEN_BINDINGS(BaseElement)
@@ -22,6 +23,8 @@ namespace AdaptiveCards
             .function("getId", &BaseElement::GetId)
             .function("setId", select_overload<void(const std::string&)>(&BaseElement::SetId))
             .function("getFallbackType", &BaseElement::GetFallbackType)
-            .function("toString", &BaseElement::Serialize);
+            .function("toString", &BaseElement::Serialize)
+            .function("deserializeBaseProperties", &BaseElement::DeserializeBaseProperties)
+            .function("deserializeBasePropertiesFromString", &BaseElement::DeserializeBasePropertiesFromString);
     }
 }

@@ -13,6 +13,9 @@
             setId: function(str) {
               Module.baseElement.prototype.setId.call(this, `JS? '${str}'`);
             },
+            getId: function() {
+              return Module.baseElement.prototype.getId.call(this);
+            },
             getElementType: function() {
               return "MyCustomElement";
             },
@@ -25,18 +28,22 @@
           let customParser = Module.baseCardElementParser.extend("baseCardElementParser", {
             __construct: function() {
               this.__parent.__construct.call(this);
-              console.log("custom ctor");
             },
             deserialize: function(ctx, jsonObj) {
-              // TODO: something
-              console.log("E_NOTIMPL");
               let retval = new myCustomElement();
-              console.log("seriously not implemented");
+              retval.deserializeBaseProperties(ctx, jsonObj);
+              let customProp = jsonObj.get("customProperty", new Module.jsonValue());
+              if (customProp?.isInt())
+              {
+                retval.customProperty = customProp.asInt();
+              }
+
               return retval;
             },
             deserializeFromString: function(ctx, jsonStr) {
-              console.log("what the what?");
               let customElem = new myCustomElement();
+              customElem.deserializeBasePropertiesFromString(ctx, jsonStr);
+
               let jsonObj = JSON.parse(jsonStr);
               if (jsonObj["customProperty"]) {
                 customElem.customProperty = jsonObj["customProperty"];
@@ -47,17 +54,21 @@
 
           let parseContext = new Module.parseContext();
           let registration = parseContext.elementParserRegistration;
-          registration.addParser("MyCustomElement", new customParser());
+          let customParserPreInsert = new customParser();
+          registration.addParser("MyCustomElement", customParserPreInsert);
 
           let customParseInstance = parseContext.elementParserRegistration.getParser("MyCustomElement");
 
-          // console.log("about to parse empty json doc");
-          // let emptyObj = customParseInstance.deserializeFromString(parseContext, "{}");
 
           let customStr = `{ "type": "MyCustomElement", "id": "steve", "customProperty": 1 }`;
-          console.log(`about to parse: "${customStr}"`);
+          console.log(`about to parse: "${customStr}" (non-inserted parser)`);
+          let preinsertObj = customParserPreInsert.deserializeFromString(parseContext, customStr);
+          console.log(`\ttype: ${preinsertObj.getElementType()}\n\tid: ${preinsertObj.getId()}\n\tcustomprop: ${preinsertObj.customProperty}`);
+
+
+          console.log(`about to parse: "${customStr}" (inserted parser)`);
           let customObj = customParseInstance.deserializeFromString(parseContext, customStr);
-          console.log(`Could it be?\ntype: ${customObj.getElementType()}\nid: ${customObj.getId}\ncustomprop: ${customObj.customProperty}`);
+          console.log(`\ttype: ${customObj.getElementType()}\n\tid: ${customObj.getId()}\n\tcustomprop: ${customObj.customProperty}`);
         }
       };
     </script>
