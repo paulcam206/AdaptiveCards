@@ -16,6 +16,13 @@
             getId: function() {
               return Module.baseElement.prototype.getId.call(this);
             },
+            toString: function() {
+              const baseSerialize = Module.baseElement.prototype.toString.call(this);
+              let baseObj = JSON.parse(baseSerialize);
+              baseObj["customProperty"] = this.customProperty;
+              baseObj["type"] = this.getElementType();
+              return JSON.stringify(baseObj);
+            },
             getElementType: function() {
               return "MyCustomElement";
             },
@@ -59,16 +66,68 @@
 
           let customParseInstance = parseContext.elementParserRegistration.getParser("MyCustomElement");
 
-
           let customStr = `{ "type": "MyCustomElement", "id": "steve", "customProperty": 1 }`;
           console.log(`about to parse: "${customStr}" (non-inserted parser)`);
           let preinsertObj = customParserPreInsert.deserializeFromString(parseContext, customStr);
           console.log(`\ttype: ${preinsertObj.getElementType()}\n\tid: ${preinsertObj.getId()}\n\tcustomprop: ${preinsertObj.customProperty}`);
 
-
           console.log(`about to parse: "${customStr}" (inserted parser)`);
           let customObj = customParseInstance.deserializeFromString(parseContext, customStr);
           console.log(`\ttype: ${customObj.getElementType()}\n\tid: ${customObj.getId()}\n\tcustomprop: ${customObj.customProperty}`);
+
+          const containerParser = registration.getParser("Container");
+          const containerString = JSON.stringify(
+            {
+              "type": "Container",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "are you kidding me?"
+                },
+                {
+                  "type": "MyCustomElement",
+                  "id": "whaaaaaaaaat",
+                  "customProperty": 42
+                }
+              ]
+            });
+
+          const parsedContainer = containerParser.deserializeFromString(parseContext, containerString);
+
+          const items = parsedContainer.getItems();
+          for (let i = 0; i < items.size(); i++)
+          {
+            console.log(`item ${i}: "${items.get(i).toString()}"`);
+          }
+
+          let myCard = JSON.stringify({
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "type": "AdaptiveCard",
+            "version": "1.5",
+            "body": [
+              {
+                "type": "TextBlock",
+                "text": "an actual card!"
+              },
+              {
+                "type": "Container",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "this is ridiculous"
+                  },
+                  {
+                    "type": "MyCustomElement",
+                    "id": "bleh",
+                    "customProperty": 1024
+                  }
+                ]
+              }
+            ]
+          });
+
+          let parseResult = Module.adaptiveCard.fromString(myCard, "1.5");
+          console.log(`roundtripped as "${parseResult.card.toString()}"`);
         }
       };
     </script>

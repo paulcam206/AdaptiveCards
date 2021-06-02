@@ -10,6 +10,7 @@ namespace AdaptiveCards
         EMSCRIPTEN_WRAPPER(BaseElementWrapper);
         void setId(const std::string& value) { return call<void>("setId", value); }
         const std::string& getId() { return call<const std::string&>("getId"); }
+        std::string toString() { return call<std::string>("toString"); }
     };
 
     EMSCRIPTEN_BINDINGS(BaseElement)
