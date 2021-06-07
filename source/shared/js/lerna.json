@@ -1,0 +1,7 @@
+{
+	"version": "independent",
+	"packages": [
+		"pkgs/*"
+	],
+	"version": "0.0.0"
+}

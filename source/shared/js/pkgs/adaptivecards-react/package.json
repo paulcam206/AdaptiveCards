@@ -1,0 +1,31 @@
+{
+	"name": "adaptivecards-react",
+	"version": "0.0.0",
+	"description": "> TODO: description",
+	"author": "Paul Campbell <paulcam@microsoft.com> (DEP)",
+	"homepage": "https://github.com/microsoft/AdaptiveCards#readme",
+	"license": "ISC",
+	"browser": "dist/main.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/microsoft/AdaptiveCards.git"
+	},
+	"scripts": {
+		"clean": "echo clean here",
+		"build": "npm run clean && webpack"
+	},
+	"bugs": {
+		"url": "https://github.com/microsoft/AdaptiveCards/issues"
+	},
+	"peerDependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"dependencies": {
+		"adaptivecards-sharedmodel": "^0.0.1"
+	}
+}

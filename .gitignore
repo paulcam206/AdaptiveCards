@@ -314,3 +314,7 @@ _deps
 ### CMake Patch ###
 # External projects
 *-prefix/
+
+### WebAssembly outputs ###
+*.wasm
+

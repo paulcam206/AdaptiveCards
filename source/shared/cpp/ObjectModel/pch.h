@@ -20,6 +20,7 @@
 
 #if defined(__EMSCRIPTEN__)
 #include <emscripten/bind.h>
+#include "emscriptenHelpers.h"
 using namespace emscripten;
 #endif
 

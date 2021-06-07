@@ -1,0 +1,17 @@
+{
+	"name": "adaptivecards-sharedmodel",
+	"version": "0.0.1",
+	"description": "",
+	"main": "dist/main.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"clean": "rimraf dist gen src/*.d.ts src/AdaptiveCardsSharedModel*",
+		"copy-generated-bits": "cp ../../../cpp/ObjectModel/AdaptiveCardsSharedModel* src/",
+		"build": "npm run clean && npm run copy-generated-bits && webpack"
+	},
+	"author": "",
+	"license": "ISC"
+}
