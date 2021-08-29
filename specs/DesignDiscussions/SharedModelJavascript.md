@@ -1,4 +1,6 @@
-# Context
+# Reconciling the Adaptive Cards Platform
+
+## Context
 
 Adaptive Cards as a platform fills a relatively unique niche in the broader software ecosystem. At its core, Adaptive
 Cards is a JSON format for describing interactive pieces of card-like UI. JSON documents conforming to this schema can
@@ -14,15 +16,15 @@ be rendered natively and safely on a variety of OS and UI platforms:
 Renderers for other UI stacks have also been developed (or are under development) by third parties: ReactNative,
 ReactJS, Blazor, VueJS, and others.
 
-## Highlevel Architecture
+### Highlevel Architecture
 
 ![image](assets/JSSM/OverallArch.png)
 
-## .NET Renderers
+### .NET Renderers
 
 C#-implemented object model, plus renderers for WPF and HTML.
 
-## Shared Model Renderers
+### Shared Model Renderers
 
 All of the JSON parsing and object model building is done in a [single common C++
 library](https://github.com/microsoft/AdaptiveCards/tree/main/source/shared/cpp) that is consumed and wrapped in various
@@ -33,13 +35,13 @@ UWP XAML renderer.
 * iOS - builds directly against the shared library source and renders for iOS targets.
 * Android - wraps the shared model using a tool called [`SWIG`](http://swig.org/) to make Java interop possible.
 
-## The Javascript (or NodeJS) renderer
+### The Javascript (or NodeJS) renderer
 
 A [renderer](https://github.com/microsoft/AdaptiveCards/tree/main/source/nodejs/adaptivecards) written in Typescript
 using native JSON parsing and generating styleable HTML. Note that we also have a [card
 designer](https://adaptivecards.io/designer/) that leverages this renderer.
 
-# Problem/Motivation
+## Problem/Motivation
 
 As our customer base has expanded, the team has found itself dealing with the consequences of delivering across three
 base platforms:
@@ -50,7 +52,7 @@ base platforms:
 * difficulty delivering large experiences while meeting our "on any platform" promise
 * increased engineering system complexity and cost
 
-## An Illustrative Example
+### An Illustrative Example
 
 Put simply, when we implement a new feature in Adaptive Cards, we implement it a bunch of times. Take, for example,
 implementing a simple new card element. Here's the work that needs to occur in order to accommodate this new feature (or
@@ -85,7 +87,7 @@ Other work not accounted for above:
 * Other compliance tasks (A11y, Perf, etc.)
 * Documentation and other Communications
 
-## Foreseeable Consequences
+### Foreseeable Consequences
 
 When a feature is implemented independently this many times, it's almost guaranteed that inconsistencies will creep in.
 Does Javascript allow `1` or `"1"` for a property while the Shared Model only allows `"1"`? Does .NET WPF include extra
@@ -99,7 +101,7 @@ because it is. The amount of work required has left the team less agile than we 
 delivering partner requests and innovating in the space than we'd like. If anything, it gets more difficult with every
 new bit of functionality we add.
 
-## Growth Opportunities
+### Growth Opportunities
 
 There are myriad approaches to solve the size-of-work problem. I think if Adaptive Cards is to continue to be
 successful, we need to be willing to take some risks and make big changes in support of managing costs (many of these
@@ -116,7 +118,7 @@ efforts are already under way):
 
 **This last point is the focus of this document.**
 
-# Investigation
+## Investigation
 
 As I understand it, the .NET platform was the first renderer to be developed and was used as to prototype features. The
 Shared Model and Javascript platforms came shortly thereafter. In the early days, having distinct implmentations was
@@ -136,7 +138,7 @@ C#). Moving our platforms in this direction is a possibility being investigated 
 
 *But what about Javascript?*
 
-## Enter WASM
+### Enter WASM
 
 [Web Assembly](https://webassembly.org/) (or *WASM*) is a relatively new technology (ca. 2015) that defines portable
 executable code that can be consumed by web browsers. In the past couple of years in particular, it has begun to gain
@@ -149,7 +151,7 @@ WASM is broadly supported in [all major browsers](https://caniuse.com/wasm), Ele
 This critical bit of compiler tech can open the door for us to base our Javascript/client-side efforts on the same C++
 Shared Model that we use elsewhere.
 
-## Prototype and Findings
+### Prototype and Findings
 
 With only a compiler toolchain and some docs in hand, I set out to see if it was possible to project the C++ Shared
 Model (hereafter SM) into Javascript and get a feel for the feasibility of replacing the existing Javascript renderer
@@ -165,7 +167,7 @@ High-level questions that needed to be answered:
 * What is the size of the compiler outputs compared to the existing renderer?
 * How much of the existing Javascript renderer can be reused?
 
-### Toolchain and Operating Environment
+#### Toolchain and Operating Environment
 
 Emscripten provides an integrated compiler toolchain based on CMake backed by the LLVM/Clang compilers. Emscripten is
 available on Windows, macOS, and Linux. For the purposes of the prototype, I used Ubuntu in WSL for my build
@@ -196,7 +198,7 @@ Names are also entirely arbitrary, so we can follow common Javascript naming con
 The end result is that you can invoke the loader `.js` file from existing Javascript, which bootstraps the `.wasm`, and
 can then utilize the SM as you would any other library. (more details in the *Technical Deep Dive* section below)
 
-### Functionality Achieved
+#### Functionality Achieved
 
 I was able to get the SM building within the Emscripten toolchain with fairly little effort -- work had already been
 done to get the project building in CMake, so it was just a matter of extending the existing `CMakeLists.txt` to
@@ -218,7 +220,7 @@ I stood up a brand new ReactJS renderer that is capable of rendering an Adaptive
 about half of the SM classes to gauge how much the binary would grow as we fleshed the library out (a stronger
 performance consideration for web than native).
 
-### Impressions
+#### Impressions
 
 Everything seems to work more or less as expected. The most difficult part of getting the ReactJS renderer up and
 running was in packaging the Emscripten outputs correctly so that they were exposed as a module. After that, it was
@@ -244,7 +246,7 @@ tools) can get you usable callstacks down into the SM, which I only needed once 
 Overall, after getting past the initial learning bump, it seems like productizing a projected SM would not be too
 difficult a task to accomplish given resourcing.
 
-### A Note on Performance
+#### A Note on Performance
 
 Runtime performance was not observed beyond general impressions since there wasn't enough of the WASM SM implemented to
 do a representative comparison. That being said:
@@ -254,7 +256,7 @@ do a representative comparison. That being said:
 * Runtime overhead of the Emscripten binding layer is [around
   200ns](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html#performance)
 
-### Comparisons to the Existing Javascript Renderer
+#### Comparisons to the Existing Javascript Renderer
 
 There are design differences between the Javascript renderer and the SM.
 
@@ -269,7 +271,7 @@ either to wrap the existing rendering output or override each element's renderin
 alternative Javascript renderers actually ship two renderers in their payload, *even if they don't use our vanilla HTML
 rendering*.
 
-### Questions Answered
+#### Questions Answered
 
 High-level questions that needed to be answered:
 * Is it even possible for us to build the SM using Emscripten?
@@ -290,9 +292,9 @@ High-level questions that needed to be answered:
     renderer can be "reused" by adapting them to the new SM. There's likely to be a fair bit of fallout for the
     Designer, so we should account for that in our planning.*
 
-# Conclusions
+## Conclusions
 
-## Recommendations
+### Recommendations
 
 1. We should ship the projected C++ shared model as our Javascript object model.
 1. We should refactor the existing Javascript object model/renderer to be a dedicated "Vanilla" Javascript renderer
@@ -304,11 +306,11 @@ High-level questions that needed to be answered:
   common use cases easier to implement. That said, this decision does not need to be blocking. I suspect that as we move
   the existing Javascript renderer over to the SM we'll find out quickly enough if a layer is warranted.
 
-## A Possible Future
+### A Possible Future
 
 ![image](assets/JSSM/FutureArch.png)
 
-## Risks
+### Risks
 
 With any undertaking of this kind, there are risks to consider:
 * It's possible that there remains an as yet undiscovered and insurmountable technical hurdle that we won't encounter until
@@ -321,9 +323,9 @@ With any undertaking of this kind, there are risks to consider:
 
 ---
 
-# Technical Deep Dive
+## Technical Deep Dive
 
-## Emscripten Toolchain
+### Emscripten Toolchain
 
 It's pretty [straightforward](https://emscripten.org/docs/getting_started/downloads.html) to get Emscripten installed
 and configured. One nice thing is that the environment is activatable. There's a script you run to set up environment
@@ -376,9 +378,9 @@ generated. At time of writing, there are a *few* ad hoc tools for generating the
 I found them to have some problems. It's possible that there are ways we can get them working, though, so it's worth
 exploring them further.
 
-## Authoring Bindings
+### Authoring Bindings
 
-### Which binding system to use?
+#### Which binding system to use?
 
 Emscripten provides two different facilities for generating bindings between C++ and Javascript.
 
@@ -393,7 +395,7 @@ The second is to use [Embind](https://emscripten.org/docs/porting/connecting_cpp
 that's part of the Emscripten project. Embind provides macros and facilities for declaring and defining bindings. The
 generated bindings are bidirectional and know how to interface with smart pointers.
 
-### Embind Basics
+#### Embind Basics
 
 Consider the following simplified version of our `BaseElement` class (with some additions):
 
@@ -458,7 +460,7 @@ There's quite a lot that can be done with embind beyond what I've outlined above
 with the [embind docs](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html) and use the
 [embind header](https://github.com/emscripten-core/emscripten/blob/main/system/include/emscripten/bind.h) for reference.
 
-### Implementing Bindings
+#### Implementing Bindings
 
 There are some important gotchas to be aware of when implementing bindings:
 
@@ -481,7 +483,7 @@ helper code
 During the prototype I implemented roughly half of the necessary bindings for SM elements. I suspect that most if not
 all of the "surprise" binding issues have been encountered at this point.
 
-### Custom parsing from Javascript
+#### Custom parsing from Javascript
 
 Here's roughly how you can implement a custom element parser from Javascript (note: this should not be considered the
 "best practice" way -- this was just "implement until it works"):
@@ -556,7 +558,7 @@ registration.addParser("MyCustomElement", new customParser());
 
 Custom rendering, of course, will depend entirely on how the renderer piece is implemented.
 
-## ReactJS Renderer
+### ReactJS Renderer
 
 Implementing a ReactJS renderer on top of the projected C++ shared model was *surprisingly easy*. The first step was to
 create a component that could render an element from its SM representation (I started with `TextBlock` for simplicity's
@@ -644,8 +646,9 @@ export function AdaptiveCard(props) {
 These are, of course, simplifications of prototype code that didn't implement all Adaptive Cards features, but it's
 illustrative of just how easy it is to use the projected SM.
 
-## References
+### References
 
+* [Original investigation notes](https://github.com/paulcam206/AdaptiveCards/blob/paulcam/embind-build/specs/DesignDiscussions/SharedModelJavascriptInvestigation.md)
 * [`embind` walkthrough docs](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html)
 * [bind.h API docs](https://emscripten.org/docs/api_reference/bind.h.html)
 * [`embind` test suite](https://github.com/emscripten-core/emscripten/tree/main/tests/embind) (has useful examples for different scenarios)
