@@ -646,6 +646,103 @@ export function AdaptiveCard(props) {
 These are, of course, simplifications of prototype code that didn't implement all Adaptive Cards features, but it's
 illustrative of just how easy it is to use the projected SM.
 
+### Final Prototype Code
+
+The prototype was developed on a [fork](https://github.com/paulcam206/AdaptiveCards) of the Adaptive Cards codebase in the [`paulcam/embind-build` branch](https://github.com/paulcam206/AdaptiveCards/tree/paulcam/embind-build). There are several pieces worth calling out.
+
+#### The C++ Shared Model
+
+The most pertinent changes in the SM are in the
+[`CMakeLists.txt`](https://github.com/paulcam206/AdaptiveCards/blob/paulcam/embind-build/source/shared/cpp/ObjectModel/CMakeLists.txt)
+file and the various bindings I generated, which all live in [this
+directory](https://github.com/paulcam206/AdaptiveCards/tree/paulcam/embind-build/source/shared/cpp/ObjectModel/bindings).
+I'm not sure we'll want to have the bindings split out like this or not, but for the sake of keeping things relatively
+clean, this is the approach I took while exploring.
+
+The totally-not-shipping
+[`foo.html`](https://github.com/paulcam206/AdaptiveCards/blob/paulcam/embind-build/source/shared/cpp/ObjectModel/foo.html)
+has some sample code I was playing around with to get a better feel for how things would work in the projected SM. I do
+not recall if it was in a working state last I checked it in.
+
+#### The NPM Packages
+
+The remainder of the code I wrote lives in the
+[`source/shared/js`](https://github.com/paulcam206/AdaptiveCards/tree/paulcam/embind-build/source/shared/js) directory. It's a `lerna` based project containing 3 packages: 
+* [`adaptivecards-sharedmodel`](https://github.com/paulcam206/AdaptiveCards/tree/paulcam/embind-build/source/shared/js/pkgs/adaptivecards-sharedmodel), a wrapper around the Emscripted-generated loader and WASM along with a lazy-load facility
+* [`adaptivecards-react`](https://github.com/paulcam206/AdaptiveCards/tree/paulcam/embind-build/source/shared/js/pkgs/adaptivecards-react), a simple ReactJS renderer for some Adaptive Cards elements
+* [`testsite`](https://github.com/paulcam206/AdaptiveCards/tree/paulcam/embind-build/source/shared/js/pkgs/testsite), a simple site I made to help explore functionality
+
+#### How to Explore the Prototype
+
+I assume an Ubuntu environment (either native or via WSL).
+
+1. Install prerequisites
+    1. `sudo apt install git build-essential python3 cmake`
+1. Clone AC fork
+    1. `git clone https://github.com/paulcam206/AdaptiveCards <ac-location>`
+    1. `cd <clone location> && git checkout paulcam/embind-build`
+1. Install `emscripten`
+    1. `git clone https://github.com/emscripten-core/emsdk.git ~/emsdk`
+    1. `cd ~/emsdk && git pull && ./emsdk install latest && ./emsdk activate latest`
+1. Build C++ shared model
+    1. `source ~/emsdk/emsdk_env.sh`
+    1. `cd <ac-location>/source/shared/cpp/ObjectModel`
+    1. `emcmake cmake .`
+    1. `cmake --build . --parallel`
+1. Build NodeJS packages
+    1. `cd <ac-location>/source/shared/js/`
+    1. `npm i && npx lerna bootstrap && npx lerna run build`
+    1. `cd pkgs/testsite && npx webpack && node_modules/adaptivecards-sharedmodel/dist/*.wasm dist/`
+      * This is to work around a packaging difficulty I never got around to solving -- bringing the .WASM in via webpack
+        to the site. `webpack` does support this, so it's just a matter of wrangling it to work for production.
+1. Testing the site
+    1. `cd <ac-location>/source/shared/js/pkgs/testsite`
+    1. `npx webpack serve`
+    1. Open a browser to `http://localhost:8080` (or whatever URL `webpack` tells you to visit)
+
+#### Prototype Screenshot
+
+Card JSON:
+```json
+{
+	"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+	"type": "AdaptiveCard",
+	"version": "1.5",
+	"body": [
+		{
+			"type": "TextBlock",
+			"color": "good",
+			"weight": "bolder",
+			"size": "extraLarge",
+			"text": "an actual card!"
+		},
+		{
+			"type": "Container",
+			"items": [
+				{
+					"type": "TextBlock",
+					"text": "this is ridiculous"
+				},
+				{
+					"type": "TextBlock",
+					"text": "*another one!*"
+				}
+			]
+		}
+	],
+	"actions": [
+		{
+			"type": "Action.Submit",
+			"title": "Hello WASM",
+			"iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/1200px-WebAssembly_Logo.svg.png"
+		}
+	]
+}
+```
+
+Renders like this (button clicked and handler invoked):
+![image](assets/JSSM/ProtoScreenshot.png)
+
 ### References
 
 * [Original investigation notes](https://github.com/paulcam206/AdaptiveCards/blob/paulcam/embind-build/specs/DesignDiscussions/SharedModelJavascriptInvestigation.md)
