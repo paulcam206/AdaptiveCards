@@ -101,24 +101,80 @@ because it is. The amount of work required has left the team less agile than we 
 delivering partner requests and innovating in the space than we'd like. If anything, it gets more difficult with every
 new bit of functionality we add.
 
-### Growth Opportunities
+## Proposal
 
-There are myriad approaches to solve the size-of-work problem. I think if Adaptive Cards is to continue to be
-successful, we need to be willing to take some risks and make big changes in support of managing costs (many of these
-efforts are already under way):
+Adaptive Cards standardizes on using the C++ Shared Model as the core for every platform we ship.
 
-* Reduce drag on the dev team by improving
-  * Engineering systems
-  * Test availability and coverage
-  * Misc. processes
-* Continuously improve our design discussions to catch problems prior to implementation
-* Be more strategic in feature planning
-* Make sure we're right-sizing our platform investments (up to and including deprecating under-utilized renderers)
-* Share as much code as possible to reduce (or eliminate) reimplementation
+This document covers projecting the C++ Shared Model into Javascript. This is done using Emscripten to build the Shared
+Model as a Web Assembly and using Embind to generate Javascript bindings (details below).
 
-**This last point is the focus of this document.**
+@rebeccaanne is investigating using the C++ Shared Model in .NET platforms (via C#/WinRT and the UWP Object Model
+layer), which is being tracked separately (see working branch
+[here](https://github.com/jonwis/AdaptiveCards/tree/u/jonwis/winui3)).
 
-## Investigation
+The resulting architecture would look something like this:
+
+![image](assets/JSSM/FutureArch.png)
+
+## Success Criteria
+
+### Can we?
+
+In order to consider investing in a projected C++ shared model, we have to be sure that it's capable of meeting our
+needs. Here are the high-level questions that needed to be answered:
+
+**Is Web Assembly supported on the platforms we currently support?**
+
+We would probably not want to move in this direction if a Web Assembly-based object model weren't able to at least
+deliver functionality where we already have customers.
+
+**Is it possible to build the the Shared Model as a Web Assembly?**
+
+An obvious prerequisite for us to consider this technology stack.
+
+**Is the projected Shared Model capable of:**
+* **Parsing JSON originating from Javascript into its object model representation?**
+* **Serializing objects back into JSON?**
+* **Exposing properties and functionality necessary to implement a renderer?**
+* **Allowing Javascript hosts to parse custom element types?**
+* **Being debugged?**
+
+Put another way: *Can we really use this as the basis for our Javascript story?* We need to know if we'll be able to
+deliver Javascript rendering with this projection as the base.
+
+**Can the compiler outputs be packaged, shipped, and consumed like the existing Javascript implementation?**
+
+We can build it, but can we *ship* it?
+
+**What is the size of the resulting package compared to the existing renderer?**
+
+Package size is one of the most important proxies for runtime performance in the Javascript world. If it's not possible
+to deliver this platform with a reasonable size, it's probably a non-starter.
+
+**What are the dev costs of this approach compared to the existing Javascript implementation?**
+
+The premise of moving to this shared core is that it will save us time in the long run. Is that really the case?
+
+**How much of the existing Javascript renderer can be reused?**
+
+Implementation looks cheaper if we don't have to rewrite everything from scratch.
+
+### Benefits
+
+* Reduced drag on the dev team due to fewer base platforms to maintain:
+  * Simplified engineering systems
+  * Lower test overhead
+  * Better test coverage
+  * Fewer dependencies to manage
+* Cheaper/faster/more predictable feature development
+* No object model-level inconsistencies in *any* platform
+* No more Markdown inconsistencies
+* Simpler Javascript renderer (due to the removal of its object model)
+* Greater agility in developing new Javascript renderers
+* Focuses innovation into a single area of the codebase
+* Easier to develop a server-side renderer in the future, should we choose to do so
+
+## Supporting Investigation
 
 As I understand it, the .NET platform was the first renderer to be developed and was used as to prototype features. The
 Shared Model and Javascript platforms came shortly thereafter. In the early days, having distinct implmentations was
@@ -157,16 +213,6 @@ With only a compiler toolchain and some docs in hand, I set out to see if it was
 Model (hereafter SM) into Javascript and get a feel for the feasibility of replacing the existing Javascript renderer
 with a projected C++ core.
 
-High-level questions that needed to be answered:
-* Is it even possible for us to build the SM using Emscripten?
-* Is the projected SM capable of:
-  * Parsing JSON originating from Javascript into its object model representation?
-  * Exposing properties and functionality necessary to implement a renderer?
-  * Allowing Javascript hosts to parse custom element types?
-  * Being debugged?
-* What is the size of the compiler outputs compared to the existing renderer?
-* How much of the existing Javascript renderer can be reused?
-
 #### Toolchain and Operating Environment
 
 Emscripten provides an integrated compiler toolchain based on CMake backed by the LLVM/Clang compilers. Emscripten is
@@ -178,8 +224,9 @@ Emscripten additionally provides headers which provide glue between C++ and Java
 [possible](https://emscripten.org/docs/api_reference/emscripten.h.html#c.EM_JS), for example, to call out of C++ into
 the broader browser or NodeJS environment either using Javascript code inline with your C++ or, in some cases, directly
 interacting with the browser or NodeJS environment using [C++
-code](https://emscripten.org/docs/api_reference/html5.h.html). I do not see a use for this functionality at this moment,
-but it's worth noting that this facility is available should it be necessary in the future.
+code](https://emscripten.org/docs/api_reference/html5.h.html). This functionality was not necessary during prototype
+development, but might be useful in scenarios where we might want to call back into the browser directly (e.g. to
+implement a resource resolver).
 
 The outputs of the compiler relevant to us are a `.wasm` file (containing the bytecode-compiled SM) and a `.js` file
 (containing a loader to bootstrap the `.wasm`, a translation layer to marshal calls, and a Javascript definition of the
@@ -213,18 +260,28 @@ property, I had to just expose the C++ functions as they were on the SM). Other 
 the SM as needed to expose entrypoints that weren't strictly necessary if consuming the SM directly in C++.
 
 After validating basic functionality (serialize/deserialize, property access, etc.), I validated that it was possible to
-author a custom element in Javascript.
+author a custom element in Javascript. This is possible using
+[`extends`](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html#extend-example), which allows
+a Javascript object to derive from any
+[subclassable](https://emscripten.org/docs/api_reference/bind.h.html#_CPPv4NK6class_14allow_subclassEv) class in the
+framework. This extension works the way is should - namely, declared overridden functions in the derived object are
+called if present. If not present, either the super class's implementation is called or an exception is thrown if the
+method is pure virtual. Access to the super class is available via the object's `this.__parent` property. A more
+detailed examination of this functionality is available in the *Technical Deep Dive* below. It should be noted that the
+relatively raw syntax here isn't necessarily indicative of what would be exposed to third parties.
+
+From here I restructured the prototype to build as part of a `lerna` project to see if packaging was feasible. I also
+implemented wrappers for about half of the SM classes to gauge how much the binary would grow as we fleshed the library
+out. For reference, the resulting package is 305KB (vs. 3.8MB for the existing Javascript renderer).
 
 I stood up a brand new ReactJS renderer that is capable of rendering an Adaptive Card comprised of `Container`,
-`TextBlock`, and `Action.Submit` elements (including HostConfig styling of `TextBlock`). I also implemented wrappers for
-about half of the SM classes to gauge how much the binary would grow as we fleshed the library out (a stronger
-performance consideration for web than native).
+`TextBlock`, and `Action.Submit` elements (including HostConfig styling of `TextBlock`). 
 
 #### Impressions
 
-Everything seems to work more or less as expected. The most difficult part of getting the ReactJS renderer up and
-running was in packaging the Emscripten outputs correctly so that they were exposed as a module. After that, it was
-pretty straightforward to implement.
+Initial results were very positive. The most difficult part of getting the ReactJS renderer up and running was in
+packaging the Emscripten outputs correctly so that they were exposed as a module. After that, it was pretty
+straightforward to implement.
 
 The resulting module is pretty obviously the result of a projected assembly rather than a custom Javascript solution. I
 couldn't find an easy way to generate Typescript bindings for my module, and most of the API surface is populated at
@@ -239,12 +296,13 @@ majority of circumstances, as most consumers will interact with the projected SM
 The debugging story is also somewhat lacking. After becoming more familiar with the types of mistakes one can make in
 authoring bindings, tracking down needed code changes from a thrown exception became easier. There *are* debugging
 extensions that can help source debug down into the WASM itself, but currently they require Chrome Canary, and seem to
-require you to be testing on the same machine that built the binary, though I didn't investgate thoroughly. That said,
+require you to be debugging on the same machine that built the binary, though I didn't investgate thoroughly. That said,
 emitting [DWARF](http://www.dwarfstd.org/) metadata as part of the build process (natively supported by the Emscripten
-tools) can get you usable callstacks down into the SM, which I only needed once during development.
+tools) can get you usable callstacks down into the SM, which I only needed once during development. See link in
+the *Reference* section for more details.
 
-Overall, after getting past the initial learning bump, it seems like productizing a projected SM would not be too
-difficult a task to accomplish given resourcing.
+Overall, after getting past the initial learning bump, I found that working with the Emscripten/embind system was
+straightforward. Adding new bindings went from being a tricky endeavour initially to being almost robotic.
 
 #### A Note on Performance
 
@@ -252,7 +310,7 @@ Runtime performance was not observed beyond general impressions since there wasn
 do a representative comparison. That being said:
 * Compressed payload size with about half of the SM bindings written is 305KB (compared to 3.8MB for the existing JS
   library)
-* `embind` has been used successfully to port games written in SDL or GL to run at >60fps in the browser
+* Emscripten/`embind` has been used successfully to port games written in SDL or GL to run at >60fps in the browser
 * Runtime overhead of the Emscripten binding layer is [around
   200ns](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html#performance)
 
@@ -263,38 +321,18 @@ There are design differences between the Javascript renderer and the SM.
 The SM is strictly about parsing a class hierarchy to/from JSON. It provides all of the information needed to implement
 a renderer (elements, properties, Markdown parsing, date/time parsing, etc.), but does not provide any actual rendering.
 
-The Javascript renderer provides the same (technically it does not provide Markdown parsing -- it provides hooks)
-but also has an HTML renderer built in. There's no architectural separation between the object model and rendering
-functionality (each class representing an element has a `render()` method in addition to its parsing/property
-handling). This limits options when it comes to alternative Javascript-based renderers - other renderers have to choose
-either to wrap the existing rendering output or override each element's rendering individually. This also means that
-alternative Javascript renderers actually ship two renderers in their payload, *even if they don't use our vanilla HTML
-rendering*.
+The Javascript renderer provides the same (technically it does not provide Markdown parsing -- it provides hooks) but
+also has an HTML renderer built in. There's no architectural separation between the object model and rendering
+functionality (each class representing an element has a `render()` method in addition to its parsing/property handling).
+This limits options when it comes to alternative Javascript-based renderers - other renderers have to choose either to
+wrap the existing rendering output or override each element's rendering individually. This also means that alternative
+Javascript renderers actually ship two renderers in their payload, *even if they don't use our vanilla HTML rendering*.
+There's no easy way to figure out the proportion of object model/parsing to rendering code in today's Javascript
+renderer, but I'd guess that about half of the code relates either to rendering or to styling.
 
-#### Questions Answered
+## Conclusion
 
-High-level questions that needed to be answered:
-* Is it even possible for us to build the SM using Emscripten?
-  * *Very much so.*
-* Is the projected SM capable of:
-  * Parsing JSON originating from Javascript into its object model representation?
-    * *Yes*
-  * Exposing properties and functionality necessary to implement a renderer?
-    * *Yes*
-  * Allowing Javascript hosts to parse custom element types?
-    * *Yes*
-  * Being debugged?
-    * *Mostly... some scenarios get a little tricky to debug into, but the tooling is improving.*
-* What is the size of the compiler outputs compared to the existing renderer?
-  * *About 10% the size of the existing Javascript renderer (~305KB vs. ~3.8MB)*
-* How much of the existing Javascript renderer can be reused?
-  * *I don't have hard numbers to quantify how much can be reused, but it looks like most of the rendering parts of the
-    renderer can be "reused" by adapting them to the new SM. There's likely to be a fair bit of fallout for the
-    Designer, so we should account for that in our planning.*
-
-## Conclusions
-
-### Recommendations
+My investigation shows that using the C++ shared model projected into Javascript is likely to meet our success criteria.
 
 1. We should ship the projected C++ shared model as our Javascript object model.
 1. We should refactor the existing Javascript object model/renderer to be a dedicated "Vanilla" Javascript renderer
@@ -303,23 +341,88 @@ High-level questions that needed to be answered:
   by Emscripten. To date, the C++ Shared Model has rarely been used outside of the immediate team. We know that it is
   sufficient to implement a renderer, but the programming model and interface might not be as nice as it could be. There
   are uses of the Javascript object model by third party developers that may benefit from a helper library to make
-  common use cases easier to implement. That said, this decision does not need to be blocking. I suspect that as we move
-  the existing Javascript renderer over to the SM we'll find out quickly enough if a layer is warranted.
+  common use cases easier to implement (see *Development Environment* below). That said, this decision does not need to
+  be blocking. I suspect that as we move the existing Javascript renderer over to the SM we'll find out quickly enough
+  if a layer is warranted.
 
-### A Possible Future
+## Risks
 
-![image](assets/JSSM/FutureArch.png)
-
-### Risks
-
-With any undertaking of this kind, there are risks to consider:
-* It's possible that there remains an as yet undiscovered and insurmountable technical hurdle that we won't encounter until
-  we're well under way with this project.
 * Performance is a potential concern, as we have not been able to make reasonable comparisons to date.
 * The API surface feels different from standard JS libraries - possibly offputting to other devs using the object model.
-* Templating remains unimplemented for SM renderers. We obviously need to get to parity here regardless of the final
-  decision here. This is particularly concerning in light of new features that have chosen to take a dependency on the
-  existing Javascript renderer.
+* Templating remains unimplemented for SM renderers. We obviously need to get to parity for SM platforms regardless of
+  the final decision here. That being said, the existing Javascript templating library is distinct from the Javascript
+  rendering library and operated directly against JSON, so existing usage should continue to work as it already does.
+  
+## Reasons Not to Switch
+
+### Established Developer Ecosystem
+
+*The existing Javascript renderer is in broad production use today. Some partners (e.g. Teams) make use of the existing
+extensibility mechanisms to add functionality. Moving to the post-restructured Javascript renderer will likely require
+code changes on their side, and may be painful.*
+
+We will need to establish a clear upside for our customers. If possible, an adapter should be developed to allow
+existing custom element extensions to continue to function, or at least mitigate some of the cost. A similar
+accomodation should be made in the retooled renderer. We should also confirm that existing partners are comfortable
+deploying this solution.
+
+### Development Environment
+
+*Somewhat related to the above, the existing Javascript renderer is implemented using pretty standard patterns and
+practices. Consuming the renderer is a straightforward and familiar experience for developers looking to add Adaptive
+Cards rendering to their website or app. Since the object model and renderer are in the same package, consuming Adaptive
+Cards at the object model level feels much the same. The projected C++ Shared Model will likely feel unusual and
+possibly difficult to use in comparison.*
+
+One thing to keep in mind is that, while we can't be sure about numbers, it's certainly the case that most developers
+will only interact with the renderer side of Adaptive Cards (indeed, object model interactions are only documented on
+[.NET](https://docs.microsoft.com/adaptive-cards/sdk/authoring-cards/net) and
+[Javascript](https://docs.microsoft.com/adaptive-cards/sdk/authoring-cards/javascript), and even then only barely --
+another issue we should address). This portion of the codebase will remain Typescript/Javascript and should feel
+familiar.
+
+Interacting at the object model level, while comparatively rare, should be a scenario we thoroughly examine. A
+Typescript layer may be useful or necessary to enable more natural interactions. It would also be nice if we could
+generate Typescript definition files for the embind-generated projection, which we should investigate further.
+
+Similarly, we should not be hesitant to add functionality to the C++ Shared Model itself if it helps smooth out the
+developer experience. Regardless, efforts should be made to ensure object model interactions are thoroughly documented.
+
+### Implementation Costs
+
+*It's certainly true that in the short term it will be much more costly to project the SM and adapt the existing
+Javascript renderer than to maintain the status quo.*
+
+The bet here is that these up front implementation costs will reap greater savings in the future by reducing
+inconsistencies, reducing new feature development costs, bringing more existing expertise to the problem space, and
+free up Javascript development resources to focus on rendering.
+
+### Technological Uncertainty
+
+*The existing Javascript renderer ships using a widely deployed and consumed developer platform that
+enjoys broad acceptance both within and without Microsoft. WASM is not currently a common shipping medium at Microsoft.
+Emscripten and embind are not commonly used tools within our broader team.*
+
+Undoubtedly, we will be taking a risk by moving in this direction. However, WASM is gaining a good deal of popularity
+and is starting to be adopted for large projects (see .NET's
+[Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) project). The Emscripten and embind toolchain is
+under [ongoing development](https://github.com/emscripten-core/emscripten), is
+[well-tested](https://github.com/emscripten-core/emscripten/tree/main/tests), is [open
+source](https://github.com/emscripten-core/emscripten/blob/main/LICENSE) (dual NCSA/MIT), and has an active community of
+users. All of this is to say that we're not taking an untravelled path. Indeed, there's a [full WASM build of
+SQLite](https://sql.js.org/) available, made using Emscripten, which demonstrates the robustness and completeness of the
+tooling.
+
+### Designer Dependencies
+
+*The Designer has explicit and implicit behavioral dependencies on the object model present in Javascript renderer.
+Replacing the object model out from underneath it will cause problems (known and unknown).*
+
+The Designer is an important element of our card authoring story, and it's crucial that it continue to fulfill that
+role. We should consider the Designer the first best customer of the projected shared model and let it help inform our
+API surface decisions. We should drive requirements back to the shared model itself as needed. This creates benefits for
+all consumers of the shared model regardless of platform. I suspect that as porting work is done, we will get a much
+firmer understanding of the areas in which the projected shared model can improve.
 
 ---
 
@@ -330,7 +433,7 @@ With any undertaking of this kind, there are risks to consider:
 It's pretty [straightforward](https://emscripten.org/docs/getting_started/downloads.html) to get Emscripten installed
 and configured. One nice thing is that the environment is activatable. There's a script you run to set up environment
 variables to point to the various pieces of the EMSDK. This is useful as it doesn't require you to have a distinct
-`CMakeLists.txt` -- you just conditionally do Emscripten things when Emscripten is in play.
+`CMakeLists.txt` -- you can just conditionally do Emscripten things when Emscripten is in play.
 
 ```cmake
 if (EMSCRIPTEN)
@@ -384,16 +487,16 @@ exploring them further.
 
 Emscripten provides two different facilities for generating bindings between C++ and Javascript.
 
-The first is to use [WebIDL](https://www.w3.org/TR/WebIDL-1/). This approach probably makes a good deal of sense in some
-scenarios and when starting a project from scratch. However, there are two crucial limitations that preclude us from
-using the WebIDL approach. First, WebIDL-generated bindings are unidirection Javascript → C++ only. If we want to allow
-Javascript authors to have custom elements, they need to be able to have their Javascript code invoked from C++. The
-second is that the WebIDL binding environment can't interact with smart pointer classes (i.e. `std::unique_ptr<>` and
-`std::shared_ptr<>`), which are ubiquitous in existing SM code.
+The first is to use [WebIDL](https://www.w3.org/TR/WebIDL-1/). This approach probably makes a good deal of sense in
+purely consumptive scenarios and when starting a project from scratch. However, there are two crucial limitations that
+preclude us from using the WebIDL approach. First, WebIDL-generated bindings are unidirection Javascript → C++ only. If
+we want to allow Javascript authors to have custom elements, they need to be able to have their Javascript code invoked
+from C++. The second is that the WebIDL binding environment can't interact with smart pointer classes (i.e.
+`std::unique_ptr<>` and `std::shared_ptr<>`), which are ubiquitous in the existing SM codebase.
 
-The second is to use [Embind](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html) -- a header
-that's part of the Emscripten project. Embind provides macros and facilities for declaring and defining bindings. The
-generated bindings are bidirectional and know how to interface with smart pointers.
+The second option is to use [Embind](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html) -- a
+header-based solution that's part of the Emscripten project. Embind provides macros and facilities for declaring and
+1defining bindings. The generated bindings are bidirectional and know how to interface with smart pointers.
 
 #### Embind Basics
 
